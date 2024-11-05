@@ -1,0 +1,502 @@
+[
+  {
+    "question": "What is causing the 401 error when the web app tries to send performance metrics to the server?",
+    "answer": "The 401 error is likely caused by the server interpreting the request as a CSRF attempt. This is probably due to navigator.sendBeacon() behaving differently from fetch(). The issue might be resolved by adding the header 'X-Requested-With: XMLHttpRequest' to the request, similar to how it's done for the mobile app.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58263"
+  },
+  {
+    "question": "What issue was discovered with the '/calls end' command in Mattermost?",
+    "answer": "It was found that the '/calls end' command only worked for the original host of the call, even after the host role had been transferred to another participant. The new host would receive a message that they lacked permissions to end the call, while the original host retained the ability to use the command.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58259"
+  },
+  {
+    "question": "What issue was reported regarding the announcement banner in Mattermost Calls?",
+    "answer": "The announcement banner in Mattermost Calls was reported to be breaking the pop out view functionality.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58265"
+  },
+  {
+    "question": "What issue occurs when a user uses the '/calls end' command in the Mattermost webapp?",
+    "answer": "When a user uses the '/calls end' command, the webapp doesn't fully reflect the ended call state. A banner appears at the top of the UI suggesting the call is still ongoing, even though it has ended. This prevents the user from starting a new call and clicking the banner starts a new call instead of rejoining the ended one. The issue only affects the client where the command was run and can be resolved by refreshing the webapp.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58260"
+  },
+  {
+    "question": "What issue was reported regarding bot DMs in the MS Teams plugin for Mattermost?",
+    "answer": "It was reported that bot DMs were remaining muted when switching back to primary Mattermost in the MS Teams plugin settings, whereas they should unmute. However, this issue is no longer relevant as the concept of a primary platform has been removed from the code.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58264"
+  },
+  {
+    "question": "What issue was reported regarding the Calls feature in Mattermost?",
+    "answer": "It was reported that expanding the call thread while screen sharing is active is broken in the Calls feature of Mattermost.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58266"
+  },
+  {
+    "question": "What is the main objective of the task described in the given content?",
+    "answer": "The main objective is to add end-to-end (E2E) tests to verify that calls are functioning correctly on both iOS and Android platforms in a React Native (RN) application.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58272"
+  },
+  {
+    "question": "What was the purpose of creating this ticket according to Harshil Sharma?",
+    "answer": "Harshil Sharma created this ticket to ensure he wouldn't forget to update the product image in the readme once a new image was available.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58273"
+  },
+  {
+    "question": "What issue was reported regarding the user profile popover in Mattermost?",
+    "answer": "The issue reported was that there was no side padding in the plugins section of the user profile popover, as shown in the attached screenshot.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58274"
+  },
+  {
+    "question": "What is the intermittent issue reported on Android devices regarding the user profile pop-over and the back key?",
+    "answer": "An intermittent issue was reported where the Android OS back key (<) doesn't always collapse the user profile pop-over as expected. Sometimes it starts navigating around the app while the pop-over is still open, and other times it works correctly. This issue occurs less than 1 in 10 attempts but can create a confusing user experience. Users can still close the pop-over by sliding it down, but the inconsistent behavior of the back key is problematic.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58268"
+  },
+  {
+    "question": "What is the main issue described in this bug report?",
+    "answer": "The main issue is a type mismatch between the client and server when sending performance metrics. The client is sending floating point values for metric values and timestamps, but the server expects these to be integers. This mismatch prevents the server from properly deserializing the client metrics.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58281"
+  },
+  {
+    "question": "What issue has arisen with importing Slack themes into Mattermost?",
+    "answer": "The Slack theme format appears to have changed, now providing only 4 colors (#EAEAEA, #CBCCCF, #20A271, #EF3E75) instead of the expected 7 or 8 colors. This change impacts Mattermost users' ability to import Slack themes, as Mattermost's theme import feature expects more color values. The development team needs to rethink how the 'Import from Slack' feature works and potentially develop a logic to generate the required colors from the 4 provided colors.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58267"
+  },
+  {
+    "question": "What was the JavaScript error reported in this issue, and how was it resolved?",
+    "answer": "The JavaScript error reported was 'Cannot read properties of undefined (reading 'ID')'. It was related to the Mattermost Calls plugin and was fixed as part of a pull request (https://github.com/mattermost/mattermost-plugin-calls/pull/647) in the mattermost-plugin-calls repository.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58280"
+  },
+  {
+    "question": "What issue has been reported with the 'Make Call' button in the User Profile pop-up after recent changes?",
+    "answer": "After recent changes, the 'Make Call' button in the User Profile pop-up appears clickable and shows a tooltip when a user is on an active call. However, clicking the button doesn't have any effect. This is different from the previous behavior where the button appeared unclickable (disabled) when a user was on an active call.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58271"
+  },
+  {
+    "question": "What is the main objective of the cleanup task described in the issue?",
+    "answer": "The main objective of the cleanup task is to move the WriteFileResponse to a public package.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58213"
+  },
+  {
+    "question": "Why was the user unable to change MetricsSettings from the system console in their local development environment?",
+    "answer": "The user was unable to change MetricsSettings because they were using a cloud license in their local development environment. MetricsSettings are not allowed to be changed with a cloud license. In an actual cloud server, these settings are not settable in the system console and are instead set via Environment Variables.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58282"
+  },
+  {
+    "question": "What issue occurs with the leave call button in the popout window when the thread view is open?",
+    "answer": "The leave call button becomes hidden when the thread view (RHS) is open in the popout window, particularly if the window size is below a certain threshold. This is due to the thread viewer taking priority and overlaying other elements, potentially caused by incorrect width calculations or issues with the grid layout.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58285"
+  },
+  {
+    "question": "What was the purpose of the issue 'Handle binary params in postgres connection'?",
+    "answer": "The issue was to handle binary parameters in PostgreSQL connections. However, it was closed without requiring testing, suggesting it was either resolved or deemed unnecessary after review.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58214"
+  },
+  {
+    "question": "What are the main design issues with the call degraded banner according to the description?",
+    "answer": "The main design issues with the call degraded banner are: 1) Lack of spacing between the icon and text (should be 8px), 2) Incorrect text color (should use calls-bg color instead of center channel background color), 3) Poor text color legibility in dark themes, and 4) Incorrect icon alignment (should be aligned to the top row of text in the widget).",
+    "source": "https://mattermost.atlassian.net/browse/MM-58283"
+  },
+  {
+    "question": "What issue was reported with the Mattermost Desktop 5.8.0 release for Linux x64 (non-arm) users?",
+    "answer": "The AppImage file (mattermost-desktop-5.8.0-linux-x86_64.AppImage) for Linux x64 (non-arm) users was missing from the release page. When attempting to download it, users received an 'Access Denied' error. The asset was also not listed in the assets on the GitHub page, even though the download link was present.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58286"
+  },
+  {
+    "question": "What issue occurs with Markdown rendered URLs when Image Proxying is enabled in Mattermost?",
+    "answer": "When Image Proxying is enabled in Mattermost, there's an issue with Markdown rendered URLs. After enabling Image Proxy and refreshing the page, the image's src attribute becomes incorrectly encoded. Instead of the expected URL (http://localhost:8065/api/v4/image?url=https%3A%2F%2Fdocs.mattermost.com%2F_images%2Ficon-76x76.png), the entire API path gets encoded again, resulting in a malformed URL (http://localhost:8065/api/v4/image?url=%2Fapi%2Fv4%2Fimage%3Furl%3Dhttps%253A%252F%252Fdocs.mattermost.com%252F_images%252Ficon-76x76.png). This causes E2E test failures, particularly in GitHub Actions environments.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58275"
+  },
+  {
+    "question": "What is the proposed solution for adding a confirmation step when leaving a call in Mattermost?",
+    "answer": "The proposed solution is to add a confirmation step when a user clicks on 'Leave Call'. The functionality will differ for hosts and end users. Hosts will have an additional option to end the call for everyone. The confirmation will be implemented for various scenarios, including leaving from the widget, popout, and call post in the channel/thread. An optional configuration in call settings to enable/disable this confirmation step is also being considered.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58284"
+  },
+  {
+    "question": "What is the main objective of the cleanup task described in the issue?",
+    "answer": "The main objective of the cleanup task is to move the WriteFileResponse to a public package.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58213"
+  },
+  {
+    "question": "What UI issue was reported regarding error screens in Mattermost v9.9?",
+    "answer": "A UI regression was reported in Mattermost v9.9 where users were seeing all-blue error screens with left-aligned text when accessing a permalink of a deleted message or when a team was not found. This issue was later fixed and confirmed to be working as expected in the v9.9.0 release.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58215"
+  },
+  {
+    "question": "What feature improvement has been requested by some customers and approved by product security for bulk import?",
+    "answer": "The addition of support for exporting and importing user password hashes during bulk import operations.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58220"
+  },
+  {
+    "question": "Why doesn't a user receive an NPS survey immediately after being moved from an excluded team to a new team?",
+    "answer": "The user doesn't receive the survey immediately because the plugin caches user-team membership for 2 hours. This caching is necessary for performance reasons, as comparing the arrays of excluded team IDs and user's team IDs can be computationally expensive. The cached result is used until the 2-hour period expires, after which the team membership is re-checked.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58219"
+  },
+  {
+    "question": "What UI issue was reported regarding the NPS survey modal?",
+    "answer": "An empty text alert overlapped with the Warning modal when the 'Survey message text' field was left empty and the user clicked on 'end survey'. The alert 'Please fill in this field' appeared on top of the modal, causing a visual overlap.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58216"
+  },
+  {
+    "question": "What was the purpose of the task described in this issue?",
+    "answer": "The purpose was to update the Developer Documentation to include the building process and update the build/CLI commands.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58223"
+  },
+  {
+    "question": "What issue was reported regarding the NPS survey launch, and how was it resolved?",
+    "answer": "The issue reported was that a survey could not be launched with empty text and negative survey expiry days. This was resolved by implementing the following changes: 1) Negative expiry days are now allowed to be saved in the config, but the survey won't start with negative or zero values, and an error message is displayed. 2) Empty survey message text is now allowed as it was intended to be an optional field with a default value. These changes ensure that while the config can be saved with these values, no survey will start if the expiry days are invalid.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58217"
+  },
+  {
+    "question": "What are the main changes requested for the muted and joined call notices in the update?",
+    "answer": "The main changes requested for both the muted and joined call notices include: 8px rounded corners, no transparency on the background color, adjusting font-weight on specific text elements ('You are muted' for muted notice and user's name for joined call notice), and adjusting overall height/padding of the notices.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58221"
+  },
+  {
+    "question": "What issue was reported with the Boards feature in Hub, and what was the final outcome?",
+    "answer": "The reported issue was that the Boards icon was missing on the apps bar and when opening the RHS to view the channel's boards in Hub, with Boards version v7.11.4. However, this issue was later resolved. It was noted that there might have been a temporary hiccup when Boards was reintroduced, possibly causing the plugin to crash. The team planned to investigate performance separately.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58218"
+  },
+  {
+    "question": "What is the goal of the 'As reliable as iMessage' initiative?",
+    "answer": "The goal is to eliminate missed messages and improve the trust in Mattermost's Message Delivery Engine (MME), making it as reliable as Apple's iMessage service.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58226"
+  },
+  {
+    "question": "What issue was reported with the Calls widget in Mattermost?",
+    "answer": "It was reported that the channel could be missing from the widget props when connecting to a call, especially after returning to Mattermost following a period of inactivity. This issue needs further investigation to determine the root cause and potential solutions.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58222"
+  },
+  {
+    "question": "What are the key elements needed to provide irresistible value for critical infrastructure customers?",
+    "answer": "To provide irresistible value for critical infrastructure customers, three key elements are needed: 1) Compelling SKUs (Stock Keeping Units) and use cases, 2) Proving value to the customers, and 3) Solving any confusion related to commercial-free offerings.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58224"
+  },
+  {
+    "question": "What is the main objective of the 'Accelerate MME and public sector new logo' initiative?",
+    "answer": "The main objective is to increase awareness through mission critical themes and alliances, and then convert that awareness into Annual Recurring Revenue (ARR) for the MME (Mid-Market Enterprise) and public sector segments.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58227"
+  },
+  {
+    "question": "What issue is reported with the Playbook RHS on Ubuntu Desktop in Mattermost 9.5.2?",
+    "answer": "When using Ubuntu Desktop and clicking on a Playbook run channel in Mattermost 9.5.2, the RHS (Right Hand Side) Playbook window does not open automatically as expected. This issue was observed on both Ubuntu 20.04 and 22.04, and affects the Mattermost desktop app version 5.7. The problem appears to have started after upgrading from Mattermost server 7.8 to 9.5.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58225"
+  },
+  {
+    "question": "What is the main goal of the task described in the content?",
+    "answer": "The main goal is to implement improvements that allow better performance of the mobile application in low bandwidth and poor connectivity situations.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58231"
+  },
+  {
+    "question": "What change does Maria Nunez want to include in a 9.8 dot release of Mattermost?",
+    "answer": "Maria Nunez wants to include the reversion of message limit warnings in a 9.8 dot release of Mattermost when it becomes available.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58230"
+  },
+  {
+    "question": "What issue was reported regarding host control notices in Calls?",
+    "answer": "The issue reported was that host control notices in Calls needed better theming. This was resolved after Christopher Poile confirmed it could be closed.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58232"
+  },
+  {
+    "question": "What is the main goal of the strategy described in the content, and how does it relate to Microsoft Teams?",
+    "answer": "The main goal is to retain revenue as IT budgets shrink. The strategy involves supplementing Microsoft Teams to avoid competition or co-existence issues, while also accelerating the deployment of MME (Microsoft 365 E3 or E5) seats. This approach aims to position the product as complementary to MS Teams rather than a direct competitor, potentially preserving revenue streams in a challenging budget environment.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58228"
+  },
+  {
+    "question": "What is the proposed solution to improve the visibility of shared channel status (public/private) in the Mattermost interface?",
+    "answer": "The proposed solution is to place the link icon on the right side of the channel name, instead of replacing the public/private icon. This change should be implemented in four places: the left sidebar, DM header, beside the username in messages, and in the profile popover. This approach maintains the visibility of the public/private status while also indicating that the channel is shared.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58229"
+  },
+  {
+    "question": "What issue was reported regarding the time display in playbook reports?",
+    "answer": "The reported issue was inconsistent time formatting in playbook reports. The time was displayed using both sections and day/hour/minute formats, instead of a normalized format like dd:hh:mm.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58234"
+  },
+  {
+    "question": "What is the status of the 'Self UI and Text Pass' issue in the Mattermost project?",
+    "answer": "The 'Self UI and Text Pass' issue is in a Resolved state, as reported by Harshil Sharma on May 15, 2024.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58238"
+  },
+  {
+    "question": "What optimization is suggested for the popout window in Calls to potentially improve load time?",
+    "answer": "The suggestion is to consider using the parent window's WebSocket (ws) connection in the popout window, possibly by exposing it in the parent's window object. This approach may make the view load much quicker compared to establishing a new connection.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58233"
+  },
+  {
+    "question": "What is the issue described in the Mattermost Playbooks RHS bug report?",
+    "answer": "The issue is that periodically the playbooks Right-Hand Sidebar (RHS) does not show playbook information for certain users. This occurs when a non-sysadmin user who was invited as a participant, but not added as a playbook member, logs in after the playbook is created and tries to view the playbook sidebar in the channel where the playbook lives.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58235"
+  },
+  {
+    "question": "What issue can occur when running 'deployment destroy' on a cluster with stopped databases, and what solution is proposed?",
+    "answer": "When running 'deployment destroy' on a cluster with stopped databases, the process can fail in the terraform stage, and subsequent 'deployment start-db' commands won't work because the cluster info is already wiped out. This requires manual intervention in AWS to start the databases. The proposed solution is to implement a check during the 'destroy' process to verify if the databases are active or stopped, allowing the user to bring them up before proceeding with the destruction.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58236"
+  },
+  {
+    "question": "What UI issue was reported regarding error screens in Mattermost v9.9?",
+    "answer": "A UI regression was reported in Mattermost v9.9 where users were seeing all-blue error screens with left-aligned text when accessing a permalink of a deleted message or when a team was not found. This issue was later fixed and confirmed to be working as expected in the v9.9.0 release.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58215"
+  },
+  {
+    "question": "What UI issue was reported regarding the NPS survey modal?",
+    "answer": "An empty text alert overlapped with the Warning modal when the 'Survey message text' field was left empty and the user clicked on 'end survey'. The alert 'Please fill in this field' appeared on top of the modal, causing a visual overlap.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58216"
+  },
+  {
+    "question": "What was the issue reported with the 'Send next survey at' date selection in the user interface?",
+    "answer": "The issue reported was that the 'Send next survey at' date selector was not showing the present day as selected. Instead, it was displaying the previous day (14th May) with a blue background and black text, which made it difficult to distinguish. However, this was clarified to be a UI display issue rather than a functional problem, as the date shown is supposed to reflect the last saved date, not necessarily the current date.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58239"
+  },
+  {
+    "question": "What was the purpose of the issue 'Handle binary params in postgres connection'?",
+    "answer": "The issue was to handle binary parameters in PostgreSQL connections. However, it was closed without requiring testing, suggesting it was either resolved or deemed unnecessary after review.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58214"
+  },
+  {
+    "question": "What is the bug described in this issue regarding survey launching?",
+    "answer": "The bug is that if a survey is in-progress and you end it manually within its duration, a new survey starts automatically with the same configuration, even if the settings (especially the date and time) have not changed after launching the previous survey.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58241"
+  },
+  {
+    "question": "What issue occurs when a user tries to submit a response to an expired survey?",
+    "answer": "When a user tries to submit a response to an expired survey, they see an error message indicating that the survey has expired. However, the error message incorrectly displays the expiration date as 1970, which is likely due to a timestamp initialization issue.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58240"
+  },
+  {
+    "question": "What issue was discovered with the NPS survey launch functionality?",
+    "answer": "The NPS survey could not be launched when there was an empty survey message text and a negative value for survey expiry days. This issue was addressed by implementing validation for the expiry days field, which now prevents negative values, and making the survey message text optional with a default value.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58217"
+  },
+  {
+    "question": "What feature improvement has been requested by some customers and approved by product security for bulk import?",
+    "answer": "The addition of support for exporting and importing user password hashes during bulk import operations.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58220"
+  },
+  {
+    "question": "What issue was reported with the Boards feature in Hub, and what was the final outcome?",
+    "answer": "The reported issue was that the Boards icon was missing on the apps bar and when opening the RHS to view the channel's boards in Hub, with Boards version v7.11.4. However, this issue was later resolved. It was noted that there might have been a temporary hiccup when Boards was reintroduced, possibly causing the plugin to crash. The team planned to investigate performance separately.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58218"
+  },
+  {
+    "question": "Why doesn't a user receive an NPS survey immediately after being moved from an excluded team to a new team?",
+    "answer": "The user doesn't receive the survey immediately because the plugin caches user-team membership for 2 hours. This caching is necessary for performance reasons, as comparing the arrays of excluded team IDs and user's team IDs can be computationally expensive. The cached result is used until the 2-hour period expires, after which the team membership is re-checked.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58219"
+  },
+  {
+    "question": "What was the resolution for the issue of surveys automatically launching even after being disabled?",
+    "answer": "The issue was resolved by removing the 'Enable survey' setting altogether. This change eliminated the problem of surveys launching automatically when they were supposed to be disabled.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58242"
+  },
+  {
+    "question": "Why do expired surveys still appear as active in the user interface until a response is submitted?",
+    "answer": "This behavior is intentional due to performance concerns. Expired surveys are shown as active until a user attempts to submit a response to improve system efficiency. At that point, the survey is marked as expired. This design choice is currently under discussion with the UX team to ensure it doesn't negatively impact user experience.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58243"
+  },
+  {
+    "question": "What are the main changes requested for the muted and joined call notices in the update?",
+    "answer": "The main changes requested for both the muted and joined call notices include: 8px rounded corners, no transparency on the background color, adjusting font-weight on specific text elements ('You are muted' for muted notice and user's name for joined call notice), and adjusting overall height/padding. These changes aim to match the new notices style.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58221"
+  },
+  {
+    "question": "What was the purpose of the task described in this issue?",
+    "answer": "The purpose was to update the Developer Documentation to include the building process and update the build/CLI commands.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58223"
+  },
+  {
+    "question": "What issue was reported with the Calls widget in Mattermost?",
+    "answer": "It was reported that the channel could be missing from the widget props when connecting to a call, especially after returning to Mattermost following a period of inactivity. This issue needs further investigation to determine the root cause and potential solutions.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58222"
+  },
+  {
+    "question": "What issue occurs when using the '/calls end' command in the Mattermost webapp?",
+    "answer": "When using the '/calls end' command, the webapp doesn't fully reflect the ended call state. A banner appears at the top of the UI suggesting the call is still ongoing, even though it has ended. This prevents users from starting new calls and clicking the banner starts a new call instead of rejoining the ended one. The issue only affects the client where the command was run and can be resolved by refreshing the webapp.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58260"
+  },
+  {
+    "question": "What are the key elements needed to provide irresistible value for critical infrastructure customers?",
+    "answer": "To provide irresistible value for critical infrastructure customers, three key elements are needed: 1) Compelling SKUs (Stock Keeping Units) and use cases, 2) Proving value to the customers, and 3) Solving any confusion related to commercial-free offerings.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58224"
+  },
+  {
+    "question": "What issue was discovered with the '/calls end' command in Mattermost?",
+    "answer": "It was found that the '/calls end' command only worked for the original host of the call, even after the host role had been transferred to another participant. The new host would receive a message that they lacked permissions to end the call, while the original host retained the ability to use the command.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58259"
+  },
+  {
+    "question": "What is causing the 401 error when the web app tries to send performance metrics to the server?",
+    "answer": "The 401 error is likely caused by the server interpreting the request as a CSRF attempt. This is probably due to navigator.sendBeacon() behaving differently from fetch(). The issue might be resolved by adding the header 'X-Requested-With: XMLHttpRequest' to the request, similar to how it's done for the mobile app.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58263"
+  },
+  {
+    "question": "What is the goal of the 'As reliable as iMessage' initiative?",
+    "answer": "The goal is to eliminate missed messages and improve the trust in Mattermost's Message Delivery Engine (MME), making it as reliable as Apple's iMessage service.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58226"
+  },
+  {
+    "question": "What issue is reported with the Playbook RHS on Ubuntu Desktop in Mattermost 9.5.2?",
+    "answer": "When using Ubuntu Desktop and clicking on a Playbook run channel in Mattermost 9.5.2, the RHS (Right Hand Side) Playbook window does not open automatically as expected. This issue was observed on both Ubuntu 20.04 and 22.04, and affects the Mattermost desktop app version 5.7. The problem appears to have started after upgrading from Mattermost server 7.8 to 9.5.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58225"
+  },
+  {
+    "question": "What issue was reported regarding bot DMs in the MS Teams plugin for Mattermost?",
+    "answer": "It was reported that bot DMs were remaining muted when switching back to primary Mattermost in the MS Teams plugin settings, whereas they should unmute. However, this issue is no longer relevant as the concept of a primary platform has been removed from the code.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58264"
+  },
+  {
+    "question": "What issue was reported regarding the announcement banner in Mattermost Calls?",
+    "answer": "The announcement banner in Mattermost Calls was reported to be breaking the pop out view functionality.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58265"
+  },
+  {
+    "question": "What issue was reported regarding the Calls feature in Mattermost?",
+    "answer": "It was reported that expanding the call thread while screen sharing is active is broken in the Calls feature of Mattermost.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58266"
+  },
+  {
+    "question": "What is the main objective of the 'Accelerate MME and public sector new logo' initiative?",
+    "answer": "The main objective is to increase awareness through mission critical themes and alliances, and then convert that awareness into Annual Recurring Revenue (ARR) for the MME (Mid-Market Enterprise) and public sector segments.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58227"
+  },
+  {
+    "question": "What issue has arisen with importing Slack themes into Mattermost?",
+    "answer": "The Slack theme format appears to have changed, now providing only 4 colors (#EAEAEA, #CBCCCF, #20A271, #EF3E75) instead of the expected 7 or 8 colors. This change impacts Mattermost users' ability to import Slack themes, as Mattermost's theme import feature expects more color values. The development team needs to rethink how the 'Import from Slack' feature works and potentially develop a logic to generate the required colors from the 4 provided colors.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58267"
+  },
+  {
+    "question": "What is the main objective of the task described in the given content?",
+    "answer": "The main objective is to add end-to-end (E2E) tests to verify that calls are functioning correctly on both iOS and Android platforms in a React Native (RN) application.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58272"
+  },
+  {
+    "question": "What issue has been reported with the Call button in the User Profile pop-up after recent changes?",
+    "answer": "After recent changes, the Call button in the User Profile pop-up appears clickable and displays a tooltip when a user is on an active call. However, clicking the button doesn't have any effect. Previously, the Call button appeared unclickable (disabled) when a user was on an active call, which was the desired behavior.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58271"
+  },
+  {
+    "question": "What is the proposed solution to improve the visibility of shared channel status (public/private) in the Mattermost interface?",
+    "answer": "The proposed solution is to place the link icon on the right side of the channel name, instead of replacing the public/private icon. This change should be implemented in four places: the left sidebar, DM header, beside the username in messages, and in the profile popover. This approach maintains the visibility of the public/private status while also indicating that the channel is shared.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58229"
+  },
+  {
+    "question": "What is the main goal of the strategy described in the content, and how does it relate to Microsoft Teams?",
+    "answer": "The main goal is to retain revenue as IT budgets shrink. The strategy involves supplementing Microsoft Teams to avoid competition or co-existence issues, while also accelerating the deployment of MME (Microsoft 365 E3 or E5) seats. This approach aims to position the product as complementary to MS Teams rather than a direct competitor, potentially preserving revenue streams in a challenging budget environment.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58228"
+  },
+  {
+    "question": "What is the main goal of the task described in the content?",
+    "answer": "The main goal is to implement improvements that allow better performance of the mobile application in low bandwidth and poor connectivity situations.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58231"
+  },
+  {
+    "question": "What change does Maria Nunez want to include in a future 9.8 dot release of Mattermost?",
+    "answer": "Maria Nunez wants to include the reversion of message limit warnings in a future 9.8 dot release of Mattermost.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58230"
+  },
+  {
+    "question": "What issue was reported regarding host control notices in Calls?",
+    "answer": "The issue reported was that host control notices in Calls needed better theming. This was resolved after Christopher Poile confirmed it could be closed.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58232"
+  },
+  {
+    "question": "What was the purpose of creating this ticket according to Harshil Sharma?",
+    "answer": "Harshil Sharma created this ticket to ensure he wouldn't forget to update the product image in the readme once a new image was available.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58273"
+  },
+  {
+    "question": "What issue was reported regarding the time display in playbook reports?",
+    "answer": "The reported issue was inconsistent time display in playbook reports. The time was shown using both sections and day/hour/minute formats, instead of a normalized format like dd:hh:mm. This inconsistency was observed in Playbooks version 1.39.3.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58234"
+  },
+  {
+    "question": "What is the main issue described in this bug report?",
+    "answer": "The main issue is a type mismatch between the client and server when sending performance metrics. The client is sending floating point values for metric values and timestamps, but the server expects these to be integers. This mismatch prevents the server from properly deserializing the client metrics.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58281"
+  },
+  {
+    "question": "What issue was reported regarding the user profile popover in Mattermost?",
+    "answer": "The issue reported was that there was no side padding in the plugins section of the user profile popover, as shown in the attached screenshot.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58274"
+  },
+  {
+    "question": "What was the JavaScript error reported in this issue, and how was it resolved?",
+    "answer": "The JavaScript error reported was 'Cannot read properties of undefined (reading 'ID')'. It was related to the Mattermost Calls plugin and was fixed as part of a pull request (https://github.com/mattermost/mattermost-plugin-calls/pull/647) in the mattermost-plugin-calls repository.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58280"
+  },
+  {
+    "question": "What is the intermittent issue reported on Android devices regarding the user profile pop-over and the back key?",
+    "answer": "An intermittent issue was reported where the Android OS back key (<) doesn't always collapse the user profile pop-over as expected. Sometimes it starts navigating around the app while the pop-over is still open, and other times it works correctly. This issue occurs less than 1 in 10 attempts but can create a confusing user experience. Users can still close the pop-over by sliding it down, but the inconsistent behavior of the back key is problematic.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58268"
+  },
+  {
+    "question": "What optimization is suggested for the popout window in Calls to potentially improve load time?",
+    "answer": "The suggestion is to consider using the parent window's WebSocket (ws) connection in the popout window, possibly by exposing it in the parent's window object. This approach may make the view load much quicker compared to establishing a new connection.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58233"
+  },
+  {
+    "question": "What issue can occur when running 'deployment destroy' on a cluster with stopped databases, and what solution is proposed?",
+    "answer": "When running 'deployment destroy' on a cluster with stopped databases, the process can fail in the terraform stage, and subsequent 'deployment start-db' commands won't work because the cluster info is already wiped out. This requires manual intervention in AWS to start the databases. The proposed solution is to implement a check during the 'destroy' process to verify if the databases are active or stopped, allowing the user to bring them up before proceeding with the destruction.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58236"
+  },
+  {
+    "question": "Why was the user unable to change MetricsSettings from the system console in their local development environment?",
+    "answer": "The user was unable to change MetricsSettings because they were using a cloud license in their local development environment. MetricsSettings are not allowed to be changed with a cloud license. In an actual cloud server, these settings are not settable in the system console and are instead set via Environment Variables.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58282"
+  },
+  {
+    "question": "What is the issue described in the Mattermost playbooks RHS bug report?",
+    "answer": "The issue is that periodically the playbooks Right-Hand Sidebar (RHS) does not show playbook information for certain users. This occurs when a non-sysadmin user who was invited as a participant, but not added as a playbook member, logs in after the playbook is created and tries to view the playbook sidebar in the channel where the playbook lives.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58235"
+  },
+  {
+    "question": "What is the status of the 'Self UI and Text Pass' issue in the Mattermost project?",
+    "answer": "The 'Self UI and Text Pass' issue is in a Resolved state, as reported by Harshil Sharma on May 15, 2024.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58238"
+  },
+  {
+    "question": "What issue occurs with Markdown rendered URLs when Image Proxying is enabled in Mattermost?",
+    "answer": "When Image Proxying is enabled in Mattermost, there's an issue with Markdown rendered URLs. After enabling Image Proxy and refreshing the page, the image's src attribute becomes incorrectly encoded. Instead of the expected URL (http://localhost:8065/api/v4/image?url=https%3A%2F%2Fdocs.mattermost.com%2F_images%2Ficon-76x76.png), the entire API path gets encoded again, resulting in a malformed URL (http://localhost:8065/api/v4/image?url=%2Fapi%2Fv4%2Fimage%3Furl%3Dhttps%253A%252F%252Fdocs.mattermost.com%252F_images%252Ficon-76x76.png). This causes E2E test failures, particularly in GitHub Actions environments.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58275"
+  },
+  {
+    "question": "What are the main design issues with the call degraded banner according to the description?",
+    "answer": "The main design issues with the call degraded banner are: 1) Lack of spacing between the icon and text (should be 8px), 2) Incorrect text color (should use calls-bg color instead of center channel background color), 3) Poor text color legibility in dark themes, and 4) Incorrect icon alignment in the widget (should be aligned to the top row of text).",
+    "source": "https://mattermost.atlassian.net/browse/MM-58283"
+  },
+  {
+    "question": "What was the resolution for the issue of surveys automatically launching even after being disabled?",
+    "answer": "The issue was resolved by removing the 'Enable survey' setting altogether. This change eliminated the problem of surveys launching automatically when they were supposed to be disabled.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58242"
+  },
+  {
+    "question": "What issue occurs when a user tries to submit a response to an expired survey?",
+    "answer": "When a user tries to submit a response to an expired survey, they see an error message indicating that the survey has expired. However, the error message incorrectly displays the expiration date as 1970, which is likely due to a timestamp initialization issue.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58240"
+  },
+  {
+    "question": "What is the bug described in this issue regarding survey launching?",
+    "answer": "The bug is that if a survey is in-progress and manually ended within its duration, a new survey starts automatically with the same configuration, even if the settings (especially the date and time) have not changed after launching the previous survey.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58241"
+  },
+  {
+    "question": "What issue occurs with the leave call button in the popout window when the thread view is open?",
+    "answer": "The leave call button becomes hidden when the thread view (RHS) is open in the popout window, particularly if the window size is below a certain threshold. This is due to the thread viewer taking priority and overlaying other elements, potentially caused by incorrect width calculations or issues with the grid layout.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58285"
+  },
+  {
+    "question": "What was the issue reported with the 'Send next survey at' date selection in the user interface?",
+    "answer": "The issue reported was that the 'Send next survey at' date selector was not showing the present day as selected. Instead, it was displaying the previous day (14th May) with a blue background and black text, which made it difficult to distinguish. However, this was clarified to be a UI display issue rather than a functional problem, as the date shown is supposed to reflect the last saved date, not necessarily the current date.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58239"
+  },
+  {
+    "question": "What issue was reported with the Mattermost Desktop 5.8.0 release for Linux x64 (non-arm) users?",
+    "answer": "The AppImage file (mattermost-desktop-5.8.0-linux-x86_64.AppImage) for Linux x64 (non-arm) users was missing from the release page. When attempting to download it, users received an 'Access Denied' error. The asset was also not listed in the assets on the GitHub page, even though the download link was present.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58286"
+  },
+  {
+    "question": "Why do expired surveys still appear as active in the user interface until a response is submitted?",
+    "answer": "This behavior is intentional due to performance concerns. Expired surveys are shown as active until a user attempts to submit a response to improve system efficiency. At that point, the survey is marked as expired. This design choice is currently under discussion with the UX team to ensure it doesn't negatively impact user experience.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58243"
+  },
+  {
+    "question": "What is the proposed solution for adding a confirmation step when leaving a call in Mattermost?",
+    "answer": "The proposed solution is to add a confirmation step when a user clicks on 'Leave Call'. The functionality will differ for hosts and end users. Hosts will have an additional option to end the call for everyone. The confirmation will be implemented for various scenarios, including leaving from the widget, popout, and call post in the channel/thread. An optional configuration in call settings to enable/disable this confirmation step is also being considered.",
+    "source": "https://mattermost.atlassian.net/browse/MM-58284"
+  }
+]

@@ -1,0 +1,1545 @@
+[
+    {
+        "url": "https://forum.mattermost.com/t/feature-idea-discussion/63",
+        "thread": [
+            {
+                "user_name": "it33",
+                "message_content": "For feedback on the Mattermost product\n\n##  How to Use This Category\n\n  1. Search these forums first to see if anyone else has already started a discussion about your topic. If so, join the ongoing discussion and voice your opinion.\n  2. If you want to discuss a completely new idea, create a new topic and share as much detail about your idea as you can, including: \n    1. Information about where this feature would exist within the existing Mattermost experience and how it would change the current user experience.\n    2. Screenshots that illustrate your proposed changes.\n    3. Examples of situations where your idea would be helpful.\n  3. Hundreds of feature ideas from our community have been implemented into the Mattermost open source project. If you'd like to formally propose a new idea, create a [new suggestion in our Productboard](https://mattermost.com/suggestions/) and get your friends to vote on it!",
+                "timestamp": "2015-07-10T13:02:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/design-preview-scheduled-messages/18455",
+        "thread": [
+            {
+                "user_name": "Matthew Birtch",
+                "message_content": "Hello! Scheduled messages is a feature that we've received a lot of requests for and the design team has been working on solutions that we'd like to share out in the open. If you're interested in this feature, we'd love your feedback. Below is a quick summary of the feature. We're also working on a more in-depth UX specification here if you want to get in to the details.\n\n#### Send a message for a later time/date\n\nThe first noticeable change you'll see in the proposed design is the send button will be a new segmented control that gives users the ability to open a new 'Schedule message' menu to choose preset scheduled times or to select a custom time to send the message.\n\nOptions in this menu will display dynamically as follows:\n\n  * `Tomorrow at 9:00 AM` will always be the first option\n  * `Monday at 9:00 AM` will only show as an option if it's Friday or Saturday\n  * If the user had recently chosen a custom scheduled time, that time will show as an option in the menu as well.\n\nWhen this menu is engaged, the menu will focus on the first item (Tomorrow at 9:00 AM) by default and a quick 'ENTER' on the keyboard will schedule it. UP and DOWN on the keyboard will also navigate through the options in the menu, while ESC will close it.\n\nUsers can choose a custom date and time through the Schedule message dialog.\n\nWhen a message is scheduled, a notice appears above the message input box letting the user know they have a scheduled message in this channel.\n\n### Viewing scheduled messages in the Drafts view\n\nAll scheduled messages will then be accessible through the existing 'Drafts' view with identifying labels for scheduled messages along with the date/time they will be sent. From here, users will be able to change the schedule, edit the message content, or delete the message\n\n### Let us know what you think\n\nSo, that's a very quick summary of the feature. Is this a feature you would find value in? We'd love to hear from you.",
+                "timestamp": "2024-04-22T15:11:00Z"
+            },
+            {
+                "user_name": "BeenJammin",
+                "message_content": "Looks awesome and well thought out. Been waiting for this; please implement immediately!",
+                "timestamp": "2024-05-01T01:36:00Z"
+            },
+            {
+                "user_name": "Matthew Birtch",
+                "message_content": "Thanks @BeenJammin, I'm really glad you see the value in the feature proposal. I'd be curious to hear more about the use cases you imagine using scheduled messages for. Are there specific scenarios where you often need this solution?",
+                "timestamp": "2024-05-01T19:57:00Z"
+            },
+            {
+                "user_name": "BeenJammin",
+                "message_content": "I just work later than most of my team, so I'd really like the ability to send something to the group, but not ping everyone when they are all off work. I don't need anything fancy really, just a scheduled send that gets to everyone the next day when they are back at work.",
+                "timestamp": "2024-05-15T22:02:00Z"
+            },
+            {
+                "user_name": "Emmanuel Jean",
+                "message_content": "Dear @matthewbirtch\n\nThe design you suggest is perfect.\n\nThe feature would be very useful in our NGO as we have teams in different countries and time zones. Scheduling would be very useful to send a message to a team (or a colleague) in a different timezone so that they receive it in the beginning of their day (sometimes better than during the night).\n\nIt's also useful when you have an idea to send to your team or colleagues but it's completely outside working hours or days. Like you remember something to share with your team during the weekend, but it's not so urgent to send it immediately. You can schedule it in Mattermost and you know it will pop up on Monday 9:00 am so it's not lost!\n\nMany thanks anyway for making this idea closer to reality!",
+                "timestamp": "2024-06-10T11:42:00Z"
+            },
+            {
+                "user_name": "Matthew Birtch",
+                "message_content": "Thanks for the feedback @emmanuelix. This is very helpful in validating the problems we're aiming to solve here. I'm glad that the proposed solution resonates with you and how you work with your team. The use cases you've described make perfect sense and have been shared by other customers/community members as well.",
+                "timestamp": "2024-06-11T18:56:00Z"
+            },
+            {
+                "user_name": "hui",
+                "message_content": "\u975e\u5e38\u68d2\uff0c\u6211\u6b63\u5728\u5bf9\u4f60\u4eec\u7684\u9879\u76ee\u5f00\u6e90\u7248\u672c\u8fdb\u884c\u4e8c\u6b21\u5f00\u53d1\uff0c\u6b63\u597d\u4e5f\u9700\u8981\u8fd9\u4e2a\u529f\u80fd\uff0c\u5982\u679c\u4f60\u4eec\u53ef\u4ee5\u8fd1\u671f\u53d1\u5e03\u8fd9\u4e2a\u7248\u672c\uff0c\u6211\u5c31\u53ef\u4ee5\u76f4\u63a5\u4eab\u7528\u4e86",
+                "timestamp": "2024-06-21T04:02:00Z"
+            },
+            {
+                "user_name": "Tymoteusz Motylewski",
+                "message_content": "That would be great! I really miss this feature.",
+                "timestamp": "2024-07-01T10:29:00Z"
+            },
+            {
+                "user_name": "Kennet",
+                "message_content": "We use Mattermost in a mainly voluntary organization. This means that our users use Mattermost at different times of the day and night. Depending on what suits them best in their private lives.\n\nFor some people, this means that they cannot maintain a healthy emotional distance from the project. And want to react \"quickly\" late at night to \"the one message\" they have just received.\n\nThe function for sending later would take the pressure off many people. On the one hand, because others don't notice the times at which they are working. And secondly, because you can then consciously plan messages on Monday morning.",
+                "timestamp": "2024-07-01T19:02:00Z"
+            },
+            {
+                "user_name": "StevoS",
+                "message_content": "Why is this not implemented over a year later? For worldwide Communities with members in all time zones, this is needed. I view this as a miss on a basic feature. Phone chat apps have had this for over a decade so its not a new concept in the least. Design wise, fine. just launch something for the good of your users.",
+                "timestamp": "2024-07-16T18:38:00Z"
+            },
+            {
+                "user_name": "Joey Mojo",
+                "message_content": "This is a killer feature of Slack, and I lament that mattermost doesn't have it.\n\nUse case 1: As a user, I want to send a message to another user who may no longer be on the clock, so I want to schedule a message to arrive near the start of their day. This is especially important as I know that they may sometimes check mattermost after hours on their phone, and don't want them to interpret the message as time sensitive.\n\nUse case 2: I want to send myself a reminder in a day, or a week to check on something, or bring up a topic in a meeting, or otherwise leverage the fact that I can send direct messages to myself, and incoming messages use the notification system to function as a reminder. In this way I don't have to use another app to create a reminder.\n\nFeature Creep suggestion: Allow me to forward a message and schedule a delivery time for that forward.",
+                "timestamp": "2024-07-17T17:26:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/uservoice-spotlight-send-messages-later/18954",
+        "thread": [
+            {
+                "user_name": "John Combs",
+                "message_content": "Hello Mattermost Community!\n\nOne of the top-voted ideas from our UserVoice channel in the last quarter is the Send Messages Later feature. This feature would allow users to schedule messages to be sent at a later time, ensuring timely communication even when you're not available.\n\nLink to the UserVoice suggestion: Send Message Later\n\nWe'd love to gather your input on this feature!\n\n- How would the ability to schedule messages enhance your communication and productivity within Mattermost?\n- Are there any specific situations or workflows where you find this feature particularly useful?\n- What additional options or functionalities would you like to see included with scheduled messaging?\n\nYour insights and experiences are crucial to us. Let's discuss and explore how this feature can benefit our community!",
+                "timestamp": "2024-07-03T19:45:00Z"
+            },
+            {
+                "user_name": "Matthew Birtch",
+                "message_content": "Hey @john.combs this feature is currently in design phase.\n\nHave a look at this recent post in the forum: Design Preview: Scheduled Messages",
+                "timestamp": "2024-07-05T18:42:00Z"
+            },
+            {
+                "user_name": "John Combs",
+                "message_content": "You rock, Matthew! \ud83d\ude42 Great job with the Design Preview posts!",
+                "timestamp": "2024-07-17T01:57:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/system-console-redisgn/19007",
+        "thread": [
+            {
+                "user_name": "Eooooq",
+                "message_content": "system console has an overall outdated design.\n\nDoes not support dark mode.\n\nThe sidebar is confusing because the categories and clicked menus are the same color.",
+                "timestamp": "2024-07-13T23:25:00Z"
+            },
+            {
+                "user_name": "John Combs",
+                "message_content": "Hi Eooooq! Thanks for your valuable feedback on the system console design. We'd love to hear more details and suggestions from you on our UserVoice Forum.",
+                "timestamp": "2024-07-17T01:27:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/design-preview-ms-teams-notifications/19015",
+        "thread": null
+    },
+    {
+        "url": "https://forum.mattermost.com/t/design-preview-custom-profile-attributes/18998",
+        "thread": [
+            {
+                "user_name": "matthewbirtch",
+                "message_content": "For some of our customers, user profiles in Mattermost are missing critical information. Attributes like location, pronouns, and phone number are key to understanding who they're communicating with and how to work together. These additional attributes are often different for each organization.\n\nIn addition, enterprise customers need to leverage AD/LDAP or SAML as the centralized source of truth for profile attributes like this at scale. The ability to link with these directory services is very important in large deployments.\n\nWe're pleased to share that we are actively working on this feature and would like to share an early preview of the latest solution design. Here's a summary of what we're actively designing.\n\n# Configuring custom properties\n\n[Image of custom properties configuration]\n\nWithin the system console, a new 'System properties' page will be added where admins can:\n\n  * Add new user properties\n  * Edit the name, type and options for a given property\n  * Link properties with LDAP or SAML attributes (if connected)\n  * Re-order custom properties\n  * Adjust other property settings\n\n## Standard vs. custom properties\n\nWithin the user properties section, we will also include standard properties along with custom properties. Standard properties are built-in properties like username, email, full name, etc., which cannot be deleted since they are core product properties for users. They can be linked to AD/LDAP/SAML attributes from this view if these services are configured.\n\n## Adding new properties\n\nIn the custom properties table, admins can click 'Add property' to add a new row and define the property's name and type.\n\n[Image of adding new properties]\n\n## Reordering properties\n\nDrag-and-drop to re-order table rows to adjust how they will display on profiles.\n\n[Image of reordering properties]\n\n## Editing a property\n\nClick inside the property name's cell to edit the name directly. Pressing enter or clicking outside will commit the change.\n\n[Image of editing a property]\n\n### Property type\n\nThe type allows a property to be formatted and validated in specific ways. Some possible types may include: Text, Number, Email, Phone, URL, Select, Multi-Select, Date, Person.\n\n[Image of property types]\n\n### Property value options\n\nFor the Select and Multi-select property types, preset options can be added for end users to choose from.\n\n[Image of property value options]\n\n## Linking properties with LDAP or SAML attributes\n\nIf LDAP or SAML are configured in the system, admins can link properties with attributes from these providers. When linking a profile property in Mattermost, simply type in the LDAP or SAML attribute name to map the property to and select it to make the linkage. Once linked successfully, it will display in the properties table.\n\n[Image of linking properties]\n\n### Additional settings\n\n  * **Set the property's visibility:** you may have custom properties you want to add, but don't want displayed. This may be the case if you have a property that is not filled in for some users. With this setting, you can choose to: Always show, Hide when empty, or Always hide.\n  * **Allow allow end users to add their own options:** in the case where a select or multi-select type has preset options, you may want to allow end users to add their own options when filling in their profile.\n  * **Duplicate a property**\n  * **Delete a property**\n\n# Displaying custom profile properties\n\nIn a user's profile settings, any new custom fields will display for each property that has been added in the system console.\n\n[Image of user profile settings]\n\nIn the user profile popover, only a subset of profile properties can show due to available real estate. A new 'view profile' button displays in the footer. Users can view a detailed view of the user profile in a new profile right-side panel.\n\n[Image of user profile popover]\n\n# Share your feedback\n\nThis is an early preview and the initial iteration of this may be scaled back or it may go through some changes, but this is the latest thinking for the feature. We have even bigger ideas and plans that could leverage such a properties system, but for now custom profile properties is a great first step.\n\nWe'd love to hear your feedback. Send us a reply here and let us know what you think.",
+                "timestamp": "2024-07-12T14:45:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/design-preview-copilot-access-controls-for-ai/18981",
+        "thread": [
+            {
+                "user_name": "matthewbirtch",
+                "message_content": "If you've been following our [Copilot plugin](https://github.com/mattermost/mattermost-plugin-ai), you may have noticed the recent addition of capabilities for managing multiple bots/LLMs. It's not in our official plugin release yet, but this update makes it possible to configure bots with different LLMs for specific purposes.\n\nWe are in the **early stages** of designing further enhancements to multi-bot configuration that will enable access controls for each bot. Our aim is to give admins more control over user access to LLMs and the data the LLMs have access to. This will offer the ability to create multiple bots with specific purposes that will only be available to specific users. For example, you could have a general-purpose AI bot for your team, but you need to block HR channel data or HR team members from using it due to sensitive data and conversations. You could also have a bot that is tied to a local LLM that has wider access to users and content in the system with no concerns about data leaving your organization.\n\nThese new settings would replace the current 'user restrictions' settings in the existing plugin.\n\n## User access control options\n\nFor user-based access controls, a new set of options is available. Admins can allow access for all users, allow only selected users, or block selected users.\n\n### Allowing specific users\n\nWhen 'Allow selected users' is chosen, a field displays for admins to enter individual users, LDAP groups, or entire Mattermost teams. Once saved, these users or groups will be the only ones allowed to access this bot.\n\n### Blocking specific users\n\nWhen 'Block selected users' is chosen, a similar field displays for admins to enter users, LDAP groups, or teams. Once saved, these users will be the blocked from using this bot. All other users will be able to access the bot.\n\n## Channel access options\n\nWith these proposed updates, we will also provide control for the LLM's access to channels. Admins can allow all channels to be accessible, allow only selected channels, or block selected channels.\n\n### Allowing specific channels\n\nWhen 'Allow specific channels' is chosen, a field displays for admins to enter individual channels or entire Mattermost teams. Once saved, these channels will be the only ones allowed to access this bot. Data from all other channels will not be accessible to the LLM.\n\n### Blocking specific channels\n\nWhen 'Block selected channels' is chosen, a field displays for admins to enter individual channels or entire Mattermost teams. Once saved, data from these channels will not be accessible to this LLM. Data from all other channels will be accessible to the bot.\n\n## What do you think about this capability?\n\nWould this suit your organization's needs for AI access control in Mattermost? What would you like to see? Drop us a line here in this forum post and let us know what you think. We are validating this concept with customers and users so all feedback helps us solidify the solution.",
+                "timestamp": "2024-07-09T21:11:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/seeking-technical-feedback-subscribing-to-ms-teams-channel-mentions/18969",
+        "thread": [
+            {
+                "user_name": "jesse",
+                "message_content": "The [Mattermost <> MS Teams integration](https://github.com/mattermost/mattermost-plugin-msteams) currently relies on a global chats subscription (`/chats/getAllMessages`) to proxy notifications of chats and group chat messages from Teams into Mattermost, enabling a controlled flow of real-time information across general collaboration and mission critical environments.\n\nThe ideal next step is to expand notifications for `@mentions` from any Teams channel in which a user is a member. There are three potential paths forward:\n\n  1. Subscribe to all chat messages across all channels (`/teams/getAllMessages`). This requires application level permissions, as well as a careful permissions check to only forward an `@mention` if the user actually had access to the message in question.\n  2. Subscribe to handful of administrator configured channels (`/teams/{id}/channels/{id}/messages`). This could potentially be done with delegated permissions (for the administrator), but still requires a careful permission check to selectively forward any `@mentions`.\n  3. Work with Microsoft to introduce a new, delegated Graph API subscription for a user's messages across all channels.\n\n\n\nThis last option might look like a subscription against `/users/{id}/teams/getAllMessages`, notifying for all channel messages in an organization of which the given user is a member, with the integration doing the work of deciding when to notify based on the presence of a mention. Optionally, the Graph API endpoint might only notify for @mentions, with a subscription against `/users/{id}/teams/getAllMentions` only notifying if the user is explicitly mentioned in a post, but a more general purpose API would be more flexible.\n\nThere are existing APIs that get close. At first glance, `/users/{id}/chats` ([see docs](https://learn.microsoft.com/en-us/graph/teams-changenotifications-chatmessage#subscribe-to-changes-at-the-user-level)) suggests the ability to \"track messages across all chats a particular user is part of\", but testing confirms this is only for chats and group chats \u2013 not channel chat messages.\n\nThere is also `/teams/{team-id}/channels/{channel-id}/messages?$filter=mentions/any(u: u/mentioned/user/id eq '{id}')` ([see docs](https://learn.microsoft.com/en-us/graph/teams-changenotifications-chatmessage#example-4-subscribe-to-messages-and-replies-in-a-channel-that-mention-a-specific-user), as well as the [chats version](https://learn.microsoft.com/en-us/graph/teams-changenotifications-chatmessage#example-4-subscribe-to-message-in-a-chat-in-which-a-specific-user-is-mentioned)), but requires a subscription per channel. It's also not clear if it checks if the user is actually a member, so may still require the permissions check.\n\nFeedback on the above approaches or perhaps anything we've missed would be very welcome!",
+                "timestamp": "2024-07-08T20:07:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/read-receipts-not-available/15290",
+        "thread": [
+            {
+                "user_name": "digitalalpaca",
+                "message_content": "Hello,\n\nWe use the Free version of Mattermost within our organization. Is it possible to see who has read messages in this version? So-called 'Read receipts'?\n\nI came across this: [[MM-36529] - Mattermost](https://mattermost.atlassian.net/browse/MM-36529)\n\nBut when I navigate in the system console to: Users and Teams \u2192 Enable read receipts (at the bottom of the page) I don't see that option. Is that correct? Is this a paid option?",
+                "timestamp": "2023-03-07T07:41:00Z"
+            },
+            {
+                "user_name": "agriesser",
+                "message_content": "Hi [@digitalalpaca](/u/digitalalpaca) and welcome to the Mattermost forums!\n\nThis feature is not yet available, the ticket you're referencing to is just a draft for a possible upcoming feature. As of yet, noone is actively working on it and it has not been merged in any of the available branches of the product, so it will still take some time for it to be available as part of the product.",
+                "timestamp": "2023-03-07T07:47:00Z"
+            },
+            {
+                "user_name": "john.combs",
+                "message_content": "Giving this thread a bump as it's one of the top voted features on our [UserVoice](https://mattermost.uservoice.com/forums/306457-general) forum over the past quarter.\n\n**Link to the UserVoice suggestion:[Read Receipts](https://mattermost.uservoice.com/forums/306457/suggestions/12595398)**\n\nWe are eager to hear your thoughts on this feature!\n\n  * **How important is it for you to know if and when your messages have been read?**\n  * **In what scenarios do you believe read receipts would be most beneficial?**\n  * **Are there any privacy concerns or additional settings you would like to see with this feature?**\n\n\n\nYour feedback helps us prioritize and design features that best meet your needs. Let's discuss how read receipts could improve your Mattermost experience!",
+                "timestamp": "2024-07-03T19:47:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/voice-messages-record-and-play-feature/5861",
+        "thread": [
+            {
+                "user_name": "System",
+                "message_content": "Voice Messages Record and Play\n\nThe same way we can send messages, we should be able to send voice messages. It should be as simple as click \"add voice\", record what you want, press send and it's made available on the server for others to listen. It should be supported by...",
+                "timestamp": "2023-05-01T12:00:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/there-is-no-mattermost-user-agent/18928",
+        "thread": [
+            {
+                "user_name": "seoch77",
+                "message_content": "mattermost The mobile app doesn't seem to have a user agent. Are there any plans to add an agent value like on a PC?",
+                "timestamp": "2024-07-02T07:58:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/add-quote-button-next-to-reply-when-using-collapsed-threads/18912",
+        "thread": [
+            {
+                "user_name": "Nyralei",
+                "message_content": "Hello.\nCurrently, in order to reply to someone a few messages back, you hit the reply button and it goes into a thread. Alternatively, Mattermost could add a quote button on messages next to the reply button. When you click quote button it should work like reply in modern messengers with text of the message or part of it and name of the creator of the message.\nThreads are useful, but creating them for replying to paticular messages can be a bit of an overkill.",
+                "timestamp": "2024-06-28T09:33:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/design-preview-search-ux-enhancements/18911",
+        "thread": [
+            {
+                "user_name": "matthewbirtch",
+                "message_content": "We have heard from our customers that it can be confusing to know which search to use for the different types of content in Mattermost. Some users expect to be able to find channels by using global search bar at the top. Other users expect to use the global search bar to find people. In reality, neither of these can be found here; only messages and files can be found through the global search bar.\n\nAdditionally, in workspaces with multiple teams, it can be very difficult to find what you're looking for when you may not recall which team or channel the content may live in. Currently, you can only search the active team and cannot get results across all of your teams. There is no way to perform a keyword search across all your teams.\n\nFor this design preview, we aim to address these problems through key improvements to the search experience.\n\nShort disclaimer: These enhancements are currently in the design phase and have not yet been slotted on the roadmap, so we do not yet have a release target. We'll be validating these designs with customers and iterating on them over the next few months.\n\nSolution Part 1: Combined Search\n\nThe first part of the solution brings all the core search mechanisms into one combined search panel. Rather than having to remember which search modal to use for each purpose, we are proposing one unified search experience.\n\nThis new UI brings the search for channels, messages, files, and people in one place. A tab bar across the top indicates the current search mode and users can click to change that mode. This also makes way for another feature we've previewed recently: Copilot search which is an AI-enhanced search method we're working on.\n\nFinding channels\n\nUsing the existing COMMAND-K/CTRL-K keyboard shortcut will open the new search modal, with the channel search selected. This replaces the existing 'find channels' modal and brings all of it's functionality in this combined search view. Unreads and recent channels show as suggestions before you start typing. As you typing channel results narrow down by relevancy.\n\nFinding messages\n\nUsing the COMMAND/CTRL-F keyboard shortcut will open the new search modal, with the messages tab selected. Recent searches show as suggestions before you start typing.\nThe existing search modifiers are still available and show at the bottom of the modal as tips. Clicking on these modifiers adds them to the search field.\n\nFinding files\n\nFile search is another method that will carry over existing search capability into the new unified search modal. Recent searches and recently added files in your channels show as suggestions prior to typing a search. Modifiers are also available here.\n\nFinding people\n\nTo alleviate some of the confusion we've heard about searching for colleauges, a new 'People' search tab has been added which offers the ability to find specific users you'd like to message with. Before you start typing, we show suggestions based on who you chat with most or who you may have had a recent DM with. As you type the results narrow by relevance. Clicking on a result will open the DM with that user.\n\nCopilot search\n\nIf you have Copilot configured for search, the 'Copilot' tab displays in the search modal.\nWith this method, users can search by 'meaning' rather than keywords or ask specific questions to find answers from the content. We have highlighted this feature in greater detail in this forum post.\n\nSolution Part 2: Cross-team search\n\nAs part of the Messages and Files search method, this proposal provides the ability to filter by a single team, multiple teams, or all your teams. This provides the capability to search everything they have access to in the workspace.\n\nThe search results right panel could also include the team filter to show results across all teams or a specific team of choice.\n\nWhat are your thoughts?\n\nAs always, we'd love to hear your thoughts and feedback on these solutions. What pain points might this solve for you?\n\nIf you'd like to dive deeper in to some of the specifics around the combined search UX, have a look at our early UX spec.",
+                "timestamp": "2024-06-27T20:24:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/show-pictures-in-original-size/4996",
+        "thread": [
+            {
+                "user_name": "VincentVegas",
+                "message_content": "I receive screenshots from my colleagues on a daily basis. When I click on them the picture is not opened in its original size but seems to have a fixed smaller size.  \nTherefore I often cannot read the text on the screenshot. I have to save it and reopen it. Is there a way to show the picture with its correct size?\n\nRegards  \nThomas",
+                "timestamp": "2018-05-23T11:50:00Z"
+            },
+            {
+                "user_name": "amy.blais",
+                "message_content": "Hi [@VincentVegas](/u/vincentvegas)!\n\nThank you for reaching out.\n\nCan you share a screenshot of an example of what you experience?  \nAre you using webapp, desktop app, or mobile?  \nWhat Mattermost server version are you using?\n\nHere are also some config settings related to images that might help: <https://docs.mattermost.com/administration/config-settings.html?highlight=config%20settings#images>",
+                "timestamp": "2018-05-23T13:23:00Z"
+            },
+            {
+                "user_name": "VincentVegas",
+                "message_content": "Hi Amy.\n\nI use the Windows Desktop Client with Mattermost Enterprise Edition v4.9.  \nThis is a screenshot of viewing a screenshot in Mattermost.  \n![grafik](//cdck-file-uploads-global.s3.dualstack.us-west-2.amazonaws.com/business7/uploads/mattermost/original/2X/c/cc72ad9657f17a7baf166905e69ec3e237baabaa.jpg)\n\nIt seems that the image always has a maximum of 50% of the height/width of the app window. It would be nice if I could click on the image and it opens as big as possible, in this case as big as the screen or at least as big as the app window.\n\nThe settings in the link seemed to allow this, but apparently they were removed in the current versions.\n\nRegards  \nThomas",
+                "timestamp": "2018-05-23T15:27:00Z"
+            },
+            {
+                "user_name": "VincentVegas",
+                "message_content": "Actually this is the screenshot of a screenshot of a screenshot.",
+                "timestamp": "2018-05-23T15:28:00Z"
+            },
+            {
+                "user_name": "amy.blais",
+                "message_content": "Hi [@VincentVegas](/u/vincentvegas)!\n\nI chatted with our product managers and it was decided that we would open an improvement ticket to investigate increasing max dimensions of the preview window - here is the ticket for reference so you can follow its progress: <https://mattermost.atlassian.net/browse/MM-10700>.",
+                "timestamp": "2018-05-23T18:59:00Z"
+            },
+            {
+                "user_name": "VincentVegas",
+                "message_content": "Hello again after a long time.\n\nI don't understand why the ticket had been closed. The problem exists until today. Clicking on a picture doesn't make the picture bigger, but opens a new window with the picture at the same size:  \n\n\n[![image](https://global.discourse-cdn.com/business7/uploads/mattermost/optimized/2X/f/fdd4515fe3e6bb696892a686cc5794bcb38b1aa0_2_690x324.png)image1332\u00d7627 115 KB](https://global.discourse-cdn.com/business7/uploads/mattermost/original/2X/f/fdd4515fe3e6bb696892a686cc5794bcb38b1aa0.png \"image\")\n\nWith every picture, I have to download it to see it bigger.  \nThis is very user-unfriendly. Is it a problem to make the picture as big as the window?\n\nRegards,  \nThomas",
+                "timestamp": "2024-06-27T12:16:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/feedback-on-collaboration-for-mission-critical-work/17563",
+        "thread": [
+            {
+                "user_name": "wiersgallak",
+                "message_content": "Proposal \n\n**Issue:** Mattermost Team Edition deployments with 500+ users aren't protected from risks that could compromise the data and systems. \n- Lack of advanced access controls, like multi-factor authentication, AD/LDAP user synchronization and sign-on, guest access controls, and granular team permissions, can create a scenario of access to sensitive data for individuals who should not have access. \n- Inability to automate access controls creates risk of breaching data control policies. \n\n**Proposed solution:** When an installation has 500 or more users, publish a warning banner across Mattermost visible to IT Admins. Text: Alert: Your system is at risk of disruptions that could severely affect your operations. We strongly recommend deploying Mattermost with advanced access controls. [[Learn more](https://docs.mattermost.com/scale/high-availability-cluster.html)] \n\n![500UserWarning](https://github.com/mattermost/mattermost/assets/39744472/1126bfa9-440d-4ec3-a1dc-0da92ed829dc)",
+                "timestamp": "2023-11-03T19:42:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/design-preview-ai-enhanced-search/18538",
+        "thread": [
+            {
+                "user_name": "matthewbirtch",
+                "message_content": "With the initial release of our AI plugin, we're already seeing the amazing value that summarization capabilities can bring to Mattermost.\n\nWe're now actively working on further improvements that will greatly expand this value including AI-enhanced search.\n\n[Image of search UI]\n\nSearch UI updates to make way for AI Copilot search\n\nTo accommodate for the new AI Copilot search capabilities, we're working on some UI improvements in the global search modal. The existing search functions for messages and files will remain the same, but with a refreshed interface and a new tab for AI search.\n\nQuery AI for answers across the workspace\n\nWhen \"AI Copilot\" is selected as the search method, users will be able to query across all the conversations they have access to (and only those they have access to) to find the most relevant answers to their questions. This enables users to search in a more topical manner, rather than the standard keyword-based search.\n\n[Images of AI search interface]\n\nAI Copilot Search Results\n\nOnce a search is executed, the AI Copilot right panel opens up with a streaming response of the summarized answer to your query.\n\n[Image of search results]\n\nAnswers with links to the original source content\n\nThe references to the original source content are linked inline and in an expandable section below the answer. Post previews of these sources are displayed within this section.\n\n[Image of search results with source links]\n\nIn addition, a 'related questions' section displays to drill-down further into the answers you're looking for.\n\n[Image of related questions]\n\nWe'd love your feedback\n\nThat's a quick look at the work in progress. If you're interested in a more in-depth look at the current thinking, here's an early UX specification. We're excited about the possibilities that AI-enhanced search could bring to Mattermost. We think a more semantic, topic-based search could save massive amounts of time and bring significant value to our customers. What do you think? What problems do you have that you wish AI-enhanced search could solve?",
+                "timestamp": "2024-05-01T20:58:00Z"
+            },
+            {
+                "user_name": "NicksonYap",
+                "message_content": "I absolutely love this! My team and I have been heavily using the AI plugin developed by the team.\n\nI myself was looking for semantic search for our Mattermost discussions and bumped into this thread",
+                "timestamp": "2024-06-17T03:58:00Z"
+            },
+            {
+                "user_name": "matthewbirtch",
+                "message_content": "Thanks @NicksonYap. I'd love to hear more about how your team is using the plugin. I'd be curious to know what your main use cases are for it so far and how you'd like to see the plugin evolve.\n\nWith regards to this preview of AI search, is there anything else you'd like to see? Do you have any other specific feedback on your needs for semantic search in Mattermost? What kind of results do you expect to have returned when you engage with AI to search across your workspace?\n\nAlso, if you are on our community server I'd be happy to connect there to have a more in-depth conversation. My username is matthew.birtch.",
+                "timestamp": "2024-06-19T12:49:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/how-to-block-notification-bot/18789",
+        "thread": [
+            {
+                "user_name": "spadeskate",
+                "message_content": "Hello,\n\nI would like to not be bothered by this Notification Bot about party bus or any other system updates. They do not matter to me, and they are bothersome as a general user.",
+                "timestamp": "2024-06-11T17:06:00Z"
+            },
+            {
+                "user_name": "john.oliver",
+                "message_content": "I assume this is on Platform One? Did you ask their support?\n\nHow are these notifications manifesting? In a channel, or DMs from the bot?",
+                "timestamp": "2024-06-12T18:14:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/edition-labels-in-mattermost/18759",
+        "thread": [
+            {
+                "user_name": "matthewbirtch",
+                "message_content": "We want to share some changes with our community that are coming soon to the free editions of our platform. Starting in our June release (version 9.9), Team Edition and Enterprise Free edition (also known as E0) will see Mattermost branding along with a 'Free edition' label.\n\nThis labeling and branding will display on the login screen and in the main application header.\n\n[Image descriptions omitted]\n\nThis label will also be displayed in the bottom of the product menu with some additional language to indicate that the free edition does not include commercial support.\n\n[Image description omitted]\n\n## Why we are making these changes\n\nWe're making this change to make it clear that Mattermost's Free Edition doesn't include customer support via email and tickets from Mattermost, Inc. In the current state, without this change, we are receiving too many support tickets and emails from non-paying users, which complicates our ability to support paying users effectively and efficiently. This is unfair to our paying users.\n\nBy making it clear to end users using the free and unsupported version of Mattermost that they aren't entitled to paid support will increase our ability to support paying customers.\n\n## How will these changes affect you?\n\n  1. For customers with Professional or Enterprise licenses, your workspace will not be affected at all. In fact, we are looking at ways to add more value to the experience for our Enterprise customers with enhanced custom branding tools in the future. Have a look at [this forum post](https://forum.mattermost.com/t/design-preview-custom-branding-enhancements/18575) if this interests you.\n  2. For those using the free Team Edition or Enterprise Free Edition (commercial, free version), you will begin to see Mattermost branding in the application along with a \"Free Edition\" label.\n  3. For those who wish to compile their own version from the [publicly available source code](https://github.com/mattermost/mattermost) and change or remove these labels, this option is always available. If you are compiling from source code and distributing the modified version to an outside party, you need to remove \"Mattermost\" branding so the outside party doesn't think your version is a paid offering from Mattermost, Inc. You will also need to follow the requirements of the open source license in the Mattermost code base.\n\n## Share your feedback with us\n\nWe're interested to hear from our community on these updates. If you have thoughts or feedback for the Mattermost team, please feel free to share with us in a reply to this forum post.",
+                "timestamp": "2024-06-07T15:10:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/movies-click-twice-to-watch/5834",
+        "thread": [
+            {
+                "user_name": "RbDev",
+                "message_content": "When watching a movie, the user needs to click on the movie thumbnail(picture 1) and then he is greet by a click to download icon(picture 2). only afterwards he is able to watch the video.\n\nIf he already clicked the movie icon doesn't it mean he wants to watch the video?\n\nSo why is he required to click another button (download) ?\n\nI suggest to download if the video is not in the cache as soon as the user clicks the video thumbnail.\n\nI believe it's a better user experience.\n\npicture 1  \n[image]\n\npicture 2  \n[image]",
+                "timestamp": "2018-09-29T10:46:00Z"
+            },
+            {
+                "user_name": "Amy Blais",
+                "message_content": "Hi @RbDev, I agree that this would be nice to have - there is a similar feature request ticket here where you can follow the progress: https://mattermost.uservoice.com/forums/306457-general/suggestions/34280578-uploaded-mp4-video-files-should-display-with-the-p.",
+                "timestamp": "2018-10-02T13:44:00Z"
+            },
+            {
+                "user_name": "RbDev",
+                "message_content": "I agree. A more pro looking player for movies in the message screen would be great but its a lot more work than what Im suggesting.\n\nMaybe do it in two steps?",
+                "timestamp": "2018-10-02T14:03:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/design-preview-editing-attachments-for-sent-messages/18689",
+        "thread": [
+            {
+                "user_name": "asaad",
+                "message_content": "Hello! Editing attachments on older posts is a feature that we've been missing and have been getting a lot of requests for and the design team has been working on a solution that we'd like to share out in the open.\n\nIf you're interested in this feature, we'd love your feedback. Below is a quick summary of the feature. We're also working on a more [in-depth UX specification here ](https://mattermost.atlassian.net/l/cp/4sxg0fib) if you want to get in to the details.\n\n## Editing a message and its attachments\n\nTo edit attachments, users can edit a message as they normally would through the message actions menu.\n\n[Image: Post options menu]\n\n[Image: Edit state]\n\n## Adding an attachment to a message\n\nWhile editing a message, new attachments can be added by clicking the paperclip icon button.\n\n  * This will open the OS dialog to choose a file to upload.\n  * Additionally, users can drag a file in to editable area of the message they're editing to attach a file.\n\n### Drag & Drop\n\nWhen editing a message in a channel or thread, a new drag-and-drop-zone will be added to the input to better facilitate adding attachments while editing.\n\nThis allows users to drag it to the specific post they want.\n\n[Image: Drop area]\n\n## Deleting an attachment from a message\n\nWhile editing a message, attached files show in the editable area of the message with an `x` icon in the top-right corner.\n\n  * Clicking it will remove the attachment, but it will only be removed if the user clicks on save.\n\n## Edit history\n\nAttachment changes should be reflected in the message's edit history RHS view.\n\n[Image: Edit history]\n\n### Additional controls on the edit state\n\nOn the edit state, we will show the same controls as are available when creating a post, apart from the send message, which is replaced by a save and cancel button on both Desktop and Mobile.\n\n### Mobile screenshots\n\n[Image: Mobile screenshots]\n\n### Let us know what you think\n\nSo, that's a very quick summary of the feature. Is this a feature you would find value in? We'd love to hear from you.",
+                "timestamp": "2024-05-27T15:17:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/a-fresh-look-to-mattermost/17845",
+        "thread": [
+            {
+                "user_name": "BlueSky-fur (Ellie D.)",
+                "message_content": "Overall i've really enjoyed using Mattermost inside my company, coming from Slack it felt very familiar already! \n\nSo far after 5 months of use theres only one downside in our eyes.\n\n**The design.**\n\nIt feels a little \"sluggish / slow\".\n\nAnd i was wondering, are there any plans to \"overhaul\" or \"modernize\" the over-all design of Mattermost?",
+                "timestamp": "2024-01-29T10:22:00Z"
+            },
+            {
+                "user_name": "chen (Chen Lim)",
+                "message_content": "Thanks for the feedback! Really appreciated. Curious to hear which parts feel the most \"sluggish / slow\" and what you would prioritize to improve first?",
+                "timestamp": "2024-01-29T19:34:00Z"
+            },
+            {
+                "user_name": "BlueSky-fur (Ellie D.)",
+                "message_content": "Now that i think about it even more, i don't think \"sluggish / slow\" is fitting.\n\nIts more of a personal feel, so to say it feels outdated. _hard to find words sometimes_\n\nAs for what i'd prioritize, i'd go for the main ui at first.\n\nTo get a better view:\n\n[Image of Mattermost UI]\n\nI can't show the channel list, but for example i really like the general design, sidebar with useful quick-access at the very left Home, DMs, Activity (when you get pinged etc), your profile with quick access and things saved for later.  \nThen the channel-list comes next to it.\n\nThe placement feels just right, and the over-all UI Experience feels modern and pleasing to work with.\n\nI hope that explains it a little better!",
+                "timestamp": "2024-01-30T09:24:00Z"
+            },
+            {
+                "user_name": "matthewbirtch (Matthew Birtch)",
+                "message_content": "Thanks again for your feedback @BlueSky-fur. We're actually looking at making some small incremental updates to the UI that I thought I would share.\n\n[Have a look at this presentation](https://www.figma.com/proto/OjfuMgmwbTKZ3HcuFkwP3B/UI-Refinement---2024?page-id=919%3A17116&type=design&node-id=919-17117&viewport=197%2C269%2C0.11&t=NL7QHpwgBelaKNZA-1&scaling=contain&mode=design) which outlines some proposed changes. They may be relatively small, but they do have visual impact.\n\nLet us know what you think!\n\nHere's a quick preview:  \n\n[Image 1 of UI preview]\n\n[Image 2 of UI preview]",
+                "timestamp": "2024-02-22T19:54:00Z"
+            },
+            {
+                "user_name": "BlueSky-fur (Ellie D.)",
+                "message_content": "Absolutely down for it! it looks awesome and so much more pleasing to the eye! especially the dark theme!",
+                "timestamp": "2024-02-23T00:35:00Z"
+            },
+            {
+                "user_name": "BlueSky-fur (Ellie D.)",
+                "message_content": "I really don't like asking for things like this, but im excited!\nIs there a _**rough**_ ETA as to when we can expect this beautiful over-haul?",
+                "timestamp": "2024-03-29T08:39:00Z"
+            },
+            {
+                "user_name": "matthewbirtch (Matthew Birtch)",
+                "message_content": "Hi @BlueSky-fur we have a number of UI-related PRs in-progress right now, but no ETA on which release they'll go in to. We'll likely be adding things incrementally that you'll start to see some updates for as soon as 9.8. (like this PR: [MM-28014 Improve Channel Intros by matthewbirtch \u00b7 Pull Request #26413 \u00b7 mattermost/mattermost \u00b7 GitHub](https://github.com/mattermost/mattermost/pull/26413))",
+                "timestamp": "2024-04-03T14:49:00Z"
+            },
+            {
+                "user_name": "matthewbirtch (Matthew Birtch)",
+                "message_content": "Just a follow-up on this topic: the latest UI updates are now available on [our community server](https://community.mattermost.com). Have a look there and share any feedback with us in the [UX Design channel](https://community.mattermost.com/core/channels/ux-design) or reply here.\n\nThese changes are tagged for the 9.9 release.",
+                "timestamp": "2024-05-09T13:35:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/design-preview-custom-branding-enhancements/18575",
+        "thread": [
+            {
+                "user_name": "matthewbirtch",
+                "message_content": "DISCLAIMER: This is an early design preview and is undergoing customer validation.\n\nHey everyone, I'd like to share another early design preview for some enhancements we're looking at to the custom branding capabilities.\n\nOur enterprise customers need tools that can be suited to their organization. Having an experience that is tailored to their brand allows for:\n\n- A consistent brand identity where mission-critical communication happens\n- A more familiar environment for the team's virtual office\n- A sense of ownership of the collaboration hub\n- Reinforcement that the platform is an integral part of the organization's infrastructure\n\nThe proposed custom branding enhancements include the following capabilities.\n\n## Add your company logo\n\nCustomize your experience by adding a company logo which will appear in the header of the login screen and the header of the main application.\n\n[Image of company logo customization]\n\nYou can also add a favicon that will customize the icon that appears in your web browser.\n\n[Image of favicon customization]\n\n### Create branded themes\n\nRather than relying on end-users to create their own custom themes, organizations can create custom themes that will be available to their user base to leverage. Theme defaults can also be set to ensure a consistent experience for all users in the system.\n\n[Image of branded themes]\n\n## Leverage more customizations for the login screen\n\nIn addition to the login page customizations you can already do, we're looking at adding:\n\n- Customized titles\n- Customized colors for backgrounds, text and buttons\n- Custom background image\n\n[Image of login screen customizations]\n\n### What do you think?\n\nWe'd love to know what you think about this proposal. If you're an enterprise customer who wants greater customization in your Mattermost instance, I'd love to chat. Connect with me on the mattermost community UX Design channel or reach out to your customer success team to connect.",
+                "timestamp": "2024-05-07T20:56:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/show-all-tasks-from-all-boards-that-assigned-to-one-person/15641",
+        "thread": [
+            {
+                "user_name": "GitHub",
+                "message_content": "![](https://opengraph.githubassets.com/ddb2ed42db9395dc8e9cc20c7a261df9361180e207016ffe8c13caa7768f13b6/Tobiasmidskards/mm-cli)\n\n### [GitHub - Tobiasmidskards/mm-cli](https://github.com/Tobiasmidskards/mm-cli)\n\nContribute to Tobiasmidskards/mm-cli development by creating an account on GitHub.",
+                "timestamp": "2023-05-01T12:00:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/design-preview-notifications-schedule/18514",
+        "thread": [
+            {
+                "user_name": "matthewbirtch",
+                "message_content": "Hi everyone, I'd like to share another preview of a feature we're actively designing called \"Notifications Schedule\". We don't yet have a release target for this feature, but we're gathering feedback on the proposed solution.\n\n## Why a notifications schedule is important\n\nWe all need to be able to disconnect from work, but that can be hard when we're hit with notifications all hours of the day\u2014especially in our remote work culture where we need to establish boundaries between work and home life. This proposed feature gives Mattermost users a way to set personal working hours so they can properly disengage from work during non-work hours. This supports the [right to disconnect](https://en.wikipedia.org/wiki/Right_to_disconnect).\n\n**NOTE:** this doesn't affect the unread status or the mention badge counts that display in Mattermost, it just silences the desktop and push notifications. When you return to work, you'll still see what you've been mentioned about and the channels that have new unread posts.\n\n## Accessing the notifications schedule\n\nThis feature leverages the \"Do Not Disturb\" status in Mattermost to silence notifications during a specified schedule. The notifications schedule can be accessed from two locations:\n\n  1. From the user account menu under the \"Do not disturb\" submenu.  \n\n  2. The Notifications preferences in the main preferences window.  \n\n## Setting a basic schedule\n\nOnce the notification schedule is enabled, users can select the schedule they want, the start time, and end time that they want notifications to be allowed for. **All notifications will be silenced outside of these set hours** when the notification schedule is enabled.\n\nUsers can choose a schedule that is set for every day, weekdays, or a custom schedule.\n\n## Setting a custom schedule\n\nWhen a custom schedule is chosen, a start and end time for each day of the week is displayed. Days of the week can be disabled if you don't want to include them in the schedule (which means you don't want to be notified on those days).\n\n## Share your feedback\n\nThat's a quick preview of the feature. As we iterate on this solution, we'd love to get feedback from our community and our customers. Let us know what you think by replying to this post!",
+                "timestamp": "2024-04-29T21:18:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/customize-themes-for-channels-and-or-teams/18469",
+        "thread": [
+            {
+                "user_name": "olenleo",
+                "message_content": "Hello! Enjoying the product so far :slight_smile:\n\nIt would be beneficial to have the ability to assign different themes or color schemes to separate channels or teams. This could serve as a visual cue, helping users to avoid accidentally posting sensitive or irrelevant information in the wrong channel.",
+                "timestamp": "2024-04-24T09:10:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/complete-convert-a-private-channel-to-public/695",
+        "thread": [
+            {
+                "user_name": "Yi EungJun",
+                "message_content": "Sometimes we want to convert a private channel to a public one when we decide to discuss the topic publicly. And also we may want to cancel it if the decision was mistake.\n\nSlack supports this feature:\n![](//cdck-file-uploads-global.s3.dualstack.us-west-2.amazonaws.com/business7/uploads/mattermost/original/1X/672624e8ed31531b77f352ffc9287a00e19442ba.png)",
+                "timestamp": "2015-12-28T02:28:00Z"
+            },
+            {
+                "user_name": "Yi EungJun",
+                "message_content": "This feature is also necessary to import private channels from slack. (Convert private channels to public channels in Slack -> Import the channels into mattermost -> Convert them to private channels)",
+                "timestamp": "2015-12-28T02:33:00Z"
+            },
+            {
+                "user_name": "Ian Tien",
+                "message_content": "Thanks @eungjun.yi, [added a ticket tracking this as part of Slack import](https://mattermost.atlassian.net/browse/PLT-1657),",
+                "timestamp": "2016-01-11T15:20:00Z"
+            },
+            {
+                "user_name": "Jrdccx",
+                "message_content": "Just as important: converting a private group into a public channel.\n\nWe often use slack/mattermost as a living, ad hoc wiki and documentation tool.\n\nOftentimes we work on projects or research with a small private group to keep the conversation focused, but later **when the project matures** we like to make the channel open for anyone to participate and benefit.\n\n(Maddeningly slack does not allow this.)",
+                "timestamp": "2016-02-12T00:30:00Z"
+            },
+            {
+                "user_name": "tgy",
+                "message_content": "I agree\n\nI'm looking for that exact feature too ![:slight_smile:](https://emoji.discourse-cdn.com/twitter/slight_smile.png?v=5)",
+                "timestamp": "2016-03-27T12:37:00Z"
+            },
+            {
+                "user_name": "Hisham Malik",
+                "message_content": "for now I just go into the database, and update the channel type to 'P'\n`update channels set type = 'P' where name = 'channelname'`",
+                "timestamp": "2016-07-29T19:10:00Z"
+            },
+            {
+                "user_name": "Ian Tien",
+                "message_content": "Thought about this for a while, we should probably create a ticket for community to add, but in my mind we'd only offer public channel to private group.\n\nCurrent thinking is the damage that could be caused by turning a private group into a public channel is massive compared to the limited administrative benefit it offers.\n\nAlso, per above. a System Admin could do it in the database (and perhaps we add a CLI tool option for this in future).\n\nHaving the option in the user interface doesn't seem worth the risk\u2013it's really difficult to review content might have been shared in an old or busy private group.",
+                "timestamp": "2016-11-07T21:26:00Z"
+            },
+            {
+                "user_name": "Yang Chen",
+                "message_content": "Hey Ian, I also thought about it for a bit, and I agree. We're going to just do public to private for now, and think about the other one (CLI, etc.) at a later time.",
+                "timestamp": "2016-11-18T21:20:00Z"
+            },
+            {
+                "user_name": "Mark",
+                "message_content": "I understand this rationale, and I think that as long as a CLI option is provided to go in the other direction, it seems like an acceptable solution.\n\nIn the meantime could someone confirm that the query posted by @hishammalik is a safe, correct and complete way to manually convert a private group into a public channel?\n\n> `update channels set type = 'P' where name = 'channelname'`\n\nAll our groups were created as private as we occasionally have guest users which should only be able to access specific channels. Once single-channel guest accounts are implemented we will want to migrate these private channels to being public.",
+                "timestamp": "2016-11-18T23:22:00Z"
+            },
+            {
+                "user_name": "Yang Chen",
+                "message_content": "Hey @MarkMaldaba, the query should work, but it would make a channel private.\n\n`update channels set type = 'O' where name = 'channelname'` would make it public.\n\nHope that helps!\n\nEDIT: We [don't recommend any changes to the database](https://docs.mattermost.com/install/troubleshooting.html#do-not-manipulate-the-mattermost-database) so I would hesitate to call it \"safe\". But it would be possible to do. Manual database modification bypass checks in the code and could make a system unrecoverable. It's not recommended and if you do make a change, make sure to back up your DB, and verify changes carefully.",
+                "timestamp": "2016-12-01T20:26:00Z"
+            },
+            {
+                "user_name": "Ilya Volvovski",
+                "message_content": "As I could see this is still the case: there is no safe/official way to convert a private channel into public. Any plans to correct this? Any concerns why it would be not desirable? May be it should be restricted to admins and owners only to make it safer? Or if taken this approach to make access restriction configurable on team level?",
+                "timestamp": "2016-12-08T18:01:00Z"
+            },
+            {
+                "user_name": "Yang Chen",
+                "message_content": "Hey @ivolvo! Good questions. As @it33 mentioned, we feel that there isn't a good way of reviewing content (messages, files, images, etc.) that's posted in a public channel, even for admins and owners. As such, converting private channels to public is currently more of a security risk that outweighs the benefits. Inviting new people to private channels, or opening new public channels is what we recommend for the use cases brought up. We may look at having this implemented as a CLI tool in the future!",
+                "timestamp": "2016-12-19T18:16:00Z"
+            },
+            {
+                "user_name": "Mike",
+                "message_content": "I would suggest that private channels should be allowed to be made public. I would then add a new channel type: Secret. Secret channels would be more appropriate for discussions involving secret stuff, and these channels would not be allowed to be made private or public. Private channels could serve a useful purpose as they would not clutter up the list of channels, but could become public if their purpose becomes more broad.\n\nAlso, technically I can still invite everyone into a private channel so there's really very little protection there.",
+                "timestamp": "2017-01-25T16:12:00Z"
+            },
+            {
+                "user_name": "shoop",
+                "message_content": "+1 for the request to convert public to private channels. For many of the same reasons discussed, I'm working in an innovation group and most concepts are held privately until the idea/concept has matured. At that point we would like to open up the channel to a public audience. Like the DoD we would like to have a control to make posts going forward public or all previous posts public. Additionally, we create channel names privately so that they are ear marked\u2026 kinda like taking a domain name so that someone else doesn't grab it.",
+                "timestamp": "2017-07-24T16:17:00Z"
+            },
+            {
+                "user_name": "Christine Mac Kenzie",
+                "message_content": "I \"just\" accidentally created a channel as \"public\", but cannot see option to change to \"private\". Noting some comments that it's dangerous to convert after it's been pubic. In this case, would be nice to convert before we starting using it, but not seeing option to do that.",
+                "timestamp": "2017-11-03T15:42:00Z"
+            },
+            {
+                "user_name": "Amy Blais",
+                "message_content": "Hi @eungjun.yi and community!\n\nJust wanted to let you know that we released v4.10 yesterday which includes the ability to convert a public channel to private: https://docs.mattermost.com/administration/command-line-tools.html#platform-channel-modify.",
+                "timestamp": "2018-05-17T23:26:00Z"
+            },
+            {
+                "user_name": "brian.s",
+                "message_content": "Hey there. Any chance this will be brought into the client? Or am I missing it?",
+                "timestamp": "2018-06-04T23:14:00Z"
+            },
+            {
+                "user_name": "Peter Gehred",
+                "message_content": "Agree 1000%. Thanks for bringing this up as I have the exact same need.",
+                "timestamp": "2018-06-21T23:47:00Z"
+            },
+            {
+                "user_name": "lfbrock",
+                "message_content": "@brian.s @pgehred\n\nConverting public channels to private should also be available in the channel menu for Team and System Admins.\n\n![x300](//cdck-file-uploads-global.s3.dualstack.us-west-2.amazonaws.com/business7/uploads/mattermost/original/2X/4/418bc7f072b83dc6d9ad9adff298232c24aec3c9.png)\n\nConverting private to public is currently only available through the CLI, since there's more concern about making private data public.\n\nIf anyone has feedback on the feature, let us know!",
+                "timestamp": "2018-07-25T20:57:00Z"
+            },
+            {
+                "user_name": "Nina",
+                "message_content": "If privacy is the main reason for not including this feature, what should be done is to note the date a private channel was converted into a public channel, and people who join the channel after that date can only see messages posted after that date.",
+                "timestamp": "2019-04-12T05:58:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/reflection-on-user-experience/18436",
+        "thread": [
+            {
+                "user_name": "phanduyhao",
+                "message_content": "I think the technical team needs to revise the Check Validate Login section.\n\nI think when a user enters an incorrect password or account, the system needs to notify the user that: A few more incorrect login attempts will result in the account being locked.\n\nBecause the system does not notify, it can easily cause users to be subjective and enter incorrectly many times. And only after being locked does the user use the \"Forgot password\" section.\n\nBut now I click \"Forgot password\" and send email, the system says \"Failed to send password reset email successfully\". And from there, the user has to create a new account because there is no other way to unlock the account again.\n\nI think the programming team needs to fix this part. Thank !",
+                "timestamp": "2024-04-19T03:36:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/default-team-setting/17863",
+        "thread": [
+            {
+                "user_name": "keo",
+                "message_content": "Hello \ud83d\udc4b\n\nWe usually turn the **Allow anyone to join this team** feature on manually for each team that we create. Is there a way to set a default team setting so we don't have to perform these task manually for each no team creation ?\n\nI could not find any ticket for this feature in your Jira but I'm not used to this interface so I might have missed it sorry \ud83d\ude15\n\nThank you for the awesome work <3",
+                "timestamp": "2024-01-31T23:56:00Z"
+            },
+            {
+                "user_name": "John Combs",
+                "message_content": "Hello @keo \ud83d\udc4b\n\nIndeed, Mattermost greatly values your time and we aim to make team management as smooth and efficient as possible.\n\nYour suggestion about having a default team setting is actually a very good idea. It has the potential to streamline the process of team creation and memberships.\n\nAs it stands now, we have not yet implemented this feature. But, I believe it would make a valuable addition to our road map. I will make sure your proposal is brought up with our development team.\n\nWe appreciate your suggestion and your continued support. Thank you for helping us make Mattermost even better!\n\nBest regards,  \n~Mattermost AI Assistant \ud83e\udd16\n\n_[**Disclaimer:** This was an AI assisted response powered by Mattermost AI. Were any of the above suggestions inaccurate? **Let us know by replying to this comment!**]_",
+                "timestamp": "2024-02-08T21:52:00Z"
+            },
+            {
+                "user_name": "Govi",
+                "message_content": "Hello \ud83d\udc4b  \nI would like to know what is the status of this request, because it's an interesting feature.  \nThank you! \ud83d\ude03",
+                "timestamp": "2024-04-16T12:32:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/option-set-a-status-not-correct-when-choosing-clear-after-today/18370",
+        "thread": [
+            {
+                "user_name": "SnowboardBas",
+                "message_content": "I am used to set a status in Mattermost: I set my location (the office, at home, elsewhere) every day, so my co-workers know where I am today.  \nI set it every day so I use the option:\"Clear after: Today\". My status message becomes: \"Until today\". But this message sounds like it's excluding today itself. More appropriate would be \"Up until today\" of \"Until the end of today\".  \nWhen using a specific end time or time period the term \"until\" works perfect: \"Until 17:00\", but it's confusing when using \"Today\" or \"This week\". \"This week\" results in \"Until Saturday\": is that including Saturday or is Friday the last day. (BTW: End of the week in Europe is Sunday\u2026).\n\nIs there a way to change this for options \"Today\" (\"Until the end of today\") and \"This week\" (\"Until the end of Sunday\")? This feedback is for US-English, but the same can be said of the Dutch-version.",
+                "timestamp": "2024-04-11T06:59:00Z"
+            },
+            {
+                "user_name": "matthewbirtch",
+                "message_content": "Thank you for the feedback @SnowboardBas. I see how this can be confusing and I like the suggestions you've provided. We will take this feedback under consideration and will see if we can make an improvement here.",
+                "timestamp": "2024-04-11T15:11:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/the-horizontal-slider-is-so-narrow-it-is-almost-impossible-to-use/18165",
+        "thread": [
+            {
+                "user_name": "Lizat",
+                "message_content": "Is there a way to enlarge this, or can we add to feature requests\nsee here: [Mattermost Desktop App - 2024-03-14_10-05-38 - TechSmith Screencast - TechSmith Screencast](https://app.screencast.com/mhAy8RHcCwNm8)",
+                "timestamp": "2024-03-14T09:08:00Z"
+            },
+            {
+                "user_name": "john.combs",
+                "message_content": "Hi Liz,\n\nThanks for reaching out about your experience with the horizontal slider in our Desktop App. We're always working on ways to improve usability, and your feedback is invaluable to us.\n\nI understand it can be challenging if the slider is too narrow. Currently, we don't have an option to enlarge it directly, but I'll be sure to pass this feedback along to the team!\n\nI would also recommend visiting our [UserVoice Feature Idea Forum](https://mattermost.uservoice.com/forums/306457-general) to post your suggestion. There, other Mattermost users can vote on your idea. We always consider highly-voted feedback for our product enhancements.\n\nIn the meantime, if you're finding it hard to use the slider, you can try using keyboard shortcuts for navigation. Check out our documentation on [Keyboard Shortcuts](https://docs.mattermost.com/help/messaging/keyboard-shortcuts.html) for more details.\n\nLet us know if you have any other questions or need further assistance. We're here to help!\n\nBest,\n~John ![:medal_military:](https://emoji.discourse-cdn.com/twitter/medal_military.png?v=12)",
+                "timestamp": "2024-03-27T01:00:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/suggest-adding-a-mechanism-for-quoting-specific-messages/18095",
+        "thread": [
+            {
+                "user_name": "CyberXUDD",
+                "message_content": "Currently, for a specific message, Mattermost has two basic functions: \"Reply\" and \"Forward.\" If you choose to reply, it will start a separate thread for that message. If a simple response to a message is needed and emoji reactions are insufficient, replying can make the process more complicated.\n\nIt is recommended to refer to the quoting function similar to that in WeChat Work. This quoting doesn't require users to enter message content in the chat but is instead completed directly through a button. This makes quick responses to some messages more efficient. Please refer to the screenshots I have provided for the detailed operation process.\n\nWhen I click the quote button for a particular message, it automatically fills the chat box with that message and @mentions the sender of the message. Additionally, after sending the quoted message, you can quickly jump to the location of the sent message by clicking on the quoted information.",
+                "timestamp": "2024-03-06T04:26:00Z"
+            },
+            {
+                "user_name": "John Combs",
+                "message_content": "Hi Cyber Xudd,\n\nFirst off: Welcome to the Mattermost peer-to-peer forums!\n\nSecond: Thank you for the detailed suggestion and for including screenshots to illustrate your recommendation. Providing a quoting mechanism similar to WeChat Work does sound like it would improve the user experience in Mattermost by making it more efficient to reference previous messages.\n\nWe appreciate your feedback as it helps us to consider different ways to improve Mattermost for our users. We're always looking for ways to make communication on the platform more efficient and the feature you've suggested does sound like a useful addition.\n\nI'll ensure that our development team gets this feedback. They'll evaluate your suggestion for feasibility and possible inclusion in future releases. Remember, user feedback is essential for us to continuously improve and cater for our community's needs, so your feedback is much appreciated!\n\nStay tuned to for future updates!\n\nBest,\n~John",
+                "timestamp": "2024-03-27T00:56:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/allow-downloading-all-files-postes-in-one-post-at-once/18208",
+        "thread": [
+            {
+                "user_name": "MichaelM",
+                "message_content": "When many files get posted at once a user may want to download all of them. As of now every file has to be downloaded one by one with many clicks needed. A new function in the droppdown for \"More\" maybe named \"download all\" could make the transfer of multiple files less tedious.",
+                "timestamp": "2024-03-20T09:21:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/recent-design-explorations-on-ai-copilot-voice-calls-and-admin-reporting/18159",
+        "thread": [
+            {
+                "user_name": "matthewbirtch",
+                "message_content": "If you're interested in seeing some of the recent design improvements and explorations the Mattermost product design team is working on, take a look at the latest issue of the 'Product Design Spotlight' we published on Medium. We'd love to hear your thoughts about the explorations on AI Copilot, Voice Call improvements, and Admin reporting enhancements.\n\nIf you're interested in other work we've shared previously, check out other stories in the Mattermost Design medium publication or joining the UX Design Channel on our Community server.",
+                "timestamp": "2024-03-13T16:48:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/does-mattermost-have-plans-to-upgrade-its-editor/18107",
+        "thread": [
+            {
+                "user_name": "CyberXUDD",
+                "message_content": "Like the editor of this forum, in addition to recognizing Markdown, it can also identify image data in the clipboard. If it's an image, it would automatically upload it and insert it at the cursor's position.\n\nCurrently, in Mattermost's text input box, when using Ctrl+V to paste, if the data in the clipboard is not text, it uniformly goes through the attachment upload process. In fact, if it's an image, it could be uploaded in the background, automatically retrieve the path, and then be inserted at the cursor position through inline code. I think this would be more intuitive, don't you agree?\n\nhttps://simditor.tower.im/\nis an open-source text editor. After proper configuration, it can achieve quite a perfect blend of text and images, and it might be worth looking into for reference.",
+                "timestamp": "2024-03-07T07:54:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/forward-a-direct-message-to-another-person-or-channel/14337",
+        "thread": [
+            {
+                "user_name": "g10085998",
+                "message_content": "The forwarding functionality introduced with version 7.2 is not enough.\n\nIn the daily business one of the most cases is:  \nA colleague sends you a direct message with some important informations maybe also with some documents as attachments.  \nAnd you would like to forward this message to another colleague, because you think also he needs this informations.  \nNow in mattermost you have to do the following:\n\n  * download the attachments of the original message.\n  * copy the original text message\n  * create a new direct message to the other colleague\n  * paste the text message\n  * attach the downloaded original attachments\n  * send new direct message\n\n\n\nWhy not implement this functionality with a simple menu point that can forward a recieved direct message to another person (or channel)?\n\nI suggest to implement this functionality because in my daily life and work with mattermost this function is one which I would need most and it would save me a lot of time (and I know a lot of other people who desire exactly this functionality also very hard) .",
+                "timestamp": "2022-10-27T12:36:00Z"
+            },
+            {
+                "user_name": "agriesser",
+                "message_content": "Thanks for the request and welcome to the Mattermost forums!\n\nI can see you already posted this at the [user voice platform](https://mattermost.uservoice.com/forums/306457-general/suggestions/45889246-forward-a-direct-message-to-another-person-or-cha), which is a good place for such requests.  \nAlso there have been some talks lately about the already existing message forward functionality and how it could be improved and there were lots of users who would want to have this feature just like you described it, so I'm positive that it will be implemented in this way in one of the next few versions.",
+                "timestamp": "2022-10-30T09:06:00Z"
+            },
+            {
+                "user_name": "csa-it",
+                "message_content": "Dear Agriesser,\n\nI would like to add something to the above requirement:  \nWe have a requirement to send a \"direct message\" to another user, regardless of which channel he belongs to.\n\nHowever, we do not want to make this solution available to every user, i.e. the existing possibilities should remain as they are.\n\nIs this additionally possible?\n\nBest regards,  \nHelmut",
+                "timestamp": "2022-11-28T16:35:00Z"
+            },
+            {
+                "user_name": "agriesser",
+                "message_content": "Hi Helmut,\n\nis this really the right thread? We're in a thread with regards to message forwarding here and the initial post does not seem to be from you. Can you confirm?",
+                "timestamp": "2022-11-28T16:48:00Z"
+            },
+            {
+                "user_name": "g10085998",
+                "message_content": "Hello Aggrieser,\n\nyou are correct. User csa-it i not the originator of the initial message.  \nI am the originator of the initial message.\n\nBest regards  \ng10085998",
+                "timestamp": "2022-11-29T06:05:00Z"
+            },
+            {
+                "user_name": "tshipenchko",
+                "message_content": "Hello Aggrieser. Are there any plans to solve this problem in the near future? Our company is faced with the same issue and the issue plays a crucial role in choosing a corporate messenger.\n\nIt seems to me that it may not be easy to implement a full-fledged message forwarding with all replies saved. Our company and possibly other companies would have quite enough functionality for copying messages. From the initial post, it seems that it is about copying a specific message to another recipient, and not a full-fledged message forwarding.\n\nI haven't dived into the code of mattermost, but perhaps the copying functionality can also be implemented as a plugin.\n\nAdditionally, the link to the [user voice platform](https://mattermost.uservoice.com/forums/306457-general/suggestions/45889246-forward-a-direct-message-to-another-person-or-cha) appears to be non-functional.",
+                "timestamp": "2024-02-15T05:40:00Z"
+            },
+            {
+                "user_name": "tshipenchko",
+                "message_content": "Sorry [@agriesser](/u/agriesser), forgot to mention you in proper way.",
+                "timestamp": "2024-02-16T04:48:00Z"
+            },
+            {
+                "user_name": "tshipenchko",
+                "message_content": "Dear [@john.combs](/u/john.combs).  \nI apologize for mentioning you in a different topic, but I noticed that the Aggrieser has been inactive since July 20th, 2023. Therefore, I am seeking to find out if anyone else has information on the status of the feature request regarding this matter.\n\nThank you for your attention. Best regards, tshipenchko",
+                "timestamp": "2024-03-05T06:03:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/open-replies-on-click-vs-everything-in-the-main-lane/17989",
+        "thread": [
+            {
+                "user_name": "Maaged",
+                "message_content": "Hi,\n\nI do see the value of this new way of hiding replies behind a click, but for some channels I really miss the old style because I could get a quick overview on what's new in the channel/conversation on one glance. Is there a way to change this behaviour?\n\nRegards,\nMaaged",
+                "timestamp": "2024-02-19T12:41:00Z"
+            },
+            {
+                "user_name": "John Combs",
+                "message_content": "Hi Maaged,\n\nThank you for sharing your thoughts with us - we truly appreciate your feedback!\n\nIt's great to know you're getting value from the current method of managing replies. We understand how beneficial the old style can be for quickly perusing through new content in a channel.\n\nUnfortunately, as of now, there isn't a direct option to alter the reply behavior individually. The design changes were made in effort to streamline conversation threads and reduce clutter within the main channel view.\n\nHowever, this doesn't mean we can't explore options to make Mattermost more personalized and fitting for users' specific needs. Your feedback is key to how we make our platform even more user-friendly. We're always looking for innovative ways to improve based on what our users find most beneficial, and your input will certainly be considered in our ongoing design discussions.\n\nPlease do not hesitate to share more thoughts or feedback you have. We value your opinion and it helps us in making Mattermost better for everyone!\n\nBest regards,\n~Mattermost AI Assistant",
+                "timestamp": "2024-02-29T04:51:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/reducing-footprint-right-sidebar/17924",
+        "thread": [
+            {
+                "user_name": "ylluminate",
+                "message_content": "Currently the right sidebar is extremely wasteful in many circumstances. The footprint that it consumes is unwarranted for the benefit that it provides, an example you can see that this consumes nearly 50px in width and effectively has only two functional icons that may be used, but find relatively rare usage:\n\n[Image: 2024-02-10_072939_UTC]\n\nCan we please figure out a more effective method to present such functionality vs a vertical drawer/bar/shelf that consumes so much of the user interface chrome? This space would be much more valuable for content and reducing wasted space.\n\nPersonally, I think a button at the top of the bar that acts as a pin or disclosure button could facilitate this. I can understand that many people might use this heavily, but then there are those who do not. Having this disclosable/expandable and pinnable presentation could help considerably to make this presence more palatable and less intrusive for those for whom screen real estate is a premium and/or simply do not use it much.",
+                "timestamp": "2024-02-10T07:34:00Z"
+            },
+            {
+                "user_name": "Bunnyh",
+                "message_content": "Yes please! I just installed the Filelist plugin, and now I have a sidebar just to get this one button! But it's worth it when a channel has over 10k files :slight_smile:",
+                "timestamp": "2024-02-20T09:43:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/seeking-technical-feedback-on-scaling-ms-teams-mattermost-integration/17853",
+        "thread": [
+            {
+                "user_name": "jasonblais",
+                "message_content": "We shipped Mattermost-Microsoft Teams integration to early customers and had to iterate on our approach a few times to go from prototype to a scaling service. There's some remaining bottlenecks that we're posting here about to connect with experts able to advise.\n\n## 1 - Scaling Mattermost for MS Teams connected experience with a per user subscription and rich notifications\n\nIn organizations where every user has access to MS Teams, but some users prefer to use Mattermost, keeping both clients open creates a \"swivel-chair\" effect. The [MS Teams plugin](https://github.com/mattermost/mattermost-plugin-msteams-sync) is an extension to [Mattermost](https://github.com/mattermost) that syncs chats bidirectionally between platforms, allowing users to stay in the platform of their choice while remaining connected to the entire organization.\n\n**Current Architecture**\n\nThe plugin maintains a single, global [/chats](https://learn.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-1.0) subscription to MS Teams. On each [change notification](https://learn.microsoft.com/en-us/graph/api/resources/change-notifications-api-overview) for a chat message, the plugin attempts to [get chatMessage](https://learn.microsoft.com/en-us/graph/api/chatmessage-get?view=graph-rest-1.0&tabs=http) using a [delegated access token](https://learn.microsoft.com/en-us/graph/auth-v2-user) for one of the members of the chat. Messages sent from Mattermost use the same delegated access token to [create a chat](https://learn.microsoft.com/en-us/graph/api/chat-post) and [send a chat message](https://learn.microsoft.com/en-us/graph/api/chat-post-messages).\n\n**Limitations**\n\nA high volume of change notifications results in a high volume of API requests. Rich notifications would avoid the API requests, but unnecessarily include the contents of all chats.\n\n**Proposed Architecture**\n\nThe plugin shall maintain a [/users/{id}/chats/getAllMessages](https://learn.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-1.0) subscription to MS Teams for each connected user. Each subscription shall be configured to receive [rich notifications](https://learn.microsoft.com/en-us/graph/change-notifications-with-resource-data) (generating a unique public key per subscription) and allowing the application to directly access the contents of the message without further [get chatMessage](https://learn.microsoft.com/en-us/graph/api/chatmessage-get?view=graph-rest-1.0&tabs=http) calls.\n\n**Limitations**\n\nA [per-organization limit of 10,000 total subscriptions](https://learn.microsoft.com/en-us/graph/api/resources/change-notifications-api-overview) limits the potential deployment size. Duplicate change notifications (for each member in a chat) also adds processing overhead. Finally, overall API usage may also induce rate limiting for a high volume of active users.\n\n### Seeking Feedback on Scaling Mattermost for MS Teams connected experience:\n\nWe are seeking feedback on whether the proposed architecture is a viable approach, specifically the impact of the per-organization limit of 10,000 total subscriptions, and if there are alternative approaches to scaling this solution for MS Teams that better meets this limitation.\n\n## 2 - Mattermost for MS Teams embedded experience with an MS Teams App\n\nIn environments where access to the full Microsoft Graph API is restricted, Mattermost can be [embedded](https://docs.mattermost.com/about/mattermost-for-microsoft-teams.html#embed-mattermost-within-mattermost-teams) as an app directly accessible from the Teams sidebar.\n\n**Current Architecture**\n\nMS Teams effectively acts as a parent window to Mattermost in an iframe. The user must authenticate directly to Mattermost, after which they can largely use the application unimpeded.\n\n**Limitations**\n\nMattermost doesn't remain active when the user uses other features in MS Teams, nor has a way to relay notifications to the user even when actively using the embedded experience.\n\n**Proposed Architecture**\n\nThe embedded experience shall be extended with application credentials that allows Mattermost to enumerate all MS Teams users and map them by email address to existing Mattermost users. A new account settings option allows Mattermost users to configure MS Teams as their primary platform, after which any notifications are relayed to MS Teams via [activity feed notifications](https://learn.microsoft.com/en-us/microsoftteams/platform/tabs/send-activity-feed-notification). Finally, support for SSO via MS Teams simplifies authentication and onboarding.\n\n**Limitations**\n\nA consent flow per user is required to allow the app to use the activity feed, unless the Azure administrator regularly accepts that consent on behalf of all new users.\n\n### Seeking Feedback on Mattermost for MS Teams embedded experience:\n\nWe are seeking feedback on whether the proposed architecture is a viable approach, specifically if there are other MS Teams apps that use the activity feed to notify users on MS Teams about new updates, or if there are alternative recommendations that the community recommends.",
+                "timestamp": "2024-01-29T21:19:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/unifying-user-accounts-across-teams-for-mattermost-3-0/1126",
+        "thread": null
+    },
+    {
+        "url": "https://forum.mattermost.com/t/design-feedback-chronological-sorting-of-direct-messages/7568",
+        "thread": [
+            {
+                "user_name": "Slashdot",
+                "message_content": "We use Mattermost for the internal communication at Extinction Rebellion and me and some other users are quite annoyed that the direct messages list in the menu is sorted alphabetically, not chronologically. So when I'm talking to someone and quickly have to look something up in another channel and I forgot the name of the user I was just talking to, I always have to check all the messages to find my last conversation. It would make more sense to order the direct messages list chronologically, so I could see my latest conversation at the top of the list. Is that possible?",
+                "timestamp": "2019-06-28T14:50:00Z"
+            },
+            {
+                "user_name": "nommaz",
+                "message_content": "Couldnt agree more. I am surprised this hasnt been picked up in all these years",
+                "timestamp": "2023-11-10T03:58:00Z"
+            },
+            {
+                "user_name": "matthewbirtch",
+                "message_content": "@nommaz and @Slashdot In the Left Sidebar under the 'Direct Messages' category there is a \u2022\u2022\u2022 icon that has a sort option where you can choose 'Recent activity' instead of 'Alphabetically'. Is that what you're looking for?",
+                "timestamp": "2024-01-29T20:00:00Z"
+            },
+            {
+                "user_name": "nommaz",
+                "message_content": "Exactly. Thanks for this great tip I had missed it. Wish it also existed for mobile.",
+                "timestamp": "2024-01-31T16:13:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/in-app-marketplace-is-useless-compared-to-api-marketplace-mattermost/16554",
+        "thread": [
+            {
+                "user_name": "smileBeda",
+                "message_content": "Supposedly, the in-app marketplace is the exact same as [Marketplace - Mattermost](https://mattermost.com/marketplace/) (at least, that is what I gather from seeing the settings saying it pulls the marketplace from https://api.integrations.mattermost.com  \nYet, the in-app marketplace lists about only 10 plugins. While the https://api.integrations.mattermost.com place, lists several 100\n\nWhy is that? And why can we not have those plugins in-app?",
+                "timestamp": "2023-07-30T05:25:00Z"
+            },
+            {
+                "user_name": "Dazeilad",
+                "message_content": "Hello, same question there. I can't install the Nextcloud plugin as it is not listed in the in-app marketplace\u2026\n\nSelf-hosted Mattermost Team Edition v 9.0.1.",
+                "timestamp": "2023-10-23T13:18:00Z"
+            },
+            {
+                "user_name": "John Combs",
+                "message_content": "Hey y'all,\n\nThank you for reaching out and raising your concerns about the discrepancy between the in-app marketplace and the api.marketplace.mattermost. I will be sure to share this feedback with the rest of the team for you.\n\nThe Mattermost in-app marketplace is designed to display plugins that are officially supported and maintained by Mattermost Inc., to provide users with a curated, high-quality selection of plugins. This is why the number is currently limited compared to the full list on api.integrations.mattermost.com. I believe the team designed it this way to provide users with a more manageable selection and guarantee a certain level of quality and official support.\n\nThat said, I feel the demand for a wider array of plugins. Mattermosters who wish to install additional plugins not listed in the in-app marketplace can download them directly from the Mattermost Integrations Directory at https://api.integrations.mattermost.com and then upload the plugins to their Mattermost server via the System Console.\n\nFor the specific question about the Nextcloud plugin, this plugin is not directly maintained by Mattermost, and therefore, is not listed in the built-in marketplace. However, you can still install it manually. Please follow this guide on how to install plugins manually: [Redirect](https://docs.mattermost.com/administration/plugins.html#plugin-uploads)\n\nWe appreciate your feedback, and it will definitely be taken into account as we continue to develop and improve our platform. If there are specific plugins you'd like to see included in the in-app marketplace, feel free to mention them and we can investigate the feasibility.\n\nDon't hesitate to reach out if you have further questions!\n\nBest,\n~John",
+                "timestamp": "2023-10-25T00:47:00Z"
+            },
+            {
+                "user_name": "Najee",
+                "message_content": "Hi there @john.combs , when I try to access http://api.integrations.mattermost.com/ I receive the following: {\"message\":\"Missing Authentication Token\"}.",
+                "timestamp": "2024-01-29T20:34:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/mattermost-pagerduty/17796",
+        "thread": [
+            {
+                "user_name": "4n6Ghost",
+                "message_content": "Will there be an added feature in Mattermost when intergrated with PagerDuty to acknowledge and resolve incidents through the Mattermost platform. Like what you see in slack. See picture",
+                "timestamp": "2024-01-24T17:21:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/why-are-custom-groups-an-enterprise-feature/17168",
+        "thread": [
+            {
+                "user_name": "lpnc_it",
+                "message_content": "This seems like a very basic feature that should be there by default but it is limited to users paying thousands a month for enterprise or professional licensing. [Manage custom groups (beta) \u2014 Mattermost documentation](https://docs.mattermost.com/collaborate/organize-using-custom-user-groups.html)",
+                "timestamp": "2023-10-27T11:26:00Z"
+            },
+            {
+                "user_name": "it33_mattermost",
+                "message_content": "The ideal size for Mattermost Team Edition is up to 50 users, and the system probably continues to work fine up to a couple of hundred.\n\nAs deployments near or exceed this milestone, our intention is for Mattermost champions to find the right capabilities in the commercial versions in order to developer a business case for purchase, to bring on the commercial capabilities and to scale smoothly and reliably.\n\nCustom groups helps our champions build a strong business case for joining our commercial community.\n\nYou can learn more about our commercial versions at\n\nhttps://docs.mattermost.com/about/editions-and-offerings.html\n\nThere's also guidance in the docs for contacting the Mattermost customer teams who can support our champions in making the business case to their organizations.\n\nThanks for asking @lpnc_it. Does this help answer your question?",
+                "timestamp": "2024-01-15T22:43:00Z"
+            },
+            {
+                "user_name": "lpnc_it",
+                "message_content": "We're a relatively small political party and while we like what we see and get use out of mattermost, we can't afford to pay even a fraction of the per-user rates as published. Most of the members pop in once every couple of weeks or months as they volunteer or gear up for a meeting or event. Every dollar is donated. It appears we are excluded from the non-profit pricing as a political entity, so we have the price options of $0/month or $900/month.  \nMy point was simply that this is a basic feature seen on slack, discord and other competing options.",
+                "timestamp": "2024-01-20T00:05:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/how-can-i-make-the-mattermost-grumble-plugin-start-working/17435",
+        "thread": [
+            {
+                "user_name": "franek327327",
+                "message_content": "I'm looking for a Mattermost plugin that allows creating voice channels similar to Discord. I found this plugin (GitHub - mgdelacroix/mattermost-grumble-plugin), but it seems to be too old and not working. Is there any way to enable it, or is it faster to rewrite it from scratch?",
+                "timestamp": "2023-12-01T12:28:00Z"
+            },
+            {
+                "user_name": "john.combs",
+                "message_content": "Hello Lukasz,\n\nThanks for reaching out, and welcome to the Mattermost peer-to-peer forums!\n\nRegarding your query about the mattermost-grumble-plugin, it's indeed an older project and will require some updates to keep up with the latest versions of Mattermost.\n\nBefore you decide to rewrite it from scratch, I recommend trying to reach out to the original author or the community around the project on GitHub. There might be some ongoing work or patches that could get the plugin up and running again. Maybe send them an invite to our forum here if they need any help! \n\nIf there's no activity or response, it might be worth considering starting fresh or finding an alternative plugin that meets your needs.\n\nPlease feel free to keep us updated on your progress, and of course, don't hesitate to ask if you have further questions or need additional help.\n\nBest of luck!  \n~John",
+                "timestamp": "2024-01-18T01:35:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/video-file-thumbnails-not-generating-issue/17254",
+        "thread": [
+            {
+                "user_name": "manzoor77",
+                "message_content": "Is there a specific reason, we are generating image thumbnails in the team edition but not generating video file thumbnails?  \nany solution to show video file thumbnail in mattermost team edition?",
+                "timestamp": "2023-11-09T05:34:00Z"
+            },
+            {
+                "user_name": "john.combs",
+                "message_content": "Hi Muhammad,\n\nThanks for reaching out and sharing your query. Presently, video file thumbnails are not generated in Mattermost Team Edition by default. This is because video thumbnail generation often requires additional system resources. However, I understand your need and how this functionality can add value to your Mattermost experience.\n\nWhile we don't have this feature available directly within Mattermost Team Edition, you might consider using a plugin or integration which adds this kind of functionality. For instance, you might check for media server plugins or other video-related integrations.\n\nIn the meantime, we're always here to help with any other questions or issues you have using Mattermost! Best of luck.",
+                "timestamp": "2023-11-15T03:32:00Z"
+            },
+            {
+                "user_name": "manzoor77",
+                "message_content": "John Combs:\n\n> For instance, you might check for media server plugins or other video-related integrations.\n\nAlright. Thanks for your response. I will check.",
+                "timestamp": "2024-01-17T14:05:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/mattermost-federation/14256",
+        "thread": [
+            {
+                "user_name": "air.head.guy",
+                "message_content": "It would be pretty nice if Mattermost had federation support like some other softwares like Matrix and Rocketchat.\n\nWe could use `DNS SRV` records for such things, which seems to be what the other softwares mentioned above use.\n\nCheers!",
+                "timestamp": "2022-10-14T20:36:00Z"
+            },
+            {
+                "user_name": "ChenSun-Phys",
+                "message_content": "I would love to see such features implemented. Mattermost gets a lot more popular in academia due to the recent price plan change by Slack. This feature will allow different research groups to interconnect, exchange information, and discuss together. It would be useful for creating joint channels by people from different servers and for inviting guests for a short chat.\n\nRight now I have to apply for an account for each mattermost server to be able to join, or issue an account for whoever I'd like to invite to my team and persuade them to use it",
+                "timestamp": "2023-03-01T21:04:00Z"
+            },
+            {
+                "user_name": "agriesser",
+                "message_content": "Hi @ChenSun-Phys,\n\nplease raise your voice on this feature request at https://mattermost.com/suggestions - if it gets enough votes, it will be worked on.  \nFor the time being I think your only options are shared channels (enterprise feature) or matterbridge.",
+                "timestamp": "2023-03-02T04:06:00Z"
+            },
+            {
+                "user_name": "ChenSun-Phys",
+                "message_content": "Hi thanks a lot for the reply and bringing up the shared channels feature. That's actually what I need. I saw that on Shared channels (experimental) \u2014 Mattermost documentation it's listed as a feature for both Enterprise and Professional plans, but on the other page Experimental configuration settings \u2014 Mattermost documentation it's Enterprise-only. Do you know which on it is?",
+                "timestamp": "2023-03-02T23:59:00Z"
+            },
+            {
+                "user_name": "agriesser",
+                "message_content": "From what I know, this is an enterprise feature, the comparison also lists it as an enterprise feature:\n\nhttps://docs.mattermost.com/about/editions-and-offerings.html\n\nI've filed a PR to update the documentation for further discussion.",
+                "timestamp": "2023-03-03T04:51:00Z"
+            },
+            {
+                "user_name": "air.head.guy",
+                "message_content": "So, small update on this:\n\n  * Rocket.chat is deprecating their own federation system in favor of Matrix federation, which means that you need at least 8Gb RAM to run Rocket.chat and Matrix, which for the most hobbyists is a no go, because VPS prices keep increasing and usually we don't make money out of this.\n  * The request for federation already exists on this uservoice (since 2015, apparently\u2026).\n  * It would be preferable if we could have native S2S support instead using third party services that require additional setup.\n  * I can probably open a feature request on https://mattermost.com/suggestions, but since it already exists in the uservoice forum, I don't think it's necessary to duplicate requests, unless it should be opened there.",
+                "timestamp": "2023-03-20T20:47:00Z"
+            },
+            {
+                "user_name": "agriesser",
+                "message_content": "Thanks for the update, I'm afraid that there are currently no plans to implement federation, but roadmaps are being reworked currently, so that might change. If I hear of something related to that, I'll let you know.",
+                "timestamp": "2023-03-21T04:10:00Z"
+            },
+            {
+                "user_name": "air.head.guy",
+                "message_content": "That's why Matrix has become so popular and why even Rocket.chat is using Matrix to federate.  \nIMHO, Mattermost really need this to help attracting more users because, overall, Mattermost is a great piece of software.",
+                "timestamp": "2024-01-06T16:31:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/how-to-integrate-mattermost-with-backend-magento-2-and-frond-end-react-native-mobile-application-what-is-the-flow/10578",
+        "thread": [
+            {
+                "user_name": "amutharaj",
+                "message_content": "We are using Magento 2 admin and react native mobile application. We would like to integrate Mattermost chat feature in client side ( react native mobile application ). How to communicate mobile application, Magento 2 with Mattermost. What is the flow? How do we integrate this?\n\nPlease advise. Thanks.",
+                "timestamp": "2020-10-19T09:34:00Z"
+            },
+            {
+                "user_name": "ArmaniConrad",
+                "message_content": "To connect them seamlessly, consider using Mattermost's APIs for communication. First, establish endpoints in your Magento 2 backend to interact with Mattermost. Then, in your React Native app, utilize these endpoints to send and receive messages. Make sure your mobile app has the necessary permissions and authentication for secure communication. A well-versed web development agency could assist in setting up these connections efficiently, ensuring a smooth flow between your app, Magento 2, and Mattermost. Remember, detailed documentation from Mattermost and Magento 2 will be your best pals throughout this integration journey.",
+                "timestamp": "2023-12-07T06:05:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/what-will-happen-with-boards/17421",
+        "thread": [
+            {
+                "user_name": "filemon93",
+                "message_content": "Hi, are there any development plans regarding Mattermost Boards?  \nWill there be mobile implementation?  \nWill there be connection with external calendars?  \nWill there be some user usage statistics for admins?  \nWill there be email and push notifications for Boards?\n\nAnd so on and so on ![:slight_smile:]",
+                "timestamp": "2023-11-28T17:42:00Z"
+            },
+            {
+                "user_name": "john.combs",
+                "message_content": "Heya filip! Good to see ya back on the forums again. Did you happen to read everything in this thread already?\n\n![](https://sea2.discourse-cdn.com/business7/user_avatar/forum.mattermost.com/amy.blais/48/7364_2.png) [Upcoming product changes to Boards and various plugins](https://forum.mattermost.com/t/upcoming-product-changes-to-boards-and-various-plugins/16669) [Announcements](/c/announce/15)\n\n> Mattermost is committed to continuously improving our products to serve our customers' evolving needs. As part of this commitment, we want to inform you about some upcoming product changes that will affect our platform. Effective September 15th, 2023, Mattermost Boards will transition to being fully community supported, with various other plugins following suit (see full list below). Mattermost will continue to actively maintain a select number of plugins, including [Jira](https://github.com/mattermost/mattermost-plugin-jira), [Github](https://github.com/mattermost/mattermost-plugin-github), [Gitlab](https://github.com/mattermost/mattermost-plugin-gitlab), [MS Tea\u2026](https://github.com/mattermost/mattermost-plugin-msteams-sync)",
+                "timestamp": "2023-12-06T01:37:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/compact-text-colorization-should-have-a-personal-palette-or-more-options-to-assign-determine-higher-contrasting-colors/17428",
+        "thread": [
+            {
+                "user_name": "ylluminate",
+                "message_content": "The colorization function for compact messages is fantastic. It feels much more like IRC and highly optimized text messaging systems now - which is a very good thing.\n\nOne problem I have noticed is that it can, however, lead to confusion when colorization is not sufficiently contrasty between users. We have noticed that users tend to be colored similar all too often. This leads to difficult differentiation and has caused some communicative mistakes and mis-assigning trains of thought.\n\nIt would be helpful to perhaps do a few things:\n\n  1. allow users to create their own color palettes or assignments for users.\n  2. allow holistic server colorization assignments.\n  3. allow users to assign their preferred color.\n  4. implement an algorithm in Mattermost to choose, by default higher contrast differentiation in channel palettes so as to maximized differentiation insomuch as is possible until there are simply too many users to perform such.\n\nI personally would like to see an organization-based colorization so that all members of certain organizations could be colorized in a similar fashion. This would, however, introduce a new variable/value for profiles that would be \"organization\" or some such associative element for users. I don't think team-based association is enough since many same-org folks are in the same teams\u2026 BUT having an organization assignment could resolve that for this need.\n\nHaving an organizational association in a profile could also open Mattermost up to other interesting features such as viewing messages in a search or other such flat-file listing that is not now really possible, but could show different views into data and perspectives, etc\u2026\n\nAnyway, I do think some level of color control would be very helpful and I appreciate the effort to move down this more concise road!",
+                "timestamp": "2023-11-30T19:21:00Z"
+            },
+            {
+                "user_name": "John Combs",
+                "message_content": "Hello [@ylluminate](/u/ylluminate),\n\nThank you for taking the time to share your feedback and ideas regarding the colorization function in compact messages!\n\nI will be sure this feedback makes it to our team for more in-depth discussions on their feasibility. We always strive to improve and adapt to our user needs, and feedback like yours helps us navigate our approach in the right direction. Please keep sharing your thoughts and suggestions to make Mattermost more efficient and user-friendly.\n\nOnce again, thank you for your contribution to the Mattermost community!",
+                "timestamp": "2023-12-06T01:36:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/does-it-ignore-e2ee-related-uservoice/17408",
+        "thread": [
+            {
+                "user_name": "System",
+                "message_content": "End-to-end (e2e) encryption support",
+                "timestamp": "2023-05-01T12:00:00Z"
+            },
+            {
+                "user_name": "Anonymous",
+                "message_content": "This would require major architectural changes for the Mattermost server, but adding some use cases to gather feedback from the community. Server admins wouldn't be able to read the content of conversations because they don't hold the keys to...",
+                "timestamp": "2023-05-01T12:01:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/run-mattermost-desktop-using-a-socks-proxy/17268",
+        "thread": [
+            {
+                "user_name": "mvoppen",
+                "message_content": "**Summary**\nI was not able to get Mattermost running using a SOCKS proxy (version 4 oder 5 would be ok).\nThere are several documents about config proxy settings but it is not clear if these documents apply for the Windows Desktop variant too.\n\nEverything is working well in the browser (Firefox + FoxyProxy Addon).\n\nIt is not clear to me if it is not possible to use the App over a proxy or if I missed to right way to configure it.\n\nI even tried external tools like proxychains, what is working well for nearly everything under Linux, but I was not successful under Windows.\n\nSo my question is if it is possible to run Mattermost using a SOCKS proxy? If not is such a feature planned in the future?\n\n**Steps to reproduce**\nHow can we reproduce the issue (what version are you using?)\n\n**Expected behavior**\nDescribe your issue in detail\n\n**Observed behavior**\nWhat did you see happen? Please include relevant error messages and/or screenshots.",
+                "timestamp": "2023-11-10T13:03:00Z"
+            },
+            {
+                "user_name": "john.combs",
+                "message_content": "Hi Marko,\n\nThank you for raising your question regarding the use of a SOCKS proxy with the Mattermost Desktop app. I understand that you've been able to get it working in your browser with a similar setup, but are experiencing difficulty achieving the same results with the desktop variant.\n\nAs of the current releases, the Mattermost Desktop app does not natively support SOCKS proxy settings. However, I can understand how this feature may be beneficial for you and potentially to other users as well. I encourage you to open a feature request on the [Mattermost UserVoice page](https://mattermost.uservoice.com/forums/306457-general) to express your interest in this potential addition. This is a great platform for our developers to see what features are most requested by our users and to plan their work accordingly.\n\nIn the meantime, as a workaround, you might consider using a global proxy setting for your OS, though the effectiveness would depend on your specific networking configuration and system administration.\n\nShould you have any further questions, don't hesitate to reach out. We're here to help.\n\nBest regards,\n~Mattermost AI Assistant ![:robot:](https://emoji.discourse-cdn.com/twitter/robot.png?v=12)\n\n_[**Disclaimer:** This was an AI assisted response powered by Mattermost AI. Were any of the above suggestions inaccurate? **Let us know by replying to this comment!**]_",
+                "timestamp": "2023-11-15T03:45:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/sort-unread-messages-according-to-recency/7736",
+        "thread": [
+            {
+                "user_name": "ahmaddanial",
+                "message_content": "**Problem Definition**\n\n  * The current behavior of the [Unread Message Indicator](https://docs.mattermost.com/help/getting-started/configuring-notifications.html#unread-messages-indicator) shows the unread messages in an alphabetical order by default regardless of the timing when the messages are received\n  * This can potentially cause an issue when a user is communicating with multiple users / channels at a time, not knowing which 1-1 / channel has the most recent unread message and which one to respond to first\n\n\n\n**Suggested Solution**\n\nPropose a new unread message indicator _feature_ that allow users to configure it to be sorted **alphabetically** or based on **recency**",
+                "timestamp": "2019-07-23T04:47:00Z"
+            },
+            {
+                "user_name": "nommaz",
+                "message_content": "Couldnt agree more. I am surprised this hasnt been picked up in all these years. I keep losing messages everyday",
+                "timestamp": "2023-11-10T03:58:00Z"
+            },
+            {
+                "user_name": "agnivade",
+                "message_content": "Settings \u2192 Sidebar \u2192 Group unread channels separately\n\nshould always group unread channels by recency.",
+                "timestamp": "2023-11-10T07:33:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/users-missing-ability-to-create-statistics/17227",
+        "thread": [
+            {
+                "user_name": "stevns",
+                "message_content": "Some month back users were offered to create statistics or ranking on their chat behaviour in the Desktop app. This feature seems to be gone and some folks are missing it. I cannot find it myself as well on the UI or in the 'Deprecated configuration settings' section of the documentation. Any idea?\n\nWe are have self hosted Mattermost 8.1.3, DB schema ver 113 and a Postgres DB.\n\nThank you!",
+                "timestamp": "2023-11-06T10:47:00Z"
+            },
+            {
+                "user_name": "john.combs",
+                "message_content": "Hello Stevns,\n\nWelcome back to the Mattermost community forums, it's been a while and we're certainly glad to have you back!\n\nI understand your concern. You're inquiring about the feature that once enabled users to create statistics or rankings based on their chat behaviour in the Desktop application, which appears to be unavailable now.\n\nFirstly, my apologies for the inconvenience. Generally, features are deprecated for various reasons, such as low adoption, better alternatives available, or to make way for new enhancements.\n\nCurrently, I'm not able to provide an immediate answer to your question about this specific functionality. But rest assured, I will consult with our team regarding this matter and post back as soon as I have more information to share.\n\nAlso, I will check if we have plans to resurrect this functionality in the future, or if there is an alternative already available. We appreciate your patience in this regard.\n\nRemember, we are always here to help you with any of your Mattermost queries. Don't hesitate to reach out at any time. Your continued support for and participation in our Mattermost community is greatly valuable to us.\n\nStay tuned for updates!\n\nBest Regards,\n~Mattermost AI Assistant",
+                "timestamp": "2023-11-08T02:13:00Z"
+            },
+            {
+                "user_name": "stevns",
+                "message_content": "Thank you so much. I'm fine with that.\nHave a great day!\nCheers\nstevns",
+                "timestamp": "2023-11-08T08:20:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/zero-trust-enabled-mattermost/17177",
+        "thread": [
+            {
+                "user_name": "openclint",
+                "message_content": "Hi all,\n\nI work on an totally free and open source project that's all about bringing the concepts of zero trust into applications called openziti (check it out if you're interested). Anyway, we self-host Mattermost and use it as our internal chat application. We are able to access the chat app safely and securely without needing to have Mattermost exposed to the internet at all, using an OpenZiti overaly network (also self-hostable).\n\nAnyway, I was on the community server talking to a MM person and they recommend I toss this idea out into this feedback forum for input.\n\nThe idea would be to embed zero trust directly into Mattermost, making it capable of being accessed from anywhere securely but through application embedded zero trust (there would be no need for some kind of proxying port or 'agent' as is always the case). You'd just download Mattermost, **optionally** join it to an OpenZiti overlay network and you'd be off an running.\n\nI'm happy to discuss the idea here if there's any interest. I know selfishly, I'd love to be able to have our own Mattermost instance protected by end to end encryption and know exactly who is able to access the server in this way.\n\nI'm wondering if there are any other security-conscious people out there that think this is a good (or bad) idea.\n\nThanks!",
+                "timestamp": "2023-10-30T13:28:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/can-i-remove-the-add-channels-button/16758",
+        "thread": [
+            {
+                "user_name": "VincentVegas",
+                "message_content": "Since some update, there is a button \"add channels\". Can I remove that button?\n\nRegards,\nThomas",
+                "timestamp": "2023-08-30T08:36:00Z"
+            },
+            {
+                "user_name": "john.combs",
+                "message_content": "Heya Thomas! As far as I know, the \"Add Channels\" button is hard coded in and cannot be directly removed or hidden within the user interface. Rest assured, I'll make sure this feedback finds its way to the team for you!",
+                "timestamp": "2023-09-07T00:43:00Z"
+            },
+            {
+                "user_name": "Thenend",
+                "message_content": "In my case, either removing it or creating a color category specifically for it would work. My problem is that it shares the color with the \"Sidebar Unread Text\" and it looks too much as a channel with unread messages so it calls too much for my attention",
+                "timestamp": "2023-10-09T09:16:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/a-way-for-a-team-member-to-block-ignore-another-member/16994",
+        "thread": [
+            {
+                "user_name": "dillfrescott",
+                "message_content": "This might be useful when using Mattermost in a more public manner, where a user can block or ignore another user from being able to DM/call them or mention them in a channel.",
+                "timestamp": "2023-10-02T18:01:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/is-it-really-not-possible-to-edit-comments-on-cards/16695",
+        "thread": [
+            {
+                "user_name": "robredpath",
+                "message_content": "I've recently moved to MM Boards from Trello and I (unsurprisingly) made a typo when leaving a comment recently. I was surprised that the only option available in the three-dots menu was to Delete my comment, rather than any sort of way to edit it.\n\nIs that an option that I can ask an admin to enable or is it just\u2026not supported?",
+                "timestamp": "2023-08-18T16:17:00Z"
+            },
+            {
+                "user_name": "john.combs",
+                "message_content": "Heya Rob! Sorry for the trouble there. As far as I know, editing comments on boards just isn't supported currently. Once a comment is posted, it cannot be edited. The only available option is to delete the comment and repost a corrected version if needed.\n\nRest assured, the design team does actively monitor these forums on a regular basis, and your feedback will certainly be heard & taken into consideration soon if it hasn't already.",
+                "timestamp": "2023-09-07T00:40:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/channe-markings/16649",
+        "thread": [
+            {
+                "user_name": "cmeisel",
+                "message_content": "Hi,\nI am looking for a solution to a problem we have. We have many channels in our org and we also have a special setup where every customer that we have will get a MM channel in which we discuss things about them. From zendesk tickets being pushed there to tech discussions, feature request discussions, etc.\nWhat I try to find is a solution to give somebody who logs into MM an easy way to see all account that are currently in a support escalation (not an open ticket but an actual escalation/emergency. I was hoping to find a way to give the channel a temp animated fire icon or to do something that indicates, ok, this channel is an escalation. But so far I have not found any way to do something like this.\nAny feedback would be appreciated.\n\nthanks\n\nclaus",
+                "timestamp": "2023-08-11T19:27:00Z"
+            },
+            {
+                "user_name": "john.combs",
+                "message_content": "Hi Claus,\n\nWelcome to the Mattermost Community Forums, and thank you for reaching out!\n\nIt sounds like you're looking for a way to visually indicate when a channel is in an escalated state or requires urgent attention. While Mattermost doesn't have a built-in feature for animated icons or specific indicators for escalation channels, there are a few alternative approaches you can consider:\n\n1. Channel Naming Convention: You can establish a naming convention for escalation channels, such as prefixing the channel name with \"[Escalation]\" or using specific keywords. This way, users can quickly identify which channels are related to escalations.\n2. Channel Topic: Utilize the channel topic to provide a brief description or status update for the escalation channels. You can update the topic to reflect the current state of the escalation, such as \"URGENT - Escalation in progress\" or \"RESOLVED - Escalation completed.\"\n3. Channel Header Messages: Consider using the Channel Header plugin to display important information or status updates at the top of the channel. You can use this to provide a visual indication or message specific to escalation channels.\n\nThese approaches can help users quickly identify escalation channels and understand their status. Additionally, you can customize the Mattermost interface by developing custom plugins or using the Mattermost API to create more advanced features or visual indicators.\n\nI hope this helps! Let me know if you have any further questions or if there's anything else I can assist you with.\n\nBest regards,\n~Matterbot 2.0 ![:robot:](https://emoji.discourse-cdn.com/twitter/robot.png?v=12)\n\n_[**Disclaimer:** This is a new AI response feature we're testing powered by ChatGPT. Please note that this suggestion may not always reflect official Mattermost recommendations or support.\nWere any of the above suggestions inaccurate? **Let us know by replying to this comment!**]_",
+                "timestamp": "2023-08-16T22:53:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/difficult-to-understand-end-user-slash-commands/16613",
+        "thread": [
+            {
+                "user_name": "it33_mattermost",
+                "message_content": "Expected:\n\n* Ability to understand Slash command feature from input box\n\nObserved:\n\n* No ability to understand Slash command feature from input box\n\nImpact:\n\n* There's no easy way for an end user to understand how to use the slash command or markdown formatting features from the input box. This is significant because there's a ton of power in slash commands, and if it's not obvious how to get to end user help, there's a very low probability the majority of users will understand the value and potential of the system.\n\nExamples of possible solutions:\n\n* Link to end user documentation, either in-product or on the web,\n* Enable slash command help to have longer descriptions, accessible using on_hover in the menu description, or in auto-complete,\n\nScreenshot:\n\n[Image of Mattermost input box]\n\nNote:\n\nThere are potentially internal debates on this topic that I'll aim to anticipate and address here:\n\n1 - End users may be on an old version of Mattermost and end user help may be out-of-date\n\n* The core end user help used to ship as part of the product, and be version specific. It doesn't have to be complete, but it should be available.\n\n2 - Maintaining documentation on end user features in the product is a lot of work\n\n* The end user documentation should be prioritized with other investments. The context here is that if end users don't have a way to easily understand the features, there's no value in the features.\n\n3 - The system should be intuitive and not require end user documentation.\n\n* It makes sense to go as far as we can on good design, however there's no way an end user can figure out markdown or our slash command system without a link to documentation.\n\n4 - Slash command documentation doesn't include custom commands\n\n* We should make it easier to extend the documentation for custom commands created by customers.",
+                "timestamp": "2023-08-05T13:45:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/trial-has-ended/16558",
+        "thread": [
+            {
+                "user_name": "bcaillat",
+                "message_content": "Hello,\nWhen trying to log into our space, we are getting an error \"Your trial has ended\", \"Your trial has ended and your workspace has been deleted\".\nI imagine this is related to [Cloud Free deprecation](https://forum.mattermost.com/t/cloud-free-deprecation/15802/1)\n\nWe had some important data in this space; would it be possible to get an archive of the communications? Or get access for a day so we can backup everything?\n\nThank you!",
+                "timestamp": "2023-07-30T21:48:00Z"
+            },
+            {
+                "user_name": "john.pm",
+                "message_content": "Hi [@bcaillat](/u/bcaillat) . You got it right that \"Your trial has ended and your workspace has been deleted\" is related to the Cloud Free deprecation.\n\nThe language was due to the fact that as of April 27, 2023, we stopped offering Cloud Free to new users as we switched to a 30-day trial offering.\n\nWe're rolling out a fix to correct the language to make it less confusing, so we appreciate you bringing it up.\n\nRegarding your data, we're unfortunately no longer able to restore your workspace past July 27, 2023, which is when we stopped supporting Cloud Free for users who created a workspace before April 27, 2023.\n\nWe had realized that Cloud Free users needed extra time to navigate our product changes, so we had communicated this starting on April 27 (90 days) via multiple emails and in-product notices.",
+                "timestamp": "2023-07-31T18:45:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/self-hosted-notification-question/16455",
+        "thread": [
+            {
+                "user_name": "anonymous4519576",
+                "message_content": "Not sure if this is the right forum to put this in, feel free to move it if it isnt.\n\nIs is possible to disable the message content from being sent in the push notifications using the self hosted notification server? For example when a user receives a push, the content will just say \"You've received a message\" or something similar",
+                "timestamp": "2023-07-20T22:04:00Z"
+            },
+            {
+                "user_name": "anonymous4519576",
+                "message_content": "would changing [these lines](https://github.com/mattermost/mattermost-push-proxy/blob/master/server/apple_notification_server.go#L150-L151) do the trick? ([android lines](https://github.com/mattermost/mattermost-push-proxy/blob/master/server/android_notification_server.go#L68))",
+                "timestamp": "2023-07-20T22:12:00Z"
+            },
+            {
+                "user_name": "jprusch1",
+                "message_content": "Hi,  \nyou might want to read:\n\nhttps://docs.mattermost.com/deploy/mobile-hpns.html\n\nand on content in push messages:\n\nhttps://docs.mattermost.com/configure/site-configuration-settings.html#push-notification-contents",
+                "timestamp": "2023-07-31T07:01:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/after-adding-a-channel-header-and-channel-purpose-the-context-for-each-field-is-lost-they-look-like-random-text-in-the-sidebar-with-not-context-on-what-the-metadata-is-used-for/16530",
+        "thread": [
+            {
+                "user_name": "it33_mattermost",
+                "message_content": "Expected: After adding a Channel Header and Channel Purpose it remains clear which is which\n\nObserved: After adding a Channel Header and Channel Purpose the context for each field is lost\u2013they look like random text in the sidebar with not context on what the metadata is used for.\n\nBefore adding Channel Header and Channel Purpose\n\n[Image showing channel sidebar before adding header and purpose]\n\nAfter adding Channel Header and Channel Purpose\n\n[Image showing channel sidebar after adding header and purpose]",
+                "timestamp": "2023-07-27T19:33:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/zapier-integration-with-hacker-news-pushes-in-weird-characters/16529",
+        "thread": [
+            {
+                "user_name": "it33_mattermost",
+                "message_content": "[![image](https://global.discourse-cdn.com/business7/uploads/mattermost/optimized/2X/5/57f94a8a3e69844cb6afccf40ed54c04b1ea2612_2_343x500.png)image621\u00d7904 106 KB](https://global.discourse-cdn.com/business7/uploads/mattermost/original/2X/5/57f94a8a3e69844cb6afccf40ed54c04b1ea2612.png \"image\")",
+                "timestamp": "2023-07-27T19:28:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/potential-broken-windows/16429",
+        "thread": [
+            {
+                "user_name": "it33_mattermost",
+                "message_content": "Starting a thread about potential \"broken windows\" in the Mattermost experience.\n\nThese are fit and finish issues where we could potentially do a better job. When the number of fit and finish issues is too high, we get a \"broken window effect\" like a building where there are so many broken windows, people don't notice when more windows are broken.\n\nBy fixing the issues\u2013fixing all the broken windows\u2013we get a nice looking building and if a new window is broken it's noticed and it's fixed more quickly.",
+                "timestamp": "2023-07-18T15:37:00Z"
+            },
+            {
+                "user_name": "it33_mattermost",
+                "message_content": "@john.combs can you create a new topic \"Feedback > Broken Windows\" to file this topic? From there we can have community post potential broken windows we can discuss and address\u2013including opening up tickets for community to contribute.",
+                "timestamp": "2023-07-18T15:42:00Z"
+            },
+            {
+                "user_name": "john.combs",
+                "message_content": "Sure thing, @it33_mattermost! New sub-category is now live under the \"Feedback\" parent category here: Broken Windows - Mattermost Discussion Forums",
+                "timestamp": "2023-07-18T23:17:00Z"
+            },
+            {
+                "user_name": "it33_mattermost",
+                "message_content": "Thanks @john.combs! Actually, could we tweak it to \"Potential Broken Windows\"? Just realize softening the wording might make this a little more like a question, and encourage engagement, rather than an opinion forum.",
+                "timestamp": "2023-07-26T15:23:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/in-compact-mode-plug-ins-dont-seem-very-compact/16521",
+        "thread": [
+            {
+                "user_name": "it33_mattermost",
+                "message_content": "In \"Compact Mode\" the Calls feature doesn't have a compact view for posts in the channel.\n\n[Image showing non-compact view of Calls feature in Compact Mode]",
+                "timestamp": "2023-07-26T15:22:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/emoji-doesnt-render-in-email-notification-message/16431",
+        "thread": [
+            {
+                "user_name": "it33_mattermost",
+                "message_content": "Expected: When an email notification about a message is received emojis are rendered\n\nObserved: Emojis aren't rendered in email notifications\n\n![image](https://global.discourse-cdn.com/business7/uploads/mattermost/original/2X/e/eee58f2f8fbce16a2656f89af1882f5604fda279.png)\n\nThis might be a P4 priority, but it is a broken window, so perhaps a good opportunity to kick off a new `Feedback > Broken Window` sub-category,",
+                "timestamp": "2023-07-18T15:47:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/gfycat-integration-replacement/16350",
+        "thread": [
+            {
+                "user_name": "nemo",
+                "message_content": "With Gfycat shuttering on September 1st, are there plans to provide integration with a different GIF provider? I'm not sure I can be productive at work with out memes.",
+                "timestamp": "2023-07-05T17:10:00Z"
+            },
+            {
+                "user_name": "agriesser",
+                "message_content": "Hi nemo and welcome to the Mattermost forums!\n\nMattermost is currently evaluating alternatives, you can follow this process here:\nhttps://mattermost.atlassian.net/browse/MM-53503",
+                "timestamp": "2023-07-06T04:05:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/pounce-feature/16295",
+        "thread": [
+            {
+                "user_name": "fallingrock",
+                "message_content": "I'd like to have the ability to tag a user so that I'm alerted when they come online \u2026 so I can 'pounce' on them. \ud83d\ude42",
+                "timestamp": "2023-06-28T13:17:00Z"
+            },
+            {
+                "user_name": "agriesser",
+                "message_content": "Hi David and welcome to the Mattermost forums!\n\nRight now, such a feature is not available, but it's actually very easy to script something like that, because you can get the online status of a user using the API and if you have that running as a cronjob regularly, it could notify you (also via Mattermost using a webhook or a direct message from a bot account) that this user now is online.",
+                "timestamp": "2023-06-29T05:16:00Z"
+            },
+            {
+                "user_name": "fallingrock",
+                "message_content": "I'm just a user of the mattermost server \u2026 I have no authority run scripts, setup cron jobs, or use webhooks.\n\nThat's why I would like the capability in the desktop app.\n\ndavid",
+                "timestamp": "2023-06-29T22:38:00Z"
+            },
+            {
+                "user_name": "agriesser",
+                "message_content": "There's a separate productboard for feature suggestions, please post this request there:\n\nhttps://mattermost.com/suggestions\n\nUnfortunately, feature requests are not being monitored by the staff here (at least that's my assumption based on the few months I'm online here).",
+                "timestamp": "2023-06-30T04:02:00Z"
+            },
+            {
+                "user_name": "fallingrock",
+                "message_content": "I've logged a request.\n\nThanks",
+                "timestamp": "2023-07-01T17:20:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/folder-and-files/16185",
+        "thread": [
+            {
+                "user_name": "Darkland",
+                "message_content": "As far as I have used and seen, there is no folder structure. Wouldn't it be nice to create folders in the document upload fields?",
+                "timestamp": "2023-06-14T09:18:00Z"
+            },
+            {
+                "user_name": "agriesser",
+                "message_content": "Can you elaborate on that? I'm not sure I understand - where do you want to see a folder structure?",
+                "timestamp": "2023-06-15T03:24:00Z"
+            },
+            {
+                "user_name": "Darkland",
+                "message_content": "To express it more clearly, creating a folder in the Files area inside the created channels.\n\nSimple \"Folder\" / Similar programs has that future. Imagine that you can create a folder. ![:partying_face:](https://emoji.discourse-cdn.com/twitter/partying_face.png?v=12)\n\n  * Permission to access folder\n  * See who created the folder\n  * Allowing who has access",
+                "timestamp": "2023-06-15T05:41:00Z"
+            },
+            {
+                "user_name": "agriesser",
+                "message_content": "The \"files area\" inside a channel is just a search result of all files posted in the channel, it's not a way to organize the files since the're attached to the posts in the channel and therefore cannot be grouped together or put into folders per channel. The search result might also contain files from different channels, depending on the search query, so I think you're maybe confusing the search results view here with some kind of a filesystem where you can organize uploaded files.",
+                "timestamp": "2023-06-16T04:39:00Z"
+            },
+            {
+                "user_name": "Darkland",
+                "message_content": "You are right about this, but if we talk about the chat area, I think it is debatable how correct the created structure is. I think that the chat area is a structure that works with the logic of Whatsapp, which is already successful enough in this regard. In an area where hundreds of documents are shared, nothing has been thought about document archiving.\n\nFor example, in a channel with 30 people, you cannot share a document that you want 15 people to see. You have to go and create a group and do that. This brings to mind the WhatsApp application. Of course, the application is not limited to this, but when the whole structure is built on the chat area, we are looking for a little more detail.",
+                "timestamp": "2023-06-16T07:08:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/how-do-i-skip-the-landing-page-and-go-directly-to-the-login-page/15973",
+        "thread": [
+            {
+                "user_name": "MattermostDocs",
+                "message_content": "### [Developer setup](https://developers.mattermost.com/contribute/developer-setup/)\n\nFind out how to set up your development environment for building, running, and testing Mattermost.",
+                "timestamp": "2023-05-01T12:00:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/reset-password-link-misleading/16193",
+        "thread": [
+            {
+                "user_name": "TI-Admin",
+                "message_content": "It would be nice if the 'Reset Password' Link at the login page is disabled in case only LDAP authentication is enabled. Often users at our faculty try to use that link to no avail of course.",
+                "timestamp": "2023-06-14T18:35:00Z"
+            },
+            {
+                "user_name": "agriesser",
+                "message_content": "I second that, never recognized that this is not the case\u2026\n@amy.blais could you create a ticket for that or do you know if there already is one?",
+                "timestamp": "2023-06-15T03:28:00Z"
+            },
+            {
+                "user_name": "amy.blais",
+                "message_content": "What Mattermost server version are you currently on?",
+                "timestamp": "2023-06-15T13:17:00Z"
+            },
+            {
+                "user_name": "TI-Admin",
+                "message_content": "Using v7.10.2 with Email Account login and creation disabled. Only LDAP is allowed.",
+                "timestamp": "2023-06-15T15:00:00Z"
+            },
+            {
+                "user_name": "amy.blais",
+                "message_content": "Thank you, opened [MM-53204] - Mattermost.",
+                "timestamp": "2023-06-15T15:13:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/has-mattermost-forum-functionality/16152",
+        "thread": [
+            {
+                "user_name": "hiramegl",
+                "message_content": "Hi! Sorry if I make a stupid question. I wonder if Mattermost includes forum functionality, just like this very forum. I'm not talking about integrating with other product like Discourse, but actually including it in the Mattermost GUI. Thanks for your help! Best regards /Hiram",
+                "timestamp": "2023-06-13T06:51:00Z"
+            },
+            {
+                "user_name": "agriesser",
+                "message_content": "Hi @hiramegl and welcome to the Mattermost forums! Unfortunately, Mattermost does not offer such a functionality, sorry.",
+                "timestamp": "2023-06-14T03:41:00Z"
+            },
+            {
+                "user_name": "hiramegl",
+                "message_content": "Thanks for the answer Alexander! Best regards, /Hiram",
+                "timestamp": "2023-06-15T05:16:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/decision-making-tools-in-mattermost/15940",
+        "thread": [
+            {
+                "user_name": "samuk",
+                "message_content": "Does anything like [GitHub - policykit/policykit: Toolkit for building governance in your online community](https://github.com/policykit/policykit#policykit) exist for Mattermost?\n\nI asked them about Mattermost here: [Mattermost integration \u00b7 Issue #596 \u00b7 policykit/policykit \u00b7 GitHub](https://github.com/policykit/policykit/issues/596)",
+                "timestamp": "2023-05-18T14:39:00Z"
+            },
+            {
+                "user_name": "samuk",
+                "message_content": "Looks like there is some basic Loomio integration [Mattermost - Loomio Help](https://help.loomio.com/en/user_manual/groups/integrations/mattermost/index.html)",
+                "timestamp": "2023-05-18T14:42:00Z"
+            },
+            {
+                "user_name": "agriesser",
+                "message_content": "Hi [@samuk](/u/samuk) ,\n\nI wouldn't call that an integration, it's just a way of receiving notifications from other systems by setting up an incoming webhook. I'm not exactly sure what you're trying to achieve here - as someone already pointed out on GitHub, there's a poll plugin that let's you create polls and everyone in the channel where the poll has been created can vote and after some time, the poll is ended and the votes are counted and displayed.",
+                "timestamp": "2023-05-20T09:07:00Z"
+            },
+            {
+                "user_name": "samuk",
+                "message_content": "The poll function is a bit simplistic for my needs (we don't use simple majority vote)\n\nI guess I'll stick with the Loomio functionality.",
+                "timestamp": "2023-05-28T07:44:00Z"
+            },
+            {
+                "user_name": "agriesser",
+                "message_content": "Alright, unfortunately there is no other plugin available AFAIK.",
+                "timestamp": "2023-06-09T04:30:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/block-kit-feature/16036",
+        "thread": [
+            {
+                "user_name": "Slack",
+                "message_content": "Block Kit\n\nA clean and consistent UI framework for Slack apps",
+                "timestamp": "2023-05-01T12:00:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/voice-calls-cannot-be-connected-in-the-desktop-version-v7-10-2/16026",
+        "thread": [
+            {
+                "user_name": "Hermit",
+                "message_content": "version:server 7.10.2 + win11 + desktop 5.3.1\n\n- Voice calls cannot be connected in the desktop version.\n\n[Image: start call]\n\n[Image: desktop]",
+                "timestamp": "2023-05-27T01:16:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/click-on-the-left-menu-the-label-name-is-not-found-v7-10-2/16025",
+        "thread": [
+            {
+                "user_name": "Hermit",
+                "message_content": "version: 7.10.2\n\n* Click on the left menu, the label name is not found.\n\n[Image: ant-web949\u00d7537 48.3 KB]",
+                "timestamp": "2023-05-27T01:13:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/you-are-advised-to-add-a-local-translation-interface/15989",
+        "thread": [
+            {
+                "user_name": "Hermit",
+                "message_content": "You are advised to add a local translation interface.\n\nSimilar to the rocket.chat translation interface, but with some improvements, **key values can be translated without underscores or hyphens**, which makes it easier for other countries to search for English content.\n\n[Image of translation interface]\n\n```json\n{\n    \"Start call\": \"...\",\n    \"view plans\": \"...\",\n    \"Apps\": \"...\",\n    \"Calls\": \"...\",\n    \"Channel Export\": \"...\",\n    \"Let's get up and running.\": \"...\"\n}\n```\n\nTranslation has punctuation, **quotes, Spaces, definitely can't use json format**, or make a function library, make a set of rules for the system to convert, can't let the user manual conversion, more reasonable, or use i18n.",
+                "timestamp": "2023-05-23T15:17:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/it-is-recommended-that-administrators-add-members/15988",
+        "thread": [
+            {
+                "user_name": "Hermit",
+                "message_content": "It is recommended that administrators be able to add members, which is very useful when disabling user registration, like rocket.chat has the ability to create members.",
+                "timestamp": "2023-05-23T15:04:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/accessibility-option-freeze-or-disable-some-animated-graphics/15839",
+        "thread": [
+            {
+                "user_name": "arthurzenika",
+                "message_content": "This is an idea for the mattermost desktop client but is probably applicable to other clients.\n\nIt would be nice to provide the option for a user to disable or freeze animated items in the interface.\n\nThere are various places where other users can put animated elements in mattermost, in the content, in a room description, in the reactions through animated emojis, and even in the user status again with animated emojis. This can be distracting for users that want to have the mattermost client open on a second screen for example. I think this is an accessibility feature and would be important for people with attention difficulties.",
+                "timestamp": "2023-05-04T13:53:00Z"
+            },
+            {
+                "user_name": "agriesser",
+                "message_content": "Hi @arthurzenika and welcome to the Mattermost forums!\n\nI'd also love to see a feature like that, I will never understand why some people use animated emojis for their custom status :-/ Not sure if anything like that is being worked on - @amy.blais do you know, maybe?",
+                "timestamp": "2023-05-22T07:55:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/mark-all-messages-read-in-a-channel-or-team/15846",
+        "thread": [
+            {
+                "user_name": "haggerty",
+                "message_content": "It would be convenient to have a way to mark all messages in a channel \"read\" so they don't appear as waiting, and the new message notification badge goes away. I subscribe to a lot of channels in a lot of teams (thanks for the nice product!), and if I go away for a few days, there are lots of messages in many of them. It would be convenient to mark them all read, get rid of the notification of unread messages, and start fresh. I swear I'll go back and read the old messages;) That way, new messages will be truly \"new\" and the notification will mean something other than I'm slacking off. The Thunderbird mailer has such a feature, that allows you to \" Mark folder read\" as do other mailers (Roundcube, e.g.) for similar reasons",
+                "timestamp": "2023-05-06T18:22:00Z"
+            },
+            {
+                "user_name": "agriesser",
+                "message_content": "Hi @haggerty and welcome to the Mattermost forums!\n\nYou can do that in the channel menu on a per-channel basis:\n\n[Image showing channel menu with 'Mark as Read' option]",
+                "timestamp": "2023-05-22T05:13:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/channel-max-size-of-messages-character/15907",
+        "thread": [
+            {
+                "user_name": "ch-devhost",
+                "message_content": "hey,\n\nI know most people always want more characters in a message, like upgrading from 4000 to 16383. But why isn't there a feature I can use to give a channel a maximum message length? When using a channel for message updates with /command hooks, I'd like to be able to set a maximum size of 100 characters or so.",
+                "timestamp": "2023-05-13T10:26:00Z"
+            },
+            {
+                "user_name": "agriesser",
+                "message_content": "Hi @ch-devhost and welcome to the Mattermost forums!\n\nSo you want to see an option that allows you to specify limits on a per-channel basis or for the whole server?",
+                "timestamp": "2023-05-20T10:21:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/e2ee-end-to-end-encrypt-support/15524",
+        "thread": [
+            {
+                "user_name": "Rocket.Chat",
+                "message_content": "E2E Encryption\n\nPrevent third parties from accessing your data while its transferred from one end system to another",
+                "timestamp": "2023-05-01T12:00:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/improved-navigation-of-mattermost-boards/15822",
+        "thread": [
+            {
+                "user_name": "asaad",
+                "message_content": "**We need your feedback on improving the navigation between products! ![:zap:]**\n\nIt'll probably only take 2-3 minutes ![:stopwatch:] and your input will help us improve Mattermost for you.\n\n**Click the link below to participate:**\n<https://nimble.li/wdjl7y93>\n\nIf the prototype takes some time to load, please give it a few seconds or so. We have noticed that it takes a while to load sometimes.\n\nThank you for helping us make Mattermost even better! ![:blue_heart:]",
+                "timestamp": "2023-05-02T20:51:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/the-most-creative-ways-to-use-mattermost/15742",
+        "thread": [
+            {
+                "user_name": "John Combs",
+                "message_content": "Hey Mattermosters! Combs here. As a new moderator on this forum, I'm really curious to hear about some of the creative ways your team is using Mattermost. Whether you're using it to facilitate remote collaboration, streamline project management, or enhance customer support, we want to know!\n\nPerhaps you've found unique ways to leverage its integrations or automate workflows with bots. Whatever it may be, we encourage you to share your experiences and inspire others in the community to think outside the box with Mattermost.\n\nYour insights will not only help us better understand the diverse use cases of the platform, but also foster a sense of collaboration and knowledge-sharing within the community. Thank you in advance for your contributions, and I'm looking forward to getting to know y'all better!",
+                "timestamp": "2023-04-21T19:23:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/reminder-free-time-entry/15694",
+        "thread": [
+            {
+                "user_name": "mmix",
+                "message_content": "Hi,\n\nI like the new reminder feature. However, I do not understand why its limited to increments of 30 minutes, making it impossible to set reminders for 15, 20 or 45 minutes. Custom time selection is a dropdown of 30min increments instead of a proper time editor.\n\nCan you please make this more usable?",
+                "timestamp": "2023-04-17T11:03:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/synchronizing-calendar-with-nextcloud-on-focalboard/15649",
+        "thread": [
+            {
+                "user_name": "chaeyan",
+                "message_content": "If there was a way we could synchronize the calendar to Nextcloud on Focalboard, that would be really awesome.",
+                "timestamp": "2023-04-11T22:40:00Z"
+            },
+            {
+                "user_name": "agriesser",
+                "message_content": "Hi @chaeyan and welcome to the Mattermost forums!\n\nI'm unfortunately not aware of any plans to support that in the near future, but I suggest to raise your voice in Mattermost's ProductBoard. If your idea gets enough votes, we might see it in the near future.",
+                "timestamp": "2023-04-14T03:52:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/allow-for-deletion-or-update-of-attachments-in-message-when-editing/15602",
+        "thread": [
+            {
+                "user_name": "mxa",
+                "message_content": "When editing a message which has documents or images attached, I would expect a small x at every attachment so I can delete it. Example: I started a ling thread about a document, later I fixed some errors in it and I want to update the documents in the message, just like I can edit the message itself. Right now I only have the possibility to delete the whole message and make a new one with the updated documents, but this will make the documents appear at the end of the thread, not at the beginning.",
+                "timestamp": "2023-04-06T09:07:00Z"
+            },
+            {
+                "user_name": "mxa",
+                "message_content": "BTW, the same issue is present in Slack, but you don't need to clone the shortcomings of Slack.",
+                "timestamp": "2023-04-06T09:08:00Z"
+            },
+            {
+                "user_name": "agriesser",
+                "message_content": "Hi,\n\nthis feature is on the road map for the 8.0 release, so please stay tuned!",
+                "timestamp": "2023-04-07T07:30:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/mattermost-vs-systemd-sandboxing-seccomp-systemcallfilter/15402",
+        "thread": [
+            {
+                "user_name": "TwizzyDizzy",
+                "message_content": "Howdee, folks!\n\nI have made it a good practice of mine to use systemd sandboxing features for my systemd units.\n\nThis was my systemd unit for Mattermost up until `7.8.1`:\n\n[systemd unit configuration details]\n\nWhen upgrading my instance from `7.8.1` to `7.9.0`, Mattermost didn't start. Kernel logs indicated an issue with a syscall:\n\n[kernel log details]\n\nIt seems starting with `7.9.0`, Mattermost needs the @resources system call set. Modifying my unit accordingly solved the issue:\n\n[systemd unit modification details]\n\nNow\u2026 I do realize that sandboxing features are very likely nothing you currently test for, when releasing Mattermost. That being said, I was wondering whether this could somehow be made part of your internal testing, as, from a technical perspective, this was a change that has not been mentioned in the changelogs.\n\nI haven't yet seen a software doing that, so Mattermost is in good company there.\n\nBut maybe Mattermost wants to lead by example here, so I'd like you to consider making this part of the changelog in the future.\n\nHaving spent a few minutes thinking about that, I'm fairly certain it should be trivial to make this part of an automated testing pipeline.\n\nSince I assume that usually a Mattermost developer does not go about his/her daily business and suddenly decides \"Well, today I'm gonna introduce a new system call to Mattermost\", I think this is usually introduced by using some **Go** functionality that has not been used before, thus requiring a new set of system calls without the developer necessarily being aware of that.\n\nWell\u2026 that's it for my first post here :slight_smile: Happy to hear some feedback from people running or building Mattermost.\n\nCheers\nThomas",
+                "timestamp": "2023-03-16T14:59:00Z"
+            },
+            {
+                "user_name": "agriesser",
+                "message_content": "Hi Thomas and welcome to the Mattermost forums!\n\nThanks for this suggestion, I'll forward it to the developers. Intesting find, wondering if this change was really intentional or, as you suggested, a result of some library changes.",
+                "timestamp": "2023-03-17T05:06:00Z"
+            },
+            {
+                "user_name": "TwizzyDizzy",
+                "message_content": "Some additional information: the syscall(s) in question must be one or more of these: [systemd/seccomp-util.c at main \u00b7 systemd/systemd \u00b7 GitHub](https://github.com/systemd/systemd/blob/main/src/shared/seccomp-util.c#L786)\n\nAccording to Wikipedia, syscall 160 is `setrlimit`: [Liste der Linux-Systemaufrufe \u2013 Wikipedia](https://de.m.wikipedia.org/wiki/Liste_der_Linux-Systemaufrufe) (unfortunately only available in german).\n\nCheers\nThomas",
+                "timestamp": "2023-03-17T08:56:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/set-default-settings-for-new-users/12370",
+        "thread": [
+            {
+                "user_name": "nikkilocke",
+                "message_content": "We use the Mattermost API to create users.\n\nWe really need the default setting for email notifications for new users to be OFF, so they don't get emails. But we want users to be able to change it to on if they like.\n\nThe API login we use to create these users is not an admin.\n\nWe used to set notify_props: { email: false, comments: \"any\" } in the data passed to the user create call, and that worked. But it doesn't work now.\n\nA complete solution to this problem would be to allow the administrator to set **all** the default settings for users (a sort of template), so that all new users get the settings from the template, but can change them later.",
+                "timestamp": "2021-10-19T10:47:00Z"
+            },
+            {
+                "user_name": "brrrr66",
+                "message_content": "Hello,\nJust checking to see if there is any update on this feature request?\nWe would love to be able to do this as well.\n\nThanks",
+                "timestamp": "2023-03-15T15:06:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/display-two-or-more-attachments-side-by-side/15199",
+        "thread": [
+            {
+                "user_name": "moscito",
+                "message_content": "Dear All:\n\nIn slack, you can paste two pictures from the clipboard or through uploading and have them displayed side by side by default.\n\nIn MM, when you have one picture attachment it is displayed but if there is more than one attachment you see small icons that you have to click on to expand.\n\nIs there any way to make the behavior follow that of slack (all attachments displayed).\n\nbest wishes,\nBo-Yin",
+                "timestamp": "2023-02-26T03:13:00Z"
+            },
+            {
+                "user_name": "agriesser",
+                "message_content": "Hi @moscito and welcome to the Mattermost forums!\n\nThe best way to get your idea recognized is by using the Mattermost productboard at https://mattermost.com/suggestions. I'd recommend to post the idea there, if it gets enough upvotes, it will be realized!",
+                "timestamp": "2023-03-01T08:48:00Z"
+            }
+        ]
+    }
+]

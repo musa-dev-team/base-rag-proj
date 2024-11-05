@@ -1,0 +1,297 @@
+[
+    {
+        "url": "https://forum.mattermost.com/t/about-the-frequently-asked-questions-category/15",
+        "thread": [
+            {
+                "user_name": "it33",
+                "message_content": "Answers for all common problems & questions",
+                "timestamp": "2015-06-27T15:55:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/virtually-merge-multiple-mattermost-teams-into-one-view/18314",
+        "thread": [
+            {
+                "user_name": "honza-zidek",
+                "message_content": "I am a member of multiple teams. Many people from our organizations are members of all the teams, but some of them only of some. I never remember in which team they are and navigating through the UI is very cumbersome.\n\nIs it possible to \"merge\" the teams into **one single view** , where I would see _only one_ submenu `Favorites`, _only one_ submenu `Channels` and _only one_ submenu `Direct Messages`?\n\nI **don't** mean to [merge the _teams_](https://forum.mattermost.com/t/merge-2-teams-into-1-team/6825), just to visually merge each of the previous categories in the UI. I absolutely don't care about the teams, it's mostly disturbing, because our team membership is based rather on the company branches and external companies, and I don't know (and _don't care_) in which part of the company structure each person is. And many people (but not all) are members of all the teams.",
+                "timestamp": "2024-04-02T13:46:00Z"
+            },
+            {
+                "user_name": "TreyJohnson",
+                "message_content": "Please please implement this.",
+                "timestamp": "2024-06-28T16:17:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/connexion-mattermost-to-my-ad/18843",
+        "thread": [
+            {
+                "user_name": "Simplon",
+                "message_content": "Hello,\nI just installed Mattermost on an Ubuntu.\nI made the first connection with a login and I want to make the connection with my Active Directory but it does not work.\nI would like to point out that I took the free 30-day business edition\nCan you help me please ?",
+                "timestamp": "2024-06-18T16:07:00Z"
+            },
+            {
+                "user_name": "john.oliver",
+                "message_content": "Talk to an Expert | Mattermost will get you to the correct sales rep. AD/LDAP is supported in the paid versions. Professional provides user synch\u2026 allowing you to use a single group to manage Mattermost membership. Enterprise allows group synch, which lets you use multiple groups to manage team and channel membership.\n\nPricing | Mattermost shows all of the deltas.",
+                "timestamp": "2024-06-20T14:14:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/a-space-for-guest-users/18675",
+        "thread": [
+            {
+                "user_name": "mksa",
+                "message_content": "Hi,\nI just set up a server for mattermost with the intention of testing it out before rolling it out to my users.\n\nI need to have a space where I can interact with a few freelancers, such that they cannot interact with each other. Is there a way to set up something like this?\n\nCurrently in Slack I use external connections and 1:1 messages with them.",
+                "timestamp": "2024-05-25T19:30:00Z"
+            },
+            {
+                "user_name": "gdelia-pm",
+                "message_content": "Assuming pro/enterprise, you can create a channel for your communication that only you and them are a part of. Then add them as a guest user with just access to that channel.\nThe guest will be able to communicate in that channel, and would only be able to DM members of channels they are a part of.",
+                "timestamp": "2024-05-28T18:21:00Z"
+            },
+            {
+                "user_name": "gdelia-pm",
+                "message_content": "https://docs.mattermost.com/onboard/guest-accounts.html",
+                "timestamp": "2024-05-28T18:21:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/faq-how-do-i-fix-a-502-bad-gateway-error-when-trying-to-load-mattermost/18072",
+        "thread": [
+            {
+                "user_name": "John Combs",
+                "message_content": "**How do I fix a \"502 Bad Gateway\" error when trying to load Mattermost?**\n\nA **502 Bad Gateway error** in Mattermost means that whatever server your request was sent to on the way to retrieving the information you requested, likely your reverse proxy server, got an invalid response from a server it sent a request to in order to fulfill your request. Here are the steps you can take to troubleshoot this issue:\n\n1. **Check Server Status**: It might be a temporary issue with the server, so it's worth checking again after a few minutes.\n2. **Refresh Your Browser/Page**: Try refreshing the page (press F5 or ctrl + r). In many cases, a quick refresh can fix the problem\n3. **Clear Your Browser's Cache**: Outdated or corrupted files that are being stored by your browser could be causing this issue. Clearing your browser's cache might solve the problem.\n4. **DNS Issue**: This could be a DNS issue. Flushing your DNS cache might help.\n5. **Checking Server Logs**: Check your server logs, both on your Mattermost server and on any reverse proxy server you're using in front of it. They might contain important information about what's going wrong.\n6. **Configure the Reverse Proxy Correctly**: If you're using a reverse proxy server (like Nginx or Apache), ensure it's configured properly to work with Mattermost. You might be seeing this issue because of incorrect configuration.\n7. **Check with ISP/Hosting Provider**: If the problem persists, the issue might be with the Internet Service Provider or hosting service. Reach out to them for support.\n\nRemember, a 502 error is usually an issue on the server-side, so you might not be able to resolve it on your own. But you can certainly try these steps to see if the problem can be resolved.\n\nIf you're still having issues clearing your 502 error and logging into Mattermost, please post a new thread in our [Troubleshooting](https://forum.mattermost.com/c/trouble-shoot/16) forum with your Mattermost version number and issue summary.",
+                "timestamp": "2024-02-29T18:44:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/faq-does-mattermost-integrate-with-jumpcloud-for-saml-authentication/16572",
+        "thread": [
+            {
+                "user_name": "cwarnermm",
+                "message_content": "**Yes!**\n\nIn order to use JumpCloud as a SAML provider for Mattermost, you will need a few things:\n\n  * A Mattermost Professional or Enterprise licence (SAML integration is not available on the free version)\n  * Admin access to your Mattermost System Console\n  * Admin access to your JumpCloud environment\n\n\n\nYou will also need to make a note of your Mattermost URL.\n\nFor a complete walkthrough of setting up this integration, see the [Mattermost - JumpCloud Integration: A Step-by-Step Guide to SAML Authentication](https://m.youtube.com/watch?v=evXjZcSqvoE&ab_channel=Mattermost) video on YouTube, or follow the steps below.\n\n**Setting Up JumpCloud**  \nBefore you start, it is helpful to already have one or more [User Groups](https://jumpcloud.com/support/get-started-user-groups) in JumpCloud, with [users](https://jumpcloud.com/support/get-started-users) already assigned. This will make life easier when you come to test the integration later.\n\nFrom the left-hand menu in JumpCloud, select \"SSO\" (under \"USER AUTHENTICATION\"):  \n![jumpcloud-sso](https://global.discourse-cdn.com/business7/uploads/mattermost/original/2X/d/d7975c8bf39f965dd1c8caab6dcf41bf86eaf59c.png)\n\nIf you don't currently have any SSO applications configured, you will see a \"Get Started\" button at the bottom of the screen:  \n![get-started](https://global.discourse-cdn.com/business7/uploads/mattermost/original/2X/1/1565716a52dc03dcc60050d1214252f1660662ac.png)\n\nOtherwise, there will be a button labelled \"Add New Application\" in the upper left of the main screen:  \n![add-new-app](https://global.discourse-cdn.com/business7/uploads/mattermost/original/2X/8/8b1f83686e67849df999b0256f8787937d4c975c.png)\n\nWhichever option you have, click the button to create a new SSO integration. From the next page, we need to select the \"Custom SAML App\" from the bottom of the screen:  \n![custom-saml-app](https://global.discourse-cdn.com/business7/uploads/mattermost/original/2X/d/d90ba11903e07e49cb191a245a6d275c5fbce9ac.png)\n\nGive this app a name using the \"Display Label\" field (we recommend calling it 'Mattermost' so that the purpose of the integration is clear). We can now switch to the SSO tab for the main configuration:  \n![sso-tab](https://global.discourse-cdn.com/business7/uploads/mattermost/original/2X/6/660dfcef4adeb3eec43c9b1dcce0973a362422cb.png)\n\nTowards the bottom of this page, there is a field where you can define your IDP URL. This is made up of a fixed portion (which may be different to the examples on this page) and a custom portion. The custom portion defaults to 'saml2', but may need to be changed if this is already in use within your environment.  \n![idp-url](https://global.discourse-cdn.com/business7/uploads/mattermost/original/2X/f/f266abc323736efe3c095e4dd00345caed593c68.png)\n\nWhatever you choose for the custom portion of this URL, make a note of the entire URL, as we'll need it as we progress.\n\nBack at the top of the page, there are fields for the **IdP Entity ID** and the **SP Entity ID**. The 'IdP Entity ID' is simply the 'IDP URL' that you just noted. The 'SP Entity ID' (SP stands for \"Service Provider\") is used to match with Mattermost. We recommend using the string: `mattermost`\n\nWe need to enter an **ACS URL** so that JumpCloud knows where to send SAML responses. This will be: `http(s)://<MATTERMOST_URL>/login/sso/saml`\n\nRemember to include the port number in your Mattermost URL, if you're not using the defaults of 80/443.\n\nScroll down to the bottom of the form, leaving everything set to the defaults. At the very bottom, there is a section titled 'Attributes'. This allows us to specify what fields in Mattermost will be called when we map them across to JumpCloud, the key ones being for the `email` and `username` fields. To keep things clear, we would advise using the same attribute names in both systems.\n\nTo do this, we need two entries, mapping `email` to `email`, and `username` to `username`.  \n![add-attribute](https://global.discourse-cdn.com/business7/uploads/mattermost/original/2X/b/b85345c7686ced5e187ab28915a78c5c61fafb61.png)\n\nBefore leaving the JumpCloud configuration, we recommend going to the \"User Groups\" tab at the top of the page and adding one or more user groups to this configuration. This will map users already, making testing easier.\n\nOnce complete, press the **activate** button at the lower right of the page.\n\nAfter activating and confirming, you will be presented with a notification in the upper right of the page giving you a link to download the certificate. We will require this when we configure Mattermost.\n\nBefore moving on, it would be helpful to copy the JumpCloud Metadata URL from the SSO tab, as we'll need this when we setup Mattermost:  \n![copy-metadata-url](https://global.discourse-cdn.com/business7/uploads/mattermost/original/2X/d/dd263f2d2fee7a1ae1d0fae95454d05a2cd1166a.png)\n\n**Setting Up Mattermost**  \nIn the Mattermost System Console, scroll down the left-hand navigation until you find **SAML 2.0** in the \"AUTHENTICATION\" section.  \n![mattermost-saml-20](https://global.discourse-cdn.com/business7/uploads/mattermost/original/2X/1/100e7fedba0c141ea7e65c17284cf166a43467f1.png)\n\nTo configure Mattermost to use JumpCloud's SAML, carry out the following steps:\n\n  * Enable the SAML section by setting **Enable Login With SAML 2.0** to **true**\n\n  * Paste the copied JumpCloud Metadata URL into the field labelled **Identity Provider Metadata URL**\n\n  * Within JumpCloud, we identified the **IDP URL**. Copy and paste this URL into both the **SAML SSO URL** and **Identity Provider Issuer URL** fields.\n\n  * Next we need to upload the certificate that we downloaded from JumpCloud. Note that the name of the file changes to `saml-idp.crt` after uploading.  \n![upload-cert](https://global.discourse-cdn.com/business7/uploads/mattermost/original/2X/0/084c6854eaf43ee51ace75ea503e0442eb2d26b8.png)\n\n  * The **Service Provider Identifier** field should match the entry used for the **SP Entity ID** field in JumpCloud. If you're following our guidelines, then this would be `mattermost`.\n\n  * By default, you will see that the **Enable Encryption** field is set to 'true'. This is not supported by JumpCloud, so **must** be set to 'false'.\n\n  * Towards the bottom of the page, we see the fields **Email Attribute** and **Username Attribute**. These should be configured to match the attributes set in JumpCloud\u2014in our case, we are using `email` and `username`.\n\n  * Finally, at the very bottom of the form, you can choose to set your **Login Button Text** to make it clear how users will be signing in. This will then show as the optional SAML option at the bottom of their login screen.",
+                "timestamp": "2023-08-01T14:26:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/faq-how-can-i-troubleshoot-mattermost-connection-issues/17333",
+        "thread": [
+            {
+                "user_name": "John Combs",
+                "message_content": "**Solving Connectivity Problems with Your Mattermost Server - A Comprehensive Guide**\n\nHaving connection issues with your Mattermost server? Start here!\n\n1. **Verify Server Status** Start by checking the status of your Mattermost server. If the server is down, it would be unable to accept new connections. Use the ping command to verify server status.\n\n2. **Check Mattermost Server Logs** The server logs can provide valuable insight into what might be causing connection issues. Make sure to verify these logs, and to look for any errors or warning messages that might suggest connection problems.\n\n3. **Assess Network Connectivity** Test your server's network connectivity and ensure there are no blocks or filters causing the issue. Use utilities like ping, traceroute, or similar depending on your OS.\n\n4. **Validate Server Configuration Settings** Incorrect server configuration can also cause connection problems. Verify your server configuration settings, particularly parameters related to connection and networking.\n\n5. **Consult Mattermost Troubleshooting Guide** The Mattermost Troubleshooting guide contains comprehensive troubleshooting advice and procedures.\n\nShould these steps not resolve your connectivity dilemmas, consider contributing a detailed post illustrating your issue on our active Mattermost Troubleshooting Forum. Our vibrant peer-to-peer community and Mattermost AI helpers are always on standby to deliver the guidance you require.",
+                "timestamp": "2023-11-16T20:31:00Z"
+            },
+            {
+                "user_name": "John Combs",
+                "message_content": "Was this troubleshooting FAQ helpful? Be sure to leave a \"\u2764\ufe0f\" on the post above!",
+                "timestamp": "2023-11-16T20:33:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/how-can-i-delete-a-channel-old-but-gold/16201",
+        "thread": [
+            {
+                "user_name": "Darkland",
+                "message_content": "I guess it has been asked many times. I couldn't find a solution even though I browsed many of them on the forum. Although I researched in detail, I could not figure out how to delete the created channel? Shouldn't this be very easily accessible? Starting a demo channel turns into a nightmare. Is there anyone who can help with this?",
+                "timestamp": "2023-06-15T09:05:00Z"
+            },
+            {
+                "user_name": "agriesser",
+                "message_content": "mmctl can do that:\n\n# mmctl --local channel delete --help\nPermanently delete some channels.\nPermanently deletes one or multiple channels along with all related information including posts from the database.\n\nUsage:\n  mmctl channel delete [channels] [flags]\n\nExamples:\n  channel delete myteam:mychannel\n\nFlags:\n      --confirm   Confirm you really want to delete the channel and a DB backup has been performed.\n  -h, --help      help for delete\n\nGlobal Flags:\n      --config string                path to the configuration file (default \"$XDG_CONFIG_HOME/mmctl/config\")\n      --disable-pager                disables paged output\n      --insecure-sha1-intermediate   allows to use insecure TLS protocols, such as SHA-1\n      --insecure-tls-version         allows to use TLS versions 1.0 and 1.1\n      --json                         the output format will be in json format\n      --local                        allows communicating with the server through a unix socket\n      --quiet                        prevent mmctl to generate output for the commands\n      --strict                       will only run commands if the mmctl version matches the server one\n      --suppress-warnings            disables printing warning messages",
+                "timestamp": "2023-06-16T04:26:00Z"
+            },
+            {
+                "user_name": "Darkland",
+                "message_content": "How will the end user do these to delete the channel?",
+                "timestamp": "2023-06-16T07:17:00Z"
+            },
+            {
+                "user_name": "agriesser",
+                "message_content": "The end user is not supposed to delete channels, they can only close, archive and leave channels.",
+                "timestamp": "2023-06-16T07:33:00Z"
+            },
+            {
+                "user_name": "Darkland",
+                "message_content": "I meant us as the end user. For example, a user whom I assigned as a channel manager cannot delete the channel or why can't I simply delete the channel I created incorrectly through the application??",
+                "timestamp": "2023-06-16T07:45:00Z"
+            },
+            {
+                "user_name": "agriesser",
+                "message_content": "I don't know the reasoning behind that, but there are separate permissions available to control channel deletion as you can see in the API docs:\n\nhttps://api.mattermost.com/#tag/channels/operation/DeleteChannel\n\nInterestingly, in the GUI I cannot find a permission to allow channel deletions for anyone, so not sure what permission maybe would include that. You can try to run the delete API call (or use mmctl channel delete with one of your user accounts to see if it works for you; there's no way in the GUI to do that though, so you would have to either use the API or mmctl and full channel deletion via API needs to be enabled first in your config.json (as documented in the API).",
+                "timestamp": "2023-06-30T04:08:00Z"
+            },
+            {
+                "user_name": "agriesser",
+                "message_content": "The permission in question should be the \"Archive Channels\" permission in system console:\n\nSo if a user has this permission and the config value ServiceSettings.EnableAPIChannelDeletion is set to true, it should be possible for them to delete the channel using either the API or mmctl.",
+                "timestamp": "2023-06-30T06:16:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/can-mattermost-connect-with-irc-xmpp-lync-matrix-and-other-communication-systems/527",
+        "thread": [
+            {
+                "user_name": "it33",
+                "message_content": "Mattermost is an open source project that benefits from users building integrations to address the needs of their teams, and sharing back those integrations with the community.\n\nThe community has created multiple integrations to connect Mattermost to IRC, including Matterbridge for connecting a single Mattermost channel to IRC using outgoing webhooks, and Matterircd, which offers access to Mattermost through a minimalist IRC server using the Mattermost Web Service API.\n\nThere are existing requests from the community for connectivity to XMPP and Matrix that can be upvoted, and additional feature ideas for systems like Lync can be filed for upvote.\n\nThe more upvotes features ideas receive the more motivation contributors have to implement the ideas.",
+                "timestamp": "2015-11-19T15:29:00Z"
+            },
+            {
+                "user_name": "jrd10",
+                "message_content": "Am I the only to have voted for this feature?\n\nI use thunderbird's chat interface. And for basic exchange in specific chanel, it would be great if it was possible to communicate in XMPP :slight_smile:",
+                "timestamp": "2023-03-13T10:37:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/updated-installation-method/14789",
+        "thread": [
+            {
+                "user_name": "System",
+                "message_content": "#### [mattermost/mattermost-omnibus/blob/4565526e3cfa64c097523cd67f68dba0510a1842/scripts/repo-setup.sh](https://github.com/mattermost/mattermost-omnibus/blob/4565526e3cfa64c097523cd67f68dba0510a1842/scripts/repo-setup.sh)\n\n#!/bin/bash\nset -euo pipefail\n\nif [[ ! $# -eq 0 ]]; then\n    ARGUMENT_1=\"$1\"\nelse\n    ARGUMENT_1=\"all\"\nfi\n\n# receives a gpg key and returns its fingerprint\ngetFingerprint() {\n    gpg --with-colons --import-options show-only --import 2>/dev/null | sed -n 2p | cut -d ':' -f 10\n}\n\ngetFingerprintFromFile() {\n    file=$1\n    cat \"$file\" | getFingerprint\n}\n\nvalidateNginxKey() {\n\nThis file has been truncated. [show original](https://github.com/mattermost/mattermost-omnibus/blob/4565526e3cfa64c097523cd67f68dba0510a1842/scripts/repo-setup.sh)",
+                "timestamp": "2023-05-01T12:00:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/who-is-the-owner-of-an-attached-file/13821",
+        "thread": [
+            {
+                "user_name": "Roger",
+                "message_content": "Is there a way to find out which attachments were posted by which users and date?",
+                "timestamp": "2022-08-05T07:15:00Z"
+            },
+            {
+                "user_name": "Alexander Griesser",
+                "message_content": "Hi Roger,\n\nas far as I know, this information can only be pulled out of the database right now.  \nAn example query (without resolving the IDs) would look like this on a PostgreSQL installation:\n\n```\nmattermost=# SELECT creatorid,postid,createat,name FROM fileinfo LIMIT 10;\n         creatorid          |           postid           |   createat    |          \n----------------------------+----------------------------+---------------+----------\n 57os7g51u3g9i8fzixsceqkjto | damobgqrtt8zjdrb7qwei6h3wy | 1628667204111 | Image Pas\n uf9huytu9jbn9bkehpg8jhfm7e | 53aa9rqymf8x3foyuqtw6i3dza | 1628667314647 | Image Pas\n j9xeh1qnti8stppqq7o8nty3fh | ypu5i8sohin6detwdxfxsk16oh | 1560228850509 | SSL_STATU\n kc1df5rkzjft88wkr11aa6ki1r | 8q7uyyhtn7r5xmcekg8nm7sr3a | 1560241046626 | Kein_Supp\n kiproorrn386tf9gwpguxe8o1y | ru1e6xu31idxmcrn536ys3p5tw | 1560251696558 | leads.txt\n tj6yc69ymfdujeattogaoej1ao | ckr5myfpmfnrbq5y7xphwdxxiw | 1560327442677 | D005736.p\n kw1ccc3pcty1iy1inifih3aq1r | rzax3iypk3d3icq6ct6954dqoo | 1560340047058 | Angebot-1\n ypupscd95ibjxgxnxix1gibm5y | ogdy7pgzstrcic9xcz9c9uu6go | 1628667321506 | Image Pas\n mym4yoz187yeujs1q4sunbzrho | n6qxrbbn83nxiqgczzrjg5a8rc | 1628667473015 | Screensho\n 1kua7j8zo7ndfmgd1xw7oyugae | nha87abrtjnppff7q71mn7daso | 1628667916435 | Image Pas\n```\n\nCan you define the output format you'd like to see? I'm sure we can work on a query which produces the expected format then.",
+                "timestamp": "2022-08-05T07:21:00Z"
+            },
+            {
+                "user_name": "Roger",
+                "message_content": "Hey Alex, very cool, my interesting is the user name, email address , date similar like 2022/08/05 , File name and the stored name in the data directory of mattermost.",
+                "timestamp": "2022-08-05T07:35:00Z"
+            },
+            {
+                "user_name": "Alexander Griesser",
+                "message_content": "Alright, this is the query to use for that:\n\n```\nSELECT u.username,u.email,to_timestamp(f.createat/1000),f.path FROM fileinfo AS f,users AS u WHERE u.id=f.creatorid LIMIT 10;\n```\n\nIt's limited to 10 results so you can check if that works for you. If it does, remove the `LIMIT 10` at the end (or increase the limit).",
+                "timestamp": "2022-08-05T07:42:00Z"
+            },
+            {
+                "user_name": "Roger",
+                "message_content": "Hi Alex, this is exactly what I was looking for. Really thank you for the quick help.\nBest regards, Roger",
+                "timestamp": "2022-08-05T11:14:00Z"
+            },
+            {
+                "user_name": "Alexander Griesser",
+                "message_content": "You're welcome :slight_smile: Let me know if you need additional reports.",
+                "timestamp": "2022-08-05T11:26:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/calling-video-screenshare/9147",
+        "thread": [
+            {
+                "user_name": "productquestion",
+                "message_content": "Has anyone been successful in finding a library or plugin that works for both web and mobile clients when it comes to calling on mattermost. Any information would be extremely helpful, also if anyone has an idea about why they make this restriction of not allowing mobile to use the plugins?\n\nThe goal would be that mobile mattmost client can call web mattermost client - Please help if you know anything here!\n\nThank you!",
+                "timestamp": "2020-03-11T23:48:00Z"
+            },
+            {
+                "user_name": "itao",
+                "message_content": "Native voice calling and screen sharing is now in public beta! Here's the blog post: [Introducing Voice Calling and Screen Sharing in Channels - Mattermost](https://mattermost.com/blog/introducing-voice-calling-and-screensharing/)\n\nYou can check it out by creating a Cloud workspace or v7.0+ for self-hosted.",
+                "timestamp": "2022-06-21T17:11:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/migration-from-self-hosted-to-mattermost-cloud/12713",
+        "thread": [
+            {
+                "user_name": "kush-dl",
+                "message_content": "At our company we are currently using a self hosted Mattermost instance but now we have decided to move to Mattermost cloud. Is there any way right now to migrate our self hosted database to mattermost cloud as we don't want to lose our messages and files.",
+                "timestamp": "2021-12-17T11:22:00Z"
+            },
+            {
+                "user_name": "amy.blais",
+                "message_content": "Documentation on this can be found on our support team's knowledge base: https://support.mattermost.com/hc/en-us/articles/4412503667604",
+                "timestamp": "2021-12-17T17:10:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/removing-built-in-emoji-unsupported-use-with-caution/11450",
+        "thread": [
+            {
+                "user_name": "Stu Doherty",
+                "message_content": "WARNING: The following instructions are for advanced users. Please proceed with caution\n\nNOTE: If you operate a highly-available Mattermost cluster these steps must be applied to all Mattermost Server application nodes\n\nWARNING: These changes will need to be re-applied any time there is an upgrade to Mattermost server\n\nThere are a variety of reasons why you may need to remove the built in emojis that Mattermost ships with. For this post I'll bucket them all under one heading of \"Not appropriate for end-user community\".\n\nMattermost ships with a large library of existing emoji that is similar to what is available through your device operating system keyboard (see our docs on how to access the OS/keyboard emoji on different clients), but not exactly the same. The following steps explain how you can manually remove a specific emoji from the Mattermost client. Note, this will not affect the emoji that are available from your keyboard.\n\n1. Identify the name of the emoji you want to remove. On the desktop client you can open the emoji picker and hover over the one you want to remove. In the following screenshot I'm hovering over the poop emoji, so the name is `hankey`. Make note of this term, and the other terms which are aliases of this emoji.\n\n2. Under the Mattermost installation directory `INSTALL_DIR` (typically `/opt/mattermost`) navigate to the `INSTALL_DIR/client`\n\n3. There are 2 files you'll need to edit and they are very dense with characters (these are minified/process javascript files). First you need to find the files.\n\n4. Backup the `js` file somewhere in case you make a mistake. Open the `js` file and search for the emoji you want to remove. There are 2 places where the emoji should appear:\n\na) See following image. All 3 versions of the poop emoji are listed (\"hankey\", \"poop\", \"shit\"). We need to remove all of this `[\\\"hankey\\\",79],[\\\"poop\\\",79],[\\\"shit\\\",79],` (NOTE: The trailing comma must be removed too\u2026 this is part of a list). Save the file in place.\n\nb) See the following screenshot. Remove the entire json block (including trailing comma) that starts with \"aliases\" `{\"aliases\":[\"hankey\",\"poop\",\"shit\"],\"filename\":\"1f4a9\",\"category\":\"people\",\"batch\":\"2\"},`\n\n5. Backup the `js.map` file somewhere in case you make a mistake. Open the `js.map` file and search for the emoji you want to remove the same as in step 4. All 3 versions need to be removed. This file was extra tricky as the size really made my editor slow down. Save the file in places.\n\n6. Hard refresh your Mattermost client (CTRL/CMD-R).\n\n7. Search the emoji picker for the emoji you just deleted. Confirm it is no longer available.\n\nLet me know if you have any questions.",
+                "timestamp": "2021-03-30T18:37:00Z"
+            },
+            {
+                "user_name": "Stu Doherty",
+                "message_content": "Feedback from a developer:\n\n> you can probably skip editing the source map ( `.map` ) file - that's just information for JS debuggers\n\nI haven't tested yet.",
+                "timestamp": "2021-04-03T21:06:00Z"
+            },
+            {
+                "user_name": "Stu Doherty",
+                "message_content": "FYI - An issue was discovered with the above approach. The approach results in emoji being shifted in the UI, and images are not aligned to their correct emoji\u2026 which further emphasizes the risks of going this route. But if you absolutely MUST remove an emoji for some reason, these steps below seem to work as well:\n\n1. Restore the 2 files you edited to remove the problematic emoji (one was `*.js` , and one was `*.js.map` ). They should be back to their original state, where they would show the problematic emoji. Remember to do this on all 3 app servers.\n2. Again, going into those same 2 files, you're going to do something different. Instead of removing blocks that related to the emoji, you're now going to edit them with a different name, and have them point to a different (blank) file.\n\nSo, for me, my files have modifications like this:\n\n`main.a899b9c055b3c3ecbac7.js` :\n\n`{\"aliases\":[\"transparent\"],\"filename\":\"transparent-64x64\",\"category\":\"flags\",\"batch\":\"5\"}`\n\n`main.a899b9c055b3c3ecbac7.js.map`\n\n`,[\\\"transparent\\\",1401]`\n\nFinally, copy the attached transparent png file `transparent-64x74.png` under the following folder:\n\n`/opt/mattermost/client/emoji`",
+                "timestamp": "2021-04-12T18:27:00Z"
+            },
+            {
+                "user_name": "alex sunny",
+                "message_content": "thanks for the awesome information.",
+                "timestamp": "2021-05-13T11:09:00Z"
+            },
+            {
+                "user_name": "Stu Doherty",
+                "message_content": "This approach is no longer valid as of Mattermost v5.37.\n\nI am looking into other ways to accomplish this and will feedback when I come up with something.",
+                "timestamp": "2021-08-11T21:20:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/mattermost-broken-on-aws-elastic-beanstalk/2534",
+        "thread": [
+            {
+                "user_name": "Bruce",
+                "message_content": "\"status\":\"FAILURE\",\"api_version\":\"1.0\",\"results\":[{\"status\":\"FAILURE\",\"msg\":\"Invalid Dockerrun.aws.json version, abort deployment. \\nHook /opt/elasticbeanstalk/hooks/appdeploy/pre/03build.sh failed. For more detail, check /var/log/eb-activity.log using console or EB CLI\",\"returncode\":1,\"events\":[{\"msg\":\"Invalid Dockerrun.aws.json version, abort deployment\",\"severity\":\"ERROR\",\"timestamp\":1480065433}]}]}\n\nI changed to version to 2\u2026\n\"AWSEBDockerrunVersion\": \"2\"\n\n{\"status\":\"FAILURE\",\"api_version\":\"1.0\",\"results\":[{\"status\":\"FAILURE\",\"msg\":\"No Docker image specified in either Dockerfile or Dockerrun.aws.json. Abort deployment. \\nHook /opt/elasticbeanstalk/hooks/appdeploy/pre/03build.sh failed. For more detail, check /var/log/eb-activity.log using console or EB CLI\",\"returncode\":1,\"events\":[{\"msg\":\"No Docker image specified in either Dockerfile or Dockerrun.aws.json. Abort deployment.\",\"severity\":\"ERROR\",\"timestamp\":1480065989}]}]}\n\nAny solutions? What am I doing incorrectly?",
+                "timestamp": "2016-11-25T09:30:00Z"
+            },
+            {
+                "user_name": "Jason Blais",
+                "message_content": "Hey @Bruce, at which step of our installation guide did you see this error?",
+                "timestamp": "2016-12-15T04:15:00Z"
+            },
+            {
+                "user_name": "John Doe",
+                "message_content": "@jasonblais Hi I am unable to access the Mattermost Public URL (At step 14) I configured everything properly and I am getting Green OK symbol in Elastic Beanstack environment but URL is not accessible publicly i.e. I should get sign up page of mattermost. Any idea what is causing such problem ?",
+                "timestamp": "2020-10-27T16:17:00Z"
+            },
+            {
+                "user_name": "Ahmad Danial",
+                "message_content": "Hello, @rohan23\n\nWhat is the output of the commands below when you run it from the CLI of the machine that you are trying to access the URL?\n\n```\necho | telnet <url> 443\n\n\ncurl <url>\n```\n\nAdditionally, can you share the screen shot error that you are getting from the browser when you tried to access it from the web browser / desktop app?",
+                "timestamp": "2020-10-27T18:13:00Z"
+            }
+        ]
+    },
+    {
+        "url": "https://forum.mattermost.com/t/what-does-the-me-command-actually-do/10610",
+        "thread": [
+            {
+                "user_name": "Kees_C",
+                "message_content": "Typical novice question (I think), but what does /me actually do? All I've found so far is \"Do an action\", but what does that really mean?",
+                "timestamp": "2020-10-23T07:40:00Z"
+            },
+            {
+                "user_name": "ahmaddanial",
+                "message_content": "Hi, @Kees_C\n\nFrom my perspective, it just shows different formatting for the post that is sent to the channel.\n\n[Screenshot of /me command usage]\n\nSame set of actions when I clicked on the the three dot icon as well:\n\n[Screenshot of three dot menu]\n\nThat's pretty much it.",
+                "timestamp": "2020-10-23T14:00:00Z"
+            }
+        ]
+    }
+]

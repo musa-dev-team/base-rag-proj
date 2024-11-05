@@ -1,0 +1,477 @@
+[
+  {
+    "question": "What does the user madhavhaldia want to create for Mattermost, and what functionality is he specifically asking about?",
+    "answer": "madhavhaldia wants to create a plugin for Mattermost that takes a text input from the user and stores it for later retrieval. Specifically, he is asking about how to save and retrieve data through the webapp plugin from the Mattermost server.",
+    "source": "https://forum.mattermost.com/t/saving-data-from-webapp/13914"
+  },
+  {
+    "question": "What issue did a user experience with Mattermost after upgrading their laptop and the Mattermost application?",
+    "answer": "After upgrading from a Macbook Pro running Monterey (12.6.3) and Mattermost 5.0.2 to a Macbook Pro running Ventura (13.3.1) and Mattermost 5.3.1, the user found that Mattermost could no longer display images inline in threads. The user was unable to find a setting or property to resolve this issue, and noted that similar problems reported for Linux systems didn't apply to their Mac setup.",
+    "source": "https://forum.mattermost.com/t/after-upgrade-images-do-not-display/15975"
+  },
+  {
+    "question": "What issue did the user encounter with Mattermost Boards after updating their Mattermost instance?",
+    "answer": "The user encountered an issue where Mattermost Boards failed to start and returned errors after updating their Mattermost instance from version 5.x to 7.x, skipping important updates. This resulted in incomplete or faulty SQL table migration, causing Boards to stop working. Specifically, they found that two tables were missing: 'focalboard_boards' and 'focalboard_boards_member'.",
+    "source": "https://forum.mattermost.com/t/mattermost-boards-plugin-failed-to-start-after-update/15878"
+  },
+  {
+    "question": "What is Matterbridge and what does it do?",
+    "answer": "Matterbridge is a tool that creates bridges between various communication platforms. It allows for integration between multiple services including Mattermost, IRC, Gitter, XMPP, Slack, Discord, Telegram, RocketChat, Twitch, SSH-chat, Zulip, WhatsApp, Keybase, Matrix, Microsoft Teams, Nextcloud, Mumble, VK, and others. It also provides a REST API for further customization and integration.",
+    "source": "https://forum.mattermost.com/t/inviting-clients-from-another-space/15603"
+  },
+  {
+    "question": "What was the solution to the MacOS desktop client login issue where the session instantly expired?",
+    "answer": "The user found that closing the Boards and Playbooks tabs in the desktop client allowed them to successfully log in. This suggests that there might be a configuration issue or permission problem related to these specific features. The issue was not present for other users with the same client version, indicating it could be a localized problem with the user's setup or cached data.",
+    "source": "https://forum.mattermost.com/t/macos-client-session-expires-error-while-creating-session-for-user-access-token/15657"
+  },
+  {
+    "question": "What components are typically stored in the database for a Mattermost installation?",
+    "answer": "The Mattermost database typically stores user information (such as usernames, emails, and last login times), password hashes, team data, messages, records of uploaded attachments and their associations with messages, as well as plugin and integration data. The actual file content of attachments is stored separately in the File Store.",
+    "source": "https://forum.mattermost.com/t/mattermost-on-azure/12019"
+  },
+  {
+    "question": "What was the main issue encountered during the Mattermost upgrade attempt, and what did the error logs reveal?",
+    "answer": "The main issue was that one of the Mattermost instances failed to start after upgrading to version 7.9.0. The error logs revealed repeated connection failures to a PostgreSQL database on port 5432, with messages like 'dial tcp [::1]:5432: connect: connection refused'. This indicated a potential mismatch between the configured database type (PostgreSQL) and the actual database in use (MySQL), or issues with the PostgreSQL server's accessibility or configuration.",
+    "source": "https://forum.mattermost.com/t/failed-upgrade-to-7-9/15677"
+  },
+  {
+    "question": "What error is the user experiencing with their Mattermost setup using Docker Compose and Nginx Proxy Manager?",
+    "answer": "The user is experiencing a WebSocket connection error in their Mattermost setup. The main error message states 'Please check connection, Mattermost unreachable. If issue persists, ask administrator to check WebSocket port.' Additionally, the console shows repeated errors indicating that the WebSocket connection is polling for an undefined state.",
+    "source": "https://forum.mattermost.com/t/mattermost-unreachable-if-issue-persists-ask-administrator-to-check-websocket-port-docker-compose-nginx-proxy-manager/15964"
+  },
+  {
+    "question": "What is the main limitation of buttons in Mattermost integrations, as explained by agriesser?",
+    "answer": "According to agriesser, buttons in Mattermost integrations usually only communicate with the integrations themselves. When a user clicks a button in a post, a predefined payload is sent to the integration informing it that the user clicked on a specific button. However, this action doesn't automatically open a new window or site on the user's computer.",
+    "source": "https://forum.mattermost.com/t/webhook-bot-python-dont-does-not-respond-to-button-presses/15642"
+  },
+  {
+    "question": "In Mattermost version 7.10.2 CE, how are chat messages cleaned by clients and servers?",
+    "answer": "The specific details of how clients and servers clean chat messages in Mattermost 7.10.2 CE are not provided in the given content. This question was asked by a user on the Mattermost forum, indicating that it's a topic of interest for Mattermost users and developers. To get accurate information, one would need to refer to Mattermost's documentation or wait for responses from knowledgeable community members or Mattermost staff on the forum thread.",
+    "source": "https://forum.mattermost.com/t/how-do-clients-and-servers-clean-chat-messages/15984"
+  },
+  {
+    "question": "What versions of operating system, Mattermost, and PostgreSQL is Frank Baier's test server running?",
+    "answer": "Frank Baier's Mattermost Test Server is running on CentOS 7.5.1804 with Kernel 4.19.1, Mattermost version 5.4.0, and PostgreSQL 10.6.",
+    "source": "https://forum.mattermost.com/t/problems-upgrading-postgres-database-9-2-to-11/11697"
+  },
+  {
+    "question": "How can I compile the Mattermost mobile app into APK format and the desktop version from source code?",
+    "answer": "To compile the Mattermost mobile app and desktop version from source code, you'll need to follow specific documentation and install the required software and dependencies. For the mobile app, you'll need to set up a React Native development environment, which includes Node.js, the React Native CLI, and Android Studio for APK compilation. For the desktop version, you'll need Node.js and npm. Detailed instructions can be found in the Mattermost developer documentation for both mobile and desktop applications. It's recommended to check the official Mattermost GitHub repositories for the most up-to-date build instructions and required dependencies.",
+    "source": "https://forum.mattermost.com/t/mattermost-mobile-and-desktop-source-code-how-to-compile-the-apk-format-and-desktop-version/15987"
+  },
+  {
+    "question": "What is the purpose of the GitHub repository mentioned in the message?",
+    "answer": "The GitHub repository mentioned is for contributing to the development of a Mattermost plugin called 'mattermost-plugin-default-theme'. This plugin is likely related to managing or customizing the default theme in Mattermost.",
+    "source": "https://forum.mattermost.com/t/forcing-cohesive-ui-to-all-users/11709"
+  },
+  {
+    "question": "What solution was proposed for efficiently communicating about incoming goods at a tech company using Mattermost?",
+    "answer": "The proposed solution involved setting up a system where packages arriving at the incoming goods area would be photographed with a webcam. With the push of a button on the camera, a picture would be taken and automatically published by a Mattermost bot on an 'incoming goods' channel for all employees to see. This would streamline the process of notifying appropriate personnel about arrived packages and help identify unclear orders.",
+    "source": "https://forum.mattermost.com/t/semi-automatic-picture-upload-by-plugin-bot/11757"
+  },
+  {
+    "question": "Does Mattermost support regular expressions in its search functionality?",
+    "answer": "No, Mattermost does not support regular expressions in its search functionality. The search capabilities are limited and depend on the database backend being used. For example, PostgreSQL does not support searching for URLs at all. However, users on the free edition can try enabling the experimental Bleve search, which might provide improved search capabilities.",
+    "source": "https://forum.mattermost.com/t/searching-for-urls-in-messages-using-regex/11990"
+  },
+  {
+    "question": "How has the installation process for Focalboard changed since its initial release?",
+    "answer": "Initially, Focalboard required a separate server setup alongside Mattermost. However, it has since evolved to become a plugin for Mattermost. Now, users can simply install the Focalboard plugin directly within Mattermost, eliminating the need for a separate server. In fact, recent Mattermost server deployments come with Focalboard bundled, making the integration even more seamless.",
+    "source": "https://forum.mattermost.com/t/how-to-install-focalboard-alongside-mattermost-omnibus/11979"
+  },
+  {
+    "question": "Is it possible for a Mattermost user to set their account to read-only mode, where they can only read old messages but not send or receive new ones?",
+    "answer": "No, it is not possible to set a Mattermost account to a strict read-only mode. While administrators can disable users' ability to create direct messages or group messages, and can restrict channel creation, users who are part of a channel will still be able to post in that channel. The free edition of Mattermost does not support read-only channels.",
+    "source": "https://forum.mattermost.com/t/use-account-as-read-only/12471"
+  },
+  {
+    "question": "What is the purpose of the 'bulk-user-create.sh' script in the Mattermost repository?",
+    "answer": "The 'bulk-user-create.sh' script is designed for bulk user creation in Mattermost based on a CSV input file. It allows administrators to automate the process of adding multiple users to a Mattermost instance by reading user information from a CSV file and using the Mattermost CLI tool 'mmctl' to create the accounts.",
+    "source": "https://forum.mattermost.com/t/massively-subscribe-users-at-once-100/11467"
+  },
+  {
+    "question": "What issue is the user experiencing with the Mattermost desktop client on Linux?",
+    "answer": "The user is experiencing an issue where the Mattermost desktop client on Linux doesn't allow window manipulation. It takes up the entire desktop, including status and menu bars, and cannot be minimized or maximized using the usual buttons. The window is top-level and cannot be resized, unlike the Windows version of the app.",
+    "source": "https://forum.mattermost.com/t/linux-desktop-client-unresizable/15692"
+  },
+  {
+    "question": "What could be causing invalid characters to appear in the password reset URL, and how can it be resolved?",
+    "answer": "The invalid characters in the password reset URL, specifically '%5C' (which represents a backslash), are likely caused by an incorrect SiteUrl configuration. To resolve this issue, check the SiteUrl setting in the config.json file or the MM_SERVICESETTINGS_SITEURL environment variable if using Docker. Ensure that the domain name in the SiteUrl does not contain any backslash characters. Correcting this configuration should resolve the issue with the password reset link.",
+    "source": "https://forum.mattermost.com/t/password-reset-link-contains-invalid-characters/15696"
+  },
+  {
+    "question": "Can you customize columns in a Mattermost board's table view to include filtered card priorities and change the first column to something other than the card name?",
+    "answer": "Based on the user's request, it appears that customizing columns in a Mattermost board's table view to include filtered card priorities and changing the first column to something other than the card name is not currently possible. The user is asking if it's feasible to assign filters to columns for highest, 2nd highest, and 3rd highest priority cards, and if the first column can be set to 'Assignee' instead of the default card name. However, these specific customization options are not available in the current version of Mattermost boards, which suggests that such advanced column configurations are not supported at this time.",
+    "source": "https://forum.mattermost.com/t/editing-board-views/15741"
+  },
+  {
+    "question": "What was the root cause of the issue where invitation emails were not being sent in Mattermost after switching to SSL?",
+    "answer": "The root cause of the issue was a misconfiguration in the SPF (Sender Policy Framework) settings. The user had not properly checked the Postfix logs and had an incorrect SPF configuration, which caused errors when sending invitation emails to Google and iCloud accounts. This was discovered when the user tested with different email addresses for other notification emails.",
+    "source": "https://forum.mattermost.com/t/only-invitation-emails-are-not-sent-but-other-emails-like-notificaiton-work-well/15678"
+  },
+  {
+    "question": "How can you insert a newline character in a message when using incoming webhooks in Mattermost?",
+    "answer": "To insert a newline character in a message for incoming webhooks in Mattermost, you can use the '\\n' sequence. For example, when using curl, you would format your payload like this: 'payload={\"text\": \"this is a\\nnewline\"}'",
+    "source": "https://forum.mattermost.com/t/text-formatting-newline/1729"
+  },
+  {
+    "question": "What were the key steps that resolved the Slack migration issue in Mattermost?",
+    "answer": "The user resolved the Slack migration issue by: 1) Running all commands as the mattermost user, 2) Creating a new admin user with an email not in the Slack import, 3) Using the new user to authenticate mmctl instead of using --local, 4) Increasing client_max_body_size in the nginx server config, and 5) Running commands from the mattermost directory. These steps allowed the import to run smoothly and complete in about 10-15 minutes.",
+    "source": "https://forum.mattermost.com/t/following-slack-migration-guide-led-to-an-import-job-stuck-in-progress/15744"
+  },
+  {
+    "question": "What are some common issues encountered when setting up the Mattermost desktop development environment?",
+    "answer": "Common issues include npm installation failures, build and CLI commands not working (e.g., 'rm' not recognized), and difficulties with changing the .pfx file. To resolve these issues, it's recommended to follow the official developer setup documentation and seek guidance from the Mattermost community forums.",
+    "source": "https://forum.mattermost.com/t/i-am-not-able-to-do-developer-setup-locally-on-my-laptop/15734"
+  },
+  {
+    "question": "What was the user's initial request regarding VMware alarms and Mattermost?",
+    "answer": "The user asked for information on how to send VMware alarms to a Mattermost channel. They mentioned finding instructions for sending alarms to Slack and were looking for a similar solution for Mattermost.",
+    "source": "https://forum.mattermost.com/t/vmware-vcenter-and-mattermost/15050"
+  },
+  {
+    "question": "What was the root cause of the ChatGPT bot's authentication issue with the Mattermost server?",
+    "answer": "The root cause of the authentication issue was that the user mistakenly used the Mattermost bot token ID instead of the actual token secret. Once this was corrected, the problem was resolved.",
+    "source": "https://forum.mattermost.com/t/chatgpt-bot-failing-to-connect-docker-instance-caught-in-reboot-loop/15746"
+  },
+  {
+    "question": "What issue is the user experiencing with Mattermost notifications on Windows 11?",
+    "answer": "The user reports that when clicking on a Mattermost notification in the Windows 11 notification panel, the desktop app doesn't open or respond in any way. This occurs on Windows 11 22H2 with Mattermost Desktop version 5.3.1 and Server version 7.10.0. The expected behavior is for the app to open and navigate to the relevant message when a notification is clicked.",
+    "source": "https://forum.mattermost.com/t/windows-11-notification-pannel-click-not-working/15754"
+  },
+  {
+    "question": "How can you configure Mattermost to use a PostgreSQL domain socket with password authentication?",
+    "answer": "To configure Mattermost to use a PostgreSQL domain socket with password authentication, set the DataSource in Mattermost's config.json file using the following syntax: 'postgres:///mmdb?host=/run/postgresql&user=mmuser&password=mypassword'. This format allows you to specify the database name, socket directory, username, and password as separate parameters in the connection string.",
+    "source": "https://forum.mattermost.com/t/postgresql-unix-domain-socket-password-authentication/11585"
+  },
+  {
+    "question": "Does Mattermost have a feature to automatically sync data from Slack after an initial import?",
+    "answer": "No, Mattermost does not have an automatic sync feature with Slack. Users who have imported Slack data into Mattermost would need to perform manual partial imports periodically to keep the data updated until they are ready to fully transition to Mattermost.",
+    "source": "https://forum.mattermost.com/t/sync-data-from-slack-after-imported/15791"
+  },
+  {
+    "question": "What are the main features of the Mattermost version upgrade mentioned in the content?",
+    "answer": "The content mentions upgrading Mattermost from version 5.26 to 7.8.3 (ESR) in the Plesk extension. This upgrade addresses issues with database errors preventing updates and fixes a bug where the menu disappears again.",
+    "source": "https://forum.mattermost.com/t/channels-names-are-not-listed-anymore-after-server-update/14358"
+  },
+  {
+    "question": "What was the issue with the user's Nginx configuration when trying to forward Mattermost traffic from port 8065 to 80?",
+    "answer": "The user's Nginx configuration had an error on line 1 that was not allowed. This prevented the Nginx service from working properly to forward Mattermost traffic from port 8065 to 80. It was suggested that the user check their Nginx version and refer to the official Mattermost documentation for the correct Nginx configuration.",
+    "source": "https://forum.mattermost.com/t/cannot-start-nginx-service-affter-config-with-mattermost/15775"
+  },
+  {
+    "question": "What is the purpose of the MySQL migrations directory in the Mattermost server repository?",
+    "answer": "The MySQL migrations directory in the Mattermost server repository contains SQL scripts for database schema changes and updates. These scripts are used to manage and version the database structure as the Mattermost application evolves, ensuring smooth upgrades and consistent data management across different versions of the software.",
+    "source": "https://forum.mattermost.com/t/cant-upload-images-cant-upgrade-mattermost/15090"
+  },
+  {
+    "question": "What is the main requirement for submitting Remind Bot to the Mattermost Plugin Marketplace?",
+    "answer": "The main requirement for submitting Remind Bot to the Mattermost Plugin Marketplace is that it needs to be on version 1.0.0 or greater. Currently, Remind Bot does not meet this requirement, so a new release would need to be made before it can be published in the marketplace.",
+    "source": "https://forum.mattermost.com/t/remind-plugin-missing-from-the-marketplace/14970"
+  },
+  {
+    "question": "What error message did a user encounter on their iOS device, and how was it resolved?",
+    "answer": "A user encountered an iOS error message stating 'Cannot read property 'id' of undefined'. The issue was identified as a duplicate of a previously reported problem. While the specific resolution wasn't provided in this thread, users experiencing this error are directed to refer to the original discussion thread for potential solutions.",
+    "source": "https://forum.mattermost.com/t/ios-type-error-cannot-read-property-id-of-undefined/15807"
+  },
+  {
+    "question": "What is the issue with importing images in a Mattermost bulk import file, and how should the image paths be referenced?",
+    "answer": "The user is experiencing an issue where images are not appearing in Mattermost after a bulk import. The problem likely stems from incorrect referencing of image paths in the import file. While the user is including image paths relative to a directory within the zip file, this approach isn't working. For successful image imports, the paths should typically reference the local filesystem where Mattermost can access them during the import process. Additionally, the user needs to ensure that the images are actually being transferred to the Mattermost server or S3 bucket, as they're not visible in the S3 bucket after the import attempt.",
+    "source": "https://forum.mattermost.com/t/bulk-load-messages-with-images/15808"
+  },
+  {
+    "question": "What was the root cause of the file upload issue in Mattermost, and how was it resolved?",
+    "answer": "The root cause of the file upload issue was that antivirus scanning was enabled but ClamAV was not installed. The issue was resolved by installing ClamAV on the Mattermost application server using the commands 'sudo apt-get update' and 'sudo apt-get install clamav clamav-daemon -y'. After installation, the user ran the configuration wizard with 'dpkg-reconfigure clamav-daemon' to link it with Mattermost, which resolved the upload processing issue.",
+    "source": "https://forum.mattermost.com/t/mattermost-7-3-0-uploading-stuck-on-processing/14562"
+  },
+  {
+    "question": "What was the solution to Wei's problem with strange-looking fonts in the Mattermost desktop app on Windows 10?",
+    "answer": "Wei solved the problem by going to C:\\WINDOWS\\FONTS and deleting the strange-looking font file that was causing the issue in the Mattermost desktop app.",
+    "source": "https://forum.mattermost.com/t/solved-font-looks-weird/15712"
+  },
+  {
+    "question": "How can you configure the Mattermost desktop app to use a SOCKS5 proxy on Linux?",
+    "answer": "To use the Mattermost desktop app with a SOCKS5 proxy on Linux, you can edit the .desktop file for mattermost-desktop to add CLI parameters on startup. Modify the Exec line in /usr/share/applications/mattermost-desktop.desktop to include the proxy server information, like this: Exec=mattermost-desktop --proxy-server=socks5://ip:port. This uses standard Electron command-line arguments, which are supported by Electron apps but not officially documented or supported by Mattermost.",
+    "source": "https://forum.mattermost.com/t/mattermost-desktop-behind-socks-proxy/13141"
+  },
+  {
+    "question": "Does Mattermost Team version 7.10 support remote control during screen sharing in calls?",
+    "answer": "The Mattermost Team version 7.10 itself does not natively support remote control during screen sharing. However, Mattermost offers integrations through its Marketplace that can connect voice, video, and screen sharing solutions. Users can also link external tools like Zoom or Skype for Business to channels using markdown formatting in the channel header for easy access to these features.",
+    "source": "https://forum.mattermost.com/t/screen-sharing-remote-control/15855"
+  },
+  {
+    "question": "How can you create an initial admin user and configure features like SSO/SAML when deploying Mattermost using the Kubernetes operator?",
+    "answer": "To create an initial admin user and configure features like SSO/SAML when deploying Mattermost using the Kubernetes operator, you can use a Kubernetes ConfigMap or Secret to provide the initial configuration. You'll need to set the MM_CONFIG environment variable to point to your database connection string. For creating the initial admin user, you can use the 'mmctl' command-line tool, but you'll need to ensure you're running it from within the Mattermost pod and have the necessary permissions. If you encounter errors, make sure you're logged in and have the correct configuration file path. For SSO/SAML and other advanced configurations, you can include these settings in your ConfigMap or Secret as well.",
+    "source": "https://forum.mattermost.com/t/configuring-mattermost-operator-deployment-postgresql-db/15830"
+  },
+  {
+    "question": "Can the Mattermost mobile application for Android be used to integrate other social networks and messengers?",
+    "answer": "No, the Mattermost mobile application only supports Mattermost servers as a backend. It cannot be used as a frontend for other social networks or messengers.",
+    "source": "https://forum.mattermost.com/t/mobile-application/15779"
+  },
+  {
+    "question": "What does the image show about the Google Calendar Plugin for Mattermost?",
+    "answer": "The image shows a preview of the Google Calendar Plugin integration in Mattermost. It displays upcoming events from a Google Calendar within the Mattermost interface, including event titles, dates, times, and an option to join video calls directly from the plugin.",
+    "source": "https://forum.mattermost.com/t/why-was-the-google-calendar-plugin-repo-archived/15483"
+  },
+  {
+    "question": "What issue is the user experiencing with SAML login in their Mattermost system?",
+    "answer": "The user is experiencing an issue where after attempting to login via SAML, the process flows through, the user is created in the Mattermost system, but they end up back at the login page instead of being successfully logged in.",
+    "source": "https://forum.mattermost.com/t/saml-adfs-sso-login/15920"
+  },
+  {
+    "question": "What was the solution to the issue of the Mattermost Calls plugin not working on mobile networks?",
+    "answer": "The problem was in the Docker configuration. In the docker-compose.yml file, the UDP port needed to be explicitly specified for the Calls plugin. The correct configuration in the ports section should include '/udp' like this: '8443:8443/udp'. This allows the UDP traffic required for the Calls plugin to function properly on mobile networks.",
+    "source": "https://forum.mattermost.com/t/calls-plugin-does-not-work-on-mobile-network/15538"
+  },
+  {
+    "question": "What issue is being experienced with Mattermost Community Version 7.4 after implementing a load balancer?",
+    "answer": "After implementing a load balancer, the APIs are functioning correctly using the round-robin concept, but there's a problem with real-time chat using web sockets. When the sender is connected to server one and the receiver is connected to server two, live messages are not being sent. Messages are only fetched from the database after reloading the page. This issue may be due to state synchronization being available only in enterprise editions, not in the community edition.",
+    "source": "https://forum.mattermost.com/t/load-balancer-issue-in-mattermost/15936"
+  },
+  {
+    "question": "What S3 bucket permissions are required for an IAM user when setting up Mattermost with AWS S3 as the file store?",
+    "answer": "When setting up Mattermost with AWS S3 as the file store, the IAM user needs at least three permissions for accessing the S3 bucket: s3:PutObject, s3:GetObject, and s3:DeleteObject. These permissions allow the Mattermost server to upload, retrieve, and delete files in the S3 bucket. However, depending on your specific setup and requirements, you may need to consider additional permissions for full functionality.",
+    "source": "https://forum.mattermost.com/t/aws-s3-permissions-setup-for-iam-user/15946"
+  },
+  {
+    "question": "What is the main issue described in the thread regarding Mattermost and Let's Encrypt certificate renewal?",
+    "answer": "The main issue is that the Let's Encrypt renewal process is failing because the '/.well-known/acme-challenge/' directory is not accessible. When trying to access this directory, Mattermost redirects to a login page, preventing Let's Encrypt from completing its renewal routines. This could potentially lead to SSL failure in the future.",
+    "source": "https://forum.mattermost.com/t/proxypass-and-rewriterules-for-well-known-not-working-docker-apache2-ispconfig-leads-to-no-renewal-lets-encrypt/10050"
+  },
+  {
+    "question": "How can you upgrade Mattermost from version 7.1.2 to the latest version, and what options are available for encrypting the database?",
+    "answer": "To upgrade Mattermost from version 7.1.2, follow the instructions in the Mattermost documentation for upgrading the server. If using the binary edition, follow the steps outlined in the upgrade guide. For the docker edition, change the version in the .env file, run 'docker-compose down' followed by 'docker-compose up'. Regarding database encryption, there's no built-in method, but you can use data-at-rest encryption by either putting the MySQL data directory on an encrypted volume or configuring MySQL to use data-at-rest encryption for Mattermost database tables. Be cautious to ensure it remains transparent to the Mattermost service.",
+    "source": "https://forum.mattermost.com/t/upgrade-mattermost-version-7-1-2/15935"
+  },
+  {
+    "question": "What issue did the user encounter after installing Mattermost on an Ubuntu instance using Omnibus?",
+    "answer": "The user encountered problems with images not working at all. They were unable to upload a profile picture, receiving an error message 'Couldn't upload profile image', and sending images in chats also did not work. Additionally, the Playbook option was missing, which the user thought was part of the standard installation.",
+    "source": "https://forum.mattermost.com/t/images-not-working-at-all/15924"
+  },
+  {
+    "question": "What was the root cause of the error experienced by kajafarov on their Android mobile phone?",
+    "answer": "The problem was on the firewall side. Some changes had been made by the security administrator, which caused the unexpected error on the mobile phone.",
+    "source": "https://forum.mattermost.com/t/unexpected-error-occurred-mobile-phone/15773"
+  },
+  {
+    "question": "How can you retrieve the last password update timestamp for each user in Mattermost using the API?",
+    "answer": "To get the last password update timestamp for each user in Mattermost using the API, you need to follow these steps:\n1. Fetch all active users using the '/api/v4/users?active=true' endpoint.\n2. For each user, make a separate API call to '/api/v4/users/{user_id}' to get their details.\n3. Extract the 'last_password_update' field from the user details.\n\nA bash one-liner example was provided that demonstrates this process:\n\n```bash\nfor user in $(curl -sX GET -H \"Authorization: Token $TOKEN\" http://localhost:8065/api/v4/users?active=true  | jq -r .[].id); do curl -sX GET -H \"Authorization: Token $TOKEN\" http://localhost:8065/api/v4/users/$user | jq -jr '.|.username,\": \",.last_password_update,\"\\n\"'; done\n```\n\nThis script outputs each user's username and their last password update timestamp (or null if they've never changed their password).",
+    "source": "https://forum.mattermost.com/t/find-last-password-update-for-a-user/15932"
+  },
+  {
+    "question": "What are some effective ways to display a code of conduct on a Mattermost instance?",
+    "answer": "There are several effective ways to display a code of conduct on a Mattermost instance: 1) Use custom branding options in Site Configuration > Customization, especially the 'Custom Brand Text' feature. 2) Implement the Welcome Bot plugin to send a direct message to new members when they join. 3) Configure channel actions on the town-square channel to display a welcome message to new users. 4) Change the Terms of Use link in the customization settings, although this may not be very visible.",
+    "source": "https://forum.mattermost.com/t/what-is-the-best-way-to-display-a-code-of-conduct-on-a-mattermost-instance/15892"
+  },
+  {
+    "question": "How should you configure Nginx as a reverse proxy for a Mattermost application server?",
+    "answer": "To configure Nginx as a reverse proxy for a Mattermost application server, you should follow the documentation at https://docs.mattermost.com/install/config-proxy-nginx.html. In the Nginx configuration, you need to point the reverse proxy to your Mattermost server's IP address and port (e.g., 192.168.242.182:8065). Additionally, you should install the Let's Encrypt certificate on the Nginx proxy to handle SSL, which will then forward unencrypted traffic to the Mattermost application server.",
+    "source": "https://forum.mattermost.com/t/how-to-map-nginx-to-mattermost-server-so-my-mattermost-server-get-https/15897"
+  },
+  {
+    "question": "When using Docker containers for Mattermost and ClamAV, how should the ClamAV plugin be configured to ensure proper communication between the services?",
+    "answer": "When using Docker containers for Mattermost and ClamAV, the ClamAV plugin should be configured to use the IP address of the ClamAV container within the Docker network, not localhost. In this case, the correct configuration would be to point the ClamAV plugin to 172.18.0.2:3310, which is the IP address of the ClamAV container in the shared Docker network. This allows the Mattermost container to communicate with the ClamAV container for file scanning.",
+    "source": "https://forum.mattermost.com/t/mattermost-7-10-uploading-files-is-stuck-on-processing-while-clamav-is-on/15798"
+  },
+  {
+    "question": "How can a self-hosted Mattermost server be configured to run local bash scripts using custom slash commands?",
+    "answer": "To run local bash scripts using custom slash commands in a self-hosted Mattermost server, you cannot execute the scripts directly. Instead, you need to set up a web server on your local machine that can accept HTTP calls from the Mattermost server. This web server will act as an intermediary, receiving the slash command requests and then executing the corresponding bash scripts. You can either create a small wrapper application to handle incoming HTTP calls and run bash scripts, or set up a web server like Apache and configure its CGI mechanism to execute your local scripts.",
+    "source": "https://forum.mattermost.com/t/running-a-local-script-using-slash-command/15895"
+  },
+  {
+    "question": "What steps should be taken to enable the upload plugin in Mattermost when it's disabled in the dashboard?",
+    "answer": "To enable the upload plugin in Mattermost when it's disabled in the dashboard, you should: 1) Change 'EnableUploads' to true and 'Require Plugin Signature' to false in the config.json file. 2) After making changes to the config.json, restart the Mattermost application server or reload it using the command 'mmctl config reload' (or 'mmctl --local config reload' if using local mode). 3) If issues persist, consult with your server team to ensure the changes are properly applied and no other settings are interfering with the plugin activation.",
+    "source": "https://forum.mattermost.com/t/upload-plugin-is-disabled-in-dashboard/15866"
+  },
+  {
+    "question": "Can Playbooks and Boards be disabled in Mattermost Server version 7.10 and later?",
+    "answer": "No, Playbooks and Boards cannot be disabled in Mattermost Server version 7.10 and later. They are now bundled with the server and have become core parts of the product that cannot be disabled. This change is mentioned in the important upgrade notes for Mattermost.",
+    "source": "https://forum.mattermost.com/t/how-to-disable-playbooks-in-the-new-version/15884"
+  },
+  {
+    "question": "Is it possible to create read-only channels in Mattermost Community version?",
+    "answer": "No, it's not possible to create read-only channels in Mattermost Community version out of the box. However, it can be accomplished by creating a custom plugin that hooks into the event before a post is written to the channel and denies the request for everyone except for specific user accounts. This functionality requires a plugin and is not available through API-based integrations.",
+    "source": "https://forum.mattermost.com/t/read-only-channels/15598"
+  },
+  {
+    "question": "What are the main requirements for setting up Mattermost Calls correctly when using a reverse proxy?",
+    "answer": "To set up Mattermost Calls correctly when using a reverse proxy, you need to ensure the following: 1) The Mattermost server should be accessible via HTTPS. 2) UDP port 8443 needs to be directly accessible on the Mattermost application server, bypassing the reverse proxy. 3) If the reverse proxy is on a separate server from Mattermost, you may need to set up a new domain name for the Calls plugin or use the ICEHostOverride setting. 4) The SiteUrl configuration should reflect the exact URL, including the protocol scheme and port. 5) If needed, you can use iptables to forward UDP traffic on port 8443 from the reverse proxy to the Mattermost server.",
+    "source": "https://forum.mattermost.com/t/issue-with-voice-calls-and-screen-sharing/13908"
+  },
+  {
+    "question": "What alternative did the user consider for SMTP implementation in Mattermost after learning that Proton requires an enterprise account?",
+    "answer": "After discovering that Proton requires an enterprise account for SMTP implementation, the user decided to look into using AWS SES (Amazon Simple Email Service) as an alternative for their Mattermost instance.",
+    "source": "https://forum.mattermost.com/t/smtp-proton-implementation/15763"
+  },
+  {
+    "question": "What issues is the user experiencing with creating and sharing boards in Mattermost?",
+    "answer": "The user is unable to create boards and share them with colleagues on a free, self-hosted plan. They are also unable to find templates from the boards feature. This issue was identified as a duplicate of another reported problem related to creating boards and providing access.",
+    "source": "https://forum.mattermost.com/t/unable-to-create-boards-and-provide-access-to-team-members/15861"
+  },
+  {
+    "question": "What was the root cause of the Mattermost server crashing issue described in the thread, and how was it eventually resolved?",
+    "answer": "The root cause of the Mattermost server crashing issue was related to MySQL being updated by the AppArmor Ubuntu module during daily automatic upgrades. When MySQL was restarted, Mattermost would stop and not automatically restart. The issue was resolved by creating a script to check if Mattermost had stopped and restart it if necessary, which was then added to the sudo cron job. Additionally, it was suggested to use a proper systemd unit with the 'Requires' flag to ensure Mattermost restarts automatically when the database server is restarted.",
+    "source": "https://forum.mattermost.com/t/solved-server-crashed-runtime-error-integer-divide-by-zero/3546"
+  },
+  {
+    "question": "What security issue was reported for the mattermost-webapp package according to the GitHub Advisory Database?",
+    "answer": "The GitHub Advisory Database reported a malware issue in the mattermost-webapp package, identified by the advisory ID GHSA-r5gc-r4qf-2vh7.",
+    "source": "https://forum.mattermost.com/t/github-security-advisories-for-mattermost-packages/15615"
+  },
+  {
+    "question": "What is a common issue when upgrading Mattermost from version 5.x to 7.x, and how can it be resolved?",
+    "answer": "A common issue when upgrading Mattermost from version 5.x to 7.x is channels not appearing in the sidebar. This often occurs when the mandatory upgrade path is not followed. To resolve this, users should first upgrade to version 5.37.10 before upgrading to 7.x. If the upgrade was done incorrectly, the database may need to be manually fixed by running specific SQL queries to alter and update the channelmembers and channels tables. These queries include setting default values and updating null values for columns such as mentioncountroot, msgcountroot, and totalmsgcountroot.",
+    "source": "https://forum.mattermost.com/t/channels-not-shown-on-mattermost-7-1/15860"
+  },
+  {
+    "question": "What issue is the user experiencing with Mattermost calls when connected via VPN?",
+    "answer": "The user is experiencing random 'timeout waiting for peer connections' errors when someone tries to join or start a call from a client connected via Wireguard VPN. This issue is inconsistent, sometimes working and sometimes failing, and only occurs for VPN-connected clients. The problem started recently, despite no apparent changes to the network or VPN configuration.",
+    "source": "https://forum.mattermost.com/t/mattermost-calls-random-timeout-waiting-for-peer-connections-from-wireguard-connected-clients/15594"
+  },
+  {
+    "question": "Is it currently possible to recognize a client's IP address in Mattermost for determining if a user is in the office area?",
+    "answer": "No, it is not currently possible to recognize a client's IP address in Mattermost for determining if a user is in the office area. This functionality is not available at the moment, although it has been requested by multiple users. The information about a user's IP address is not accessible through existing methods like slash commands, apps, plugins, or outgoing webhooks. However, there is hope that this feature may be implemented in the future due to increasing demand from users.",
+    "source": "https://forum.mattermost.com/t/recognize-client-ip/15617"
+  },
+  {
+    "question": "What version of Mattermost Desktop was released on April 4, 2023?",
+    "answer": "Mattermost Desktop v5.3.1 was released on April 4, 2023.",
+    "source": "https://forum.mattermost.com/t/ubuntu-desktop-upgrade-file-size-failure/15627"
+  },
+  {
+    "question": "What is the recommended way to install and use mmctl for a Mattermost server running in a Docker container?",
+    "answer": "For a Mattermost server running in a Docker container, it's recommended to download mmctl directly on the host server rather than inside the container. You can download the latest version from the GitHub releases page using a command like 'wget https://github.com/mattermost/mmctl/releases/download/v7.10.2/linux_amd64.tar -O- | tar xf - > /usr/local/bin/mmctl'. If you don't have root privileges, you can change the destination path to a location you can write to, such as '$HOME/mmctl'. After installation, you can use mmctl from the command line by navigating to the installation directory and running './mmctl'.",
+    "source": "https://forum.mattermost.com/t/mmctl-tool-installation/15899"
+  },
+  {
+    "question": "How can you modify the configuration settings for a Mattermost Teams Edition running on Kubernetes when the config.json file is not present locally or in S3?",
+    "answer": "For Kubernetes deployments of Mattermost, the configuration is stored in the database. To modify these settings, you can use the 'mmctl config edit' command. First, establish a connection to your server using 'mmctl auth login', then use 'mmctl config edit' to make changes to the configuration. This method is recommended over directly modifying the JSON struct in the database, which is more difficult.",
+    "source": "https://forum.mattermost.com/t/config-json-not-to-be-found/15840"
+  },
+  {
+    "question": "What is the user's inquiry regarding Mattermost Boards?",
+    "answer": "The user is asking how to obtain users' activity logs in Mattermost Boards to monitor changes and potentially detect if sales agents are stealing clients from each other.",
+    "source": "https://forum.mattermost.com/t/users-activity-logs/15817"
+  },
+  {
+    "question": "What issue is the user experiencing when inviting new members in the Mattermost desktop application?",
+    "answer": "The user is experiencing an 'error while sending the email' message when trying to invite a new member for the first time. However, the invitation is successfully sent when the process is repeated a second time.",
+    "source": "https://forum.mattermost.com/t/in-desktop-application-when-inviting-new-member-it-showing-error-while-sending-the-email-after-repeating-the-process-it-will-be-sending-invitation/15856"
+  },
+  {
+    "question": "What was the issue with playing non-YouTube videos in Mattermost, and how was it resolved?",
+    "answer": "Initially, users reported issues with playing non-YouTube videos (particularly MP4 files) inline in Mattermost. The videos would only show as download links instead of playing in the browser. This problem persisted across different browsers and operating systems. The issue was resolved by upgrading to a newer version of Mattermost. After upgrading, users reported that MP4 files were working perfectly. However, some issues remained with .mov files, especially on iOS devices.",
+    "source": "https://forum.mattermost.com/t/video-preview-non-youtube/2201"
+  },
+  {
+    "question": "What is the purpose of the 'healthcheck' section in the MariaDB service configuration?",
+    "answer": "The 'healthcheck' section in the MariaDB service configuration is used to ensure the database is running and accessible. It performs a ping command every 5 seconds, with a timeout of 10 seconds, and retries up to 3 times. This helps Docker determine if the MariaDB container is healthy and ready to accept connections.",
+    "source": "https://forum.mattermost.com/t/focalboard-with-existing-mariadb-container/15631"
+  },
+  {
+    "question": "What issue is the user experiencing with the Mattermost desktop app on macOS?",
+    "answer": "The user is unable to communicate privately with team members through the Mattermost desktop app on macOS. When attempting to talk to classmates, they receive a 'Channel Not Found' error message, stating that the channel is private or does not exist. This issue occurs only in the desktop app and not in the web browser version. The problem started after a recent update to the desktop app.",
+    "source": "https://forum.mattermost.com/t/my-application-with-macos-started-doing-a-strange-thing/15632"
+  },
+  {
+    "question": "Why can't the username be updated directly in Mattermost when using an external authentication provider like GitLab?",
+    "answer": "When using an external authentication provider like GitLab, the username cannot be updated directly in Mattermost because it would break the mapping between Mattermost and the authentication provider for that specific user. Instead, the username must be changed in the external authentication provider (in this case, GitLab) to maintain the correct user mapping. Attempting to update the username directly in Mattermost will result in an error message stating that the field 'username' must be set through the user's login provider.",
+    "source": "https://forum.mattermost.com/t/updating-username-for-a-user-on-mattermost-server-is-returning-field-username-must-be-set-through-users-login-provider/15654"
+  },
+  {
+    "question": "How can you configure a Mattermost container with pre-defined accounts, teams, and API keys for a demo?",
+    "answer": "To configure a Mattermost container with pre-defined data for a demo, you can use the 'mmctl' tool. After spinning up the container, you can run the 'mmctl sampledata' command to preload the server with sample data. Alternatively, if you need more control over the specific data being created, you can use 'mmctl' to manually create users, tokens, channels, and other elements as needed.",
+    "source": "https://forum.mattermost.com/t/setup-a-container-with-pre-defined-details/15751"
+  },
+  {
+    "question": "What error occurs when trying to update Mattermost Desktop on Ubuntu using apt?",
+    "answer": "When attempting to update Mattermost Desktop on Ubuntu using apt, an error occurs stating 'File has unexpected size'. The error message suggests that there might be a mirror sync in progress, and the downloaded file size (74034020) does not match the expected size (74048594). This prevents the update from completing successfully.",
+    "source": "https://forum.mattermost.com/t/repository-error-regarding-mattermost-desktop-client-for-ubuntu-debian/15587"
+  },
+  {
+    "question": "What issue did the user encounter when trying to log into their new Mattermost installation, and how was it resolved?",
+    "answer": "The user couldn't log into their new Mattermost installation because they didn't know the default username/password and weren't prompted to create an account during installation. The issue was caused by a conflict between the pre-existing PostgreSQL 15 and the PostgreSQL 13 installed by Mattermost Omnibus. The user resolved the problem by fully removing PostgreSQL 15, allowing the Mattermost installation to work properly with the bundled PostgreSQL 13.",
+    "source": "https://forum.mattermost.com/t/how-do-i-log-into-a-brand-new-install/15810"
+  },
+  {
+    "question": "Is it currently possible to restrict the ability to finish a Playbook run to specific roles in Mattermost?",
+    "answer": "No, it is not currently possible to restrict the ability to finish a Playbook run to specific roles in Mattermost. According to the conversation, every participant of a playbook is allowed to finish it, and there are no configuration options to change this behavior. Furthermore, there are no near-term plans to add such functionality.",
+    "source": "https://forum.mattermost.com/t/finish-playbook-run-by-team-admin-only/15636"
+  },
+  {
+    "question": "What does the error message 'Failed to ping DB' typically indicate in Mattermost, and how can it be resolved?",
+    "answer": "The error message 'Failed to ping DB' in Mattermost typically indicates that the application is unable to connect to its database server. This usually means that Mattermost can't establish a connection with the PostgreSQL server, which it expects to find running on localhost at port 5432. To resolve this issue, you should verify that your PostgreSQL server is running and accessible on the expected host and port.",
+    "source": "https://forum.mattermost.com/t/failed-to-ping-to-db/15662"
+  },
+  {
+    "question": "What is the recommended upgrade path for a Mattermost server running version 4.3.0?",
+    "answer": "The recommended upgrade path for a Mattermost server running version 4.3.0 is: 4.3.0 \u2192 v5.0 \u2192 v5.37 (last ESR for v5) \u2192 v6.0 \u2192 v6.3 (ESR, latest). This path was suggested by a Mattermost team member to ensure a smooth upgrade process from such an old version to the latest stable release.",
+    "source": "https://forum.mattermost.com/t/upgrading-from-4-3-0/12953"
+  },
+  {
+    "question": "After upgrading Mattermost Team Edition from 7.5.2 to 7.10.0, what issue was encountered with Collapsed Reply Threads (CRT), and what was the unexpected database schema version?",
+    "answer": "After the upgrade, Collapsed Reply Threads (CRT) stopped working on the web and desktop clients. The Threads tab was missing from the Mattermost UI, although the settings were present in the config.json file. Unexpectedly, the database schema version showed as '105' instead of the expected version number, despite the about modal displaying version 7.10.0. Interestingly, threads were still functioning on the mobile app.",
+    "source": "https://forum.mattermost.com/t/collapsedthreads-not-working-after-upgrade-from-7-5-2-to-7-10-0-team-edition-version/15762"
+  },
+  {
+    "question": "What issue was the user experiencing with file uploads after upgrading Mattermost?",
+    "answer": "After upgrading Mattermost from version 5.37.10 to 7.8.2, the user reported that file uploads were freezing. The API call for file uploads wasn't receiving a response, and users were unable to upload any files. The logs showed a 500 error related to file handling in the Mattermost Boards feature, suggesting a possible permission issue between the Docker container and the host system.",
+    "source": "https://forum.mattermost.com/t/upload-file-problem/15651"
+  },
+  {
+    "question": "What issue is reported with small images on the Mattermost mobile client for Android?",
+    "answer": "The user reports that the Android mobile client is not displaying small images correctly. Specifically, images with dimensions of 54x25 and 113x37 pixels do not show up, while images of 48x25 pixels do appear. This issue is observed on both the latest beta and production versions of the Android app.",
+    "source": "https://forum.mattermost.com/t/mobile-client-does-not-show-small-images/15729"
+  },
+  {
+    "question": "What was the main issue reported with the Mattermost client on Windows 10 version 1803?",
+    "answer": "The main issue reported was that the Mattermost client failed to start after upgrading to Windows 10 version 1803, showing an 'Application Error' 0xc0000005 immediately after clicking on the icon. Additionally, attempts to install version mattermost-setup-4.1.2-win64.exe failed with error 0xc000007b.",
+    "source": "https://forum.mattermost.com/t/windows-10-client-not-starting-on-windows-1803-version/5028"
+  },
+  {
+    "question": "What issue was reported with image uploads in the Mattermost Android app?",
+    "answer": "The user reported an intermittent issue where image uploads would fail with an image_picker_lib error. This problem occurred sporadically over several weeks, affecting Mattermost app version 2.3.0 on Android v13, Samsung S21 Ultra, with Mattermost server 7.7.1. The issue seemed to resolve itself at times and may have been fixed in version 2.4.0, but it had been occurring on and off for about a year.",
+    "source": "https://forum.mattermost.com/t/upload-of-image-attachment-sometimes-fails-on-mattermost-for-android/15965"
+  },
+  {
+    "question": "What is a common issue users experience with the Mattermost mobile app regarding their online status?",
+    "answer": "A common issue users experience with the Mattermost mobile app is that their status appears as offline or constantly shows 'connecting' even when they are actively using the app. This problem occurs on both iOS and Android devices, and persists regardless of whether the user is connected via Wi-Fi or mobile data. The issue can be frustrating for users as it makes them appear unavailable to colleagues even when they are actively using the app.",
+    "source": "https://forum.mattermost.com/t/mobile-devices-always-showing-as-offline/8246"
+  },
+  {
+    "question": "What issue was the user experiencing with displaying First/Last names in Mattermost 5.39.0?",
+    "answer": "The user had set their Mattermost 5.39.0 instance to display First/Last Names above user posts in the System Console, but it wasn't working as expected. Users still had to go to their local settings to set the displayed name to First/Last name, instead of it being applied globally by the admin.",
+    "source": "https://forum.mattermost.com/t/failure-to-correctly-set-display-names-to-first-last-name/12234"
+  },
+  {
+    "question": "What is the current status of permissions for finishing a playbook run in Mattermost?",
+    "answer": "Currently, every team member can finish a playbook run in Mattermost. There is no specific permission system that restricts this action to project managers or the person who initiated the run. According to the forum discussion, there are no near-term plans to implement such a permission system in Playbooks.",
+    "source": "https://forum.mattermost.com/t/every-team-member-can-finish-a-playbook-run-is-that-normal/15611"
+  },
+  {
+    "question": "Is it safe to delete large files from the Mattermost data folder, and what are the potential consequences?",
+    "answer": "While it is possible to delete large files (>500MB) from the Mattermost data folder manually, there are some considerations to keep in mind. Deleting attachments from the filesystem is technically 'safe,' but it can lead to broken links in old posts. The database will still contain references to these deleted files, so users might encounter posts with non-functional attachment links. Free editions of Mattermost don't have built-in housekeeping features for managing old posts and attachments. Some third-party scripts exist for this purpose, but they should be used cautiously and with proper backups. If maintaining functional links to old attachments is not a priority, manual deletion from the filesystem is an option.",
+    "source": "https://forum.mattermost.com/t/is-it-safe-to-delete-a-file-from-the-data-folder/15732"
+  },
+  {
+    "question": "What issue is the user experiencing with the Mattermost Calls plugin in their Docker setup?",
+    "answer": "The user is experiencing an issue where the Mattermost Calls plugin doesn't ask for microphone permissions, seemingly because Mattermost doesn't recognize that SSL is being used. This occurs despite the user using forced SSL with TLS from Traefik as a reverse proxy. Additionally, when the user tries to enable TLS within Mattermost, the container fails to become healthy due to a healthcheck that's looking for an HTTP endpoint instead of HTTPS.",
+    "source": "https://forum.mattermost.com/t/mm-self-host-docker-healthcheck-compromising-whole-install/15882"
+  },
+  {
+    "question": "What is required to add events to specific dates in the calendar view of a custom board template?",
+    "answer": "To add events to specific dates in the calendar view of a custom board template, you need to create a date property. Without a date property, any new item added to the calendar view will default to today's date, regardless of which date you click on. Once a date property is created, you can move events to other dates and create new events on different days.",
+    "source": "https://forum.mattermost.com/t/cant-figure-how-custom-board-templates-work/15890"
+  },
+  {
+    "question": "How can you check the database schema version in Mattermost after a server update?",
+    "answer": "To check the database schema version in Mattermost after a server update, you can go to the 'About' screen by clicking on the top left menu with the nine dots. The database schema version will be displayed there. For example, Mattermost server version 7.7 should show a database schema version of 100.",
+    "source": "https://forum.mattermost.com/t/update-db-mattermost/15663"
+  },
+  {
+    "question": "What issue is the user experiencing with the Mattermost Desktop app when setting a new server URL?",
+    "answer": "The user is experiencing a bug where, after setting a new server URL to 'http://{my_host}:{my_port}', they are unable to login. When checking the URL again in the Edit Server dialog, they find that it has been changed to 'http://{my_host}', omitting the port number. This prevents successful login to the Mattermost server.",
+    "source": "https://forum.mattermost.com/t/macos-desktop-app-server-url-will-be-changed/15665"
+  }
+]

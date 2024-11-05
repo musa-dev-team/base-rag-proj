@@ -1,0 +1,82 @@
+[
+  {
+    "question": "What is the current status of voice calling and screen sharing features in Mattermost?",
+    "answer": "As of June 21, 2022, native voice calling and screen sharing features are in public beta for Mattermost. These features are available in Cloud workspaces and for self-hosted installations running version 7.0 or later.",
+    "source": "https://forum.mattermost.com/t/calling-video-screenshare/9147"
+  },
+  {
+    "question": "Is it possible to migrate data from a self-hosted Mattermost instance to Mattermost Cloud?",
+    "answer": "Yes, it is possible to migrate data from a self-hosted Mattermost instance to Mattermost Cloud. Mattermost provides documentation on this process in their support team's knowledge base. Users can find detailed information on how to perform this migration at the provided link: https://support.mattermost.com/hc/en-us/articles/4412503667604",
+    "source": "https://forum.mattermost.com/t/migration-from-self-hosted-to-mattermost-cloud/12713"
+  },
+  {
+    "question": "What are the differences in Active Directory integration between the Professional and Enterprise versions of Mattermost?",
+    "answer": "The Professional version of Mattermost provides user synchronization, allowing you to use a single group to manage Mattermost membership. The Enterprise version offers more advanced features, including group synchronization, which enables the use of multiple groups to manage team and channel membership.",
+    "source": "https://forum.mattermost.com/t/connexion-mattermost-to-my-ad/18843"
+  },
+  {
+    "question": "What error is Bruce encountering when trying to deploy Mattermost on AWS Elastic Beanstalk, and what step did he take to try to resolve it?",
+    "answer": "Bruce initially encountered an error stating 'Invalid Dockerrun.aws.json version, abort deployment.' To resolve this, he changed the version to 2 in the Dockerrun.aws.json file by setting 'AWSEBDockerrunVersion' to '2'. However, this led to a new error: 'No Docker image specified in either Dockerfile or Dockerrun.aws.json. Abort deployment.' This suggests that while the version issue was addressed, there was still a problem with the Docker configuration in the deployment files.",
+    "source": "https://forum.mattermost.com/t/mattermost-broken-on-aws-elastic-beanstalk/2534"
+  },
+  {
+    "question": "What are the first two steps to troubleshoot connectivity problems with a Mattermost server?",
+    "answer": "The first two steps to troubleshoot connectivity problems with a Mattermost server are: 1) Verify Server Status by checking if the server is up and running, which can be done using the ping command. 2) Check Mattermost Server Logs for any errors or warning messages that might indicate connection problems.",
+    "source": "https://forum.mattermost.com/t/faq-how-can-i-troubleshoot-mattermost-connection-issues/17333"
+  },
+  {
+    "question": "Can regular users delete channels in Mattermost, and if not, how can channel deletion be performed?",
+    "answer": "Regular users cannot delete channels through the Mattermost GUI. Channel deletion is restricted and can only be performed by users with specific permissions using either the API or the mmctl command-line tool. To enable channel deletion, the 'Archive Channels' permission must be granted to the user in the system console, and the 'ServiceSettings.EnableAPIChannelDeletion' must be set to true in the config.json file. Even with these settings, channel deletion can only be executed via the API or mmctl, not through the standard user interface.",
+    "source": "https://forum.mattermost.com/t/how-can-i-delete-a-channel-old-but-gold/16201"
+  },
+  {
+    "question": "What feature is the user requesting for Mattermost to improve navigation across multiple teams?",
+    "answer": "The user is requesting a feature to 'virtually merge' multiple Mattermost teams into a single view. This would consolidate the 'Favorites', 'Channels', and 'Direct Messages' submenus across all teams into one unified view, regardless of team membership. The goal is to simplify navigation and reduce confusion for users who are members of multiple teams but don't necessarily need or want to distinguish between team structures.",
+    "source": "https://forum.mattermost.com/t/virtually-merge-multiple-mattermost-teams-into-one-view/18314"
+  },
+  {
+    "question": "What did user it33 claim to provide in their message?",
+    "answer": "User it33 claimed to provide 'Answers for all common problems & questions' in their message posted on June 27, 2015.",
+    "source": "https://forum.mattermost.com/t/about-the-frequently-asked-questions-category/15"
+  },
+  {
+    "question": "What is the purpose of the 'getFingerprint' function in the repo-setup.sh script?",
+    "answer": "The 'getFingerprint' function in the repo-setup.sh script is designed to receive a GPG key and return its fingerprint. It uses the 'gpg' command with specific options to extract the fingerprint from the imported key data.",
+    "source": "https://forum.mattermost.com/t/updated-installation-method/14789"
+  },
+  {
+    "question": "What are some steps to troubleshoot a '502 Bad Gateway' error when loading Mattermost?",
+    "answer": "To troubleshoot a '502 Bad Gateway' error in Mattermost, you can try the following steps: 1) Check the server status and wait a few minutes. 2) Refresh your browser or page. 3) Clear your browser's cache. 4) Flush your DNS cache. 5) Check server logs, including those of any reverse proxy. 6) Ensure your reverse proxy (if used) is configured correctly for Mattermost. 7) Contact your ISP or hosting provider if the issue persists. If these steps don't resolve the problem, consider posting in the Mattermost Troubleshooting forum with your version number and issue summary.",
+    "source": "https://forum.mattermost.com/t/faq-how-do-i-fix-a-502-bad-gateway-error-when-trying-to-load-mattermost/18072"
+  },
+  {
+    "question": "What are some existing integrations for connecting Mattermost to other communication systems?",
+    "answer": "The community has created multiple integrations for Mattermost, including Matterbridge for connecting a single Mattermost channel to IRC using outgoing webhooks, and Matterircd, which offers access to Mattermost through a minimalist IRC server using the Mattermost Web Service API. There are also existing requests for connectivity to XMPP and Matrix, and additional feature ideas for systems like Lync can be filed for upvote.",
+    "source": "https://forum.mattermost.com/t/can-mattermost-connect-with-irc-xmpp-lync-matrix-and-other-communication-systems/527"
+  },
+  {
+    "question": "What is the purpose of the '/me' command in Mattermost?",
+    "answer": "The '/me' command in Mattermost is used to format a message differently, displaying it as an action. It changes the appearance of the message in the channel, making it stand out from regular text messages. For example, using '/me' allows a user to post a message that appears as if they are performing an action, rather than just stating something.",
+    "source": "https://forum.mattermost.com/t/what-does-the-me-command-actually-do/10610"
+  },
+  {
+    "question": "How can you retrieve information about file attachments in Mattermost, including the user who posted them and the date?",
+    "answer": "You can retrieve information about file attachments in Mattermost using a SQL query on the PostgreSQL database. The following query will provide the username, email address, date, file name, and stored path of attachments:\n\nSELECT u.username,u.email,to_timestamp(f.createat/1000),f.path FROM fileinfo AS f,users AS u WHERE u.id=f.creatorid LIMIT 10;\n\nThis query joins the fileinfo and users tables to get the required information. You can remove or adjust the LIMIT 10 clause to retrieve more or fewer results as needed.",
+    "source": "https://forum.mattermost.com/t/who-is-the-owner-of-an-attached-file/13821"
+  },
+  {
+    "question": "What are the main steps to set up JumpCloud as a SAML provider for Mattermost?",
+    "answer": "The main steps to set up JumpCloud as a SAML provider for Mattermost are: 1) Set up JumpCloud by creating a new SSO integration using the Custom SAML App option, configuring the IDP URL, Entity IDs, ACS URL, and attributes. 2) Set up Mattermost by enabling SAML 2.0 in the System Console, inputting the JumpCloud Metadata URL, IDP URL, uploading the JumpCloud certificate, setting the Service Provider Identifier, disabling encryption, and configuring email and username attributes. 3) Ensure you have a Mattermost Professional or Enterprise license, admin access to both Mattermost and JumpCloud, and note your Mattermost URL.",
+    "source": "https://forum.mattermost.com/t/faq-does-mattermost-integrate-with-jumpcloud-for-saml-authentication/16572"
+  },
+  {
+    "question": "How can you set up a space in Mattermost where you can interact with freelancers without them being able to interact with each other?",
+    "answer": "In Mattermost Pro or Enterprise, you can create a channel for communication and add freelancers as guest users with access only to that specific channel. This way, you can communicate with each freelancer in the channel, and they will only be able to direct message members of channels they are part of, preventing interaction between freelancers. This setup is similar to using external connections and 1:1 messages in Slack.",
+    "source": "https://forum.mattermost.com/t/a-space-for-guest-users/18675"
+  },
+  {
+    "question": "What is the main challenge with removing built-in emojis in Mattermost, and why might this approach no longer be valid?",
+    "answer": "The main challenge with removing built-in emojis in Mattermost is that it requires editing minified JavaScript files, which can be risky and may cause UI issues such as emoji misalignment. This approach is no longer valid as of Mattermost v5.37, as stated by Stu Doherty. The process involves identifying the emoji to remove, editing specific files in the Mattermost installation directory, and replacing the unwanted emoji with a transparent image. However, this method is considered advanced and should be used with caution, as it needs to be reapplied after each Mattermost server upgrade and can potentially cause problems in highly-available Mattermost clusters.",
+    "source": "https://forum.mattermost.com/t/removing-built-in-emoji-unsupported-use-with-caution/11450"
+  }
+]

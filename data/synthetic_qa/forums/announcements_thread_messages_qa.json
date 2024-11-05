@@ -1,0 +1,102 @@
+[
+  {
+    "question": "What is the new Extended Support Release (ESR) version of Mattermost, and when was it implemented?",
+    "answer": "The new Extended Support Release (ESR) version of Mattermost is v7.8, and it was implemented on February 16, 2023. It will be supported until November 15, 2023.",
+    "source": "https://forum.mattermost.com/t/support-for-extended-support-release-7-1-has-ended/15926"
+  },
+  {
+    "question": "What are the main focus areas for the Mattermost v8.0 release planned for summer 2023?",
+    "answer": "The main focus areas for Mattermost v8.0 are: 1) Core chat user experience quality-of-life improvements, including performance enhancements and Microsoft Teams federation. 2) New end user onboarding training for core collaboration tools, covering Channels, Calls, Playbooks, and Boards. 3) Administration training and resources for a successful upgrade to the August ESR, including upgrade migration scripts and assistance for complex Enterprise upgrades.",
+    "source": "https://forum.mattermost.com/t/upcoming-changes-with-mattermost-8-0/15927"
+  },
+  {
+    "question": "When will support for Mattermost Extended Support Release (ESR) version 7.8 end?",
+    "answer": "Support for Mattermost ESR version 7.8 will end on November 15, 2023. After this date, Mattermost will no longer backport fixes to v7.8. Users are advised to upgrade their systems to v8.1, which is the new ESR implemented in August 2023 and will be supported until May 15, 2024.",
+    "source": "https://forum.mattermost.com/t/support-for-extended-support-release-7-8-is-ending-soon/16749"
+  },
+  {
+    "question": "What type of information can be found in the Announcements category of the Mattermost forum?",
+    "answer": "The Announcements category of the Mattermost forum contains information about new releases, updates, and features of Mattermost. It includes topics such as new version announcements (e.g., v1.2, v1.4, 2.0, 2.2), details about enhancements like easy onboarding, improved search, community applications, documentation updates, data center support, developer mode, threaded messages, theme sharing, and language translations.",
+    "source": "https://forum.mattermost.com/t/about-the-announcements-category/144"
+  },
+  {
+    "question": "What is the new Extended Support Release (ESR) version of Mattermost announced in October 2021, and until when will it be supported?",
+    "answer": "The new Extended Support Release version announced is v5.37, which was implemented on July 16, 2021. It will be supported until April 15, 2022.",
+    "source": "https://forum.mattermost.com/t/support-for-esr-5-31-has-ended/12328"
+  },
+  {
+    "question": "What is Mattermost proposing to do with their Insights feature due to performance issues?",
+    "answer": "Mattermost is considering replacing the current Insights feature with new solutions that use AI frameworks and integrations to derive insights directly from channel data. This is due to identified performance issues with the current feature. They believe AI could provide more flexibility and allow for a wider variety of insight options without sacrificing product quality or requiring costly database processing.",
+    "source": "https://forum.mattermost.com/t/proposal-to-revise-our-insights-feature-due-to-known-performance-issues/16212"
+  },
+  {
+    "question": "What is happening to Mattermost's Cloud Free plan and when?",
+    "answer": "Mattermost's Cloud Free plan will be discontinued for both new and existing Cloud workspaces after July 26, 2023. The company is offering a 90-day transition period for organizations to adjust to this change.",
+    "source": "https://forum.mattermost.com/t/cloud-free-deprecation/15802"
+  },
+  {
+    "question": "What are the two integration development frameworks currently supported by Mattermost, and which one is being considered for deprecation?",
+    "answer": "Mattermost currently supports two integration development frameworks: the Plugin Framework and the Apps Framework. The Apps Framework is being considered for deprecation in the future.",
+    "source": "https://forum.mattermost.com/t/changes-affecting-apps-framework/17644"
+  },
+  {
+    "question": "When was Hacktoberfest 2023 announced to start, and what new features were mentioned for the Hacktoberfest page?",
+    "answer": "Hacktoberfest 2023 was announced to start on October 1st, 2023. The revamped Hacktoberfest page was mentioned to include new features such as inspiring testimonials from contributors, clear pathways into contributor communities, and teasers about upcoming events. Additionally, it was mentioned that the official theme would be unveiled the following month, and the page would be updated to match, along with a new blog post and GitHub resources.",
+    "source": "https://forum.mattermost.com/t/coming-soon-hacktoberfest-2023/16775"
+  },
+  {
+    "question": "What free training resources are available on Mattermost Academy for self-hosted Mattermost deployments?",
+    "answer": "Mattermost Academy offers three free training resources for self-hosted deployments: 1) Deploying your own self-hosted Mattermost instance using a tarball, 2) Configuring your self-hosted Mattermost server, and 3) Managing server performance. These courses cover deployment, configuration, upgrades, best practices, and performance optimization for self-hosted Mattermost instances.",
+    "source": "https://forum.mattermost.com/t/new-admin-training-available-for-self-hosted-deployments/17561"
+  },
+  {
+    "question": "What change has Mattermost implemented regarding its release process starting from version 9.2?",
+    "answer": "Starting with Mattermost v9.2, Mattermost is shipping the same release version once a month to both Cloud and self-hosted customers. This change aligns the release process for different deployment types and is accompanied by a new unified Mattermost Changelog that includes both self-hosted and cloud release details.",
+    "source": "https://forum.mattermost.com/t/unified-mattermost-changelog-for-self-hosted-and-cloud-deployments/17273"
+  },
+  {
+    "question": "What is the Mattermost Docathon and how can participants contribute?",
+    "answer": "The Mattermost Docathon is an event where participants help improve Mattermost's revamped Product Documentation site by reporting issues they encounter. Participants can join the Mattermost Community Server to learn how to participate, report issues, and potentially win Mattermost swag for their contributions. As of the announcement, over 30 issues had been reported with 7 days remaining in the event.",
+    "source": "https://forum.mattermost.com/t/were-having-a-docathon-and-youre-invited/18354"
+  },
+  {
+    "question": "When will support for Mattermost Extended Support Release (ESR) version 8.1 end?",
+    "answer": "Support for Mattermost ESR version 8.1 will end on May 15, 2024. After this date, Mattermost will no longer backport fixes to v8.1. Users are advised to upgrade their systems to v9.5, which is the new ESR implemented in February 2024 and will be supported until November 15, 2024.",
+    "source": "https://forum.mattermost.com/t/support-for-extended-support-release-8-1-is-ending-soon/17971"
+  },
+  {
+    "question": "What is the current Extended Support Release (ESR) version of Mattermost, and when will support for it end?",
+    "answer": "The current Extended Support Release (ESR) version of Mattermost is v8.1, which was implemented in August 2023. Support for v8.1 will end on May 15, 2024.",
+    "source": "https://forum.mattermost.com/t/support-for-extended-support-release-7-8-has-ended/17332"
+  },
+  {
+    "question": "What changes are happening to Mattermost Boards and other plugins, and when will these changes take effect?",
+    "answer": "Effective September 15th, 2023, Mattermost Boards will transition to being fully community supported, along with various other plugins. Mattermost will continue to actively maintain select plugins such as Jira, Github, Gitlab, MS Teams Sync plugin, Calls, ServiceNow, and Zoom. For Mattermost Cloud users, Boards will be removed from all cloud instances on September 28th, 2023. These changes are being made to focus resources on improving the platform's performance and core features.",
+    "source": "https://forum.mattermost.com/t/upcoming-product-changes-to-boards-and-various-plugins/16669"
+  },
+  {
+    "question": "Why is Mattermost discontinuing the True-up review 'Share to Mattermost' button?",
+    "answer": "Mattermost is discontinuing the True-up review 'Share to Mattermost' button due to several issues: 1) Differing customer instance setups, such as firewalls and connectivity problems, have led to unsuccessful data transmission for some customers. 2) The feature's design, which hides functionality after data is sent, prevents administrators from re-sending data if not received by Mattermost. 3) These issues have resulted in a less-than-ideal experience during the quarterly true-up process. Mattermost is currently in the early stages of designing a replacement that aims to improve the entire quarterly true-up process.",
+    "source": "https://forum.mattermost.com/t/for-customer-admins-true-up-share-to-mattermost-button-will-be-discontinued-in-v9-9/18282"
+  },
+  {
+    "question": "How will the shutdown of GFYCAT on September 1, 2023 affect Mattermost users?",
+    "answer": "The GFYCAT shutdown will impact all Mattermost self-hosted instances by making the in-product GIF selector non-functional from September 1, 2023. Users will not be able to see GIFs using the in-product GIF picker until their Mattermost instance is upgraded to v9.0, a subsequent v8.0 dot release, or a supported ESR version. The Mattermost team is working on a fix, which will involve switching the GIF picker to be powered by GIPHY. Users who use GIFs via plugins powered by GIPHY or Tenor will not be affected.",
+    "source": "https://forum.mattermost.com/t/gfycat-is-going-away-what-does-it-mean-for-mattermost-users/16751"
+  },
+  {
+    "question": "When will the Classic Mobile App for Mattermost be phased out, and what should users do to prepare?",
+    "answer": "The Classic Mobile App for Mattermost will be phased out on December 16th, 2024. To prepare, users should download the new v2 Mobile App from the Apple App Store or Google Play Store. The v2 app offers enhanced features, improved performance, and a more intuitive interface. Users can log in with their existing account credentials and start exploring the new functionalities available in the updated app.",
+    "source": "https://forum.mattermost.com/t/classic-mobile-app-deprecation/18703"
+  },
+  {
+    "question": "What changes are happening to Mattermost's billing options, and when will they take effect?",
+    "answer": "Mattermost is phasing out monthly billing for existing customers after July 26, 2023. They are also deprecating the Cloud Free option. Customers will need to switch to an annual paid plan within 90 days of the announcement. If customers don't switch to an annual plan by July 26, 2023, their cloud workspaces will be deleted.",
+    "source": "https://forum.mattermost.com/t/cloud-monthly-billing-deprecation/15804"
+  },
+  {
+    "question": "What steps should a user take before posting a question on the Mattermost discussion forums?",
+    "answer": "Before posting a question on the Mattermost discussion forums, users should take two main steps: 1) Search the web using their preferred search engine, as there's a good chance someone in the extensive Mattermost community has already solved the problem. 2) Check the list of frequently asked questions that answers many common questions and concerns from the community. If these steps don't solve the problem, then the user can create a new topic in the appropriate category on the forum.",
+    "source": "https://forum.mattermost.com/t/start-here-welcome-to-the-mattermost-forums/8"
+  }
+]

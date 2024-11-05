@@ -1,0 +1,442 @@
+[
+  {
+    "question": "What feature is being suggested for Mattermost to enhance user control in more public settings?",
+    "answer": "The suggestion is to implement a feature that allows users to block or ignore other users, preventing them from sending direct messages, making calls, or mentioning the user in channels. This would be particularly useful when Mattermost is used in a more public manner.",
+    "source": "https://forum.mattermost.com/t/a-way-for-a-team-member-to-block-ignore-another-member/16994"
+  },
+  {
+    "question": "Is it possible to edit comments on cards in Mattermost Boards?",
+    "answer": "No, currently it is not possible to edit comments on cards in Mattermost Boards. The only option available is to delete the comment and repost a corrected version if needed. Editing comments is not supported at this time.",
+    "source": "https://forum.mattermost.com/t/is-it-really-not-possible-to-edit-comments-on-cards/16695"
+  },
+  {
+    "question": "What is the current issue with the Unread Message Indicator in Mattermost, and what solution has been suggested?",
+    "answer": "The current Unread Message Indicator in Mattermost shows unread messages in alphabetical order by default, regardless of when they were received. This can cause issues for users communicating in multiple channels simultaneously, as they may not know which channel has the most recent unread message. A suggested solution is to implement a new feature that allows users to configure the unread message indicator to be sorted either alphabetically or based on recency.",
+    "source": "https://forum.mattermost.com/t/sort-unread-messages-according-to-recency/7736"
+  },
+  {
+    "question": "Does the Mattermost Desktop app currently support SOCKS proxy settings?",
+    "answer": "No, as of the current releases, the Mattermost Desktop app does not natively support SOCKS proxy settings. While it works in browsers with appropriate add-ons, the desktop variant lacks this feature. Users are encouraged to submit a feature request on the Mattermost UserVoice page for potential future implementation.",
+    "source": "https://forum.mattermost.com/t/run-mattermost-desktop-using-a-socks-proxy/17268"
+  },
+  {
+    "question": "What major feature is being discussed for potential implementation in Mattermost, and what challenge does it present for server administrators?",
+    "answer": "The feature being discussed is end-to-end (e2e) encryption support for Mattermost. This would present a challenge for server administrators as they wouldn't be able to read the content of conversations because they don't hold the encryption keys.",
+    "source": "https://forum.mattermost.com/t/does-it-ignore-e2ee-related-uservoice/17408"
+  },
+  {
+    "question": "What are some ways to visually indicate escalation channels in Mattermost?",
+    "answer": "While Mattermost doesn't have a built-in feature for animated icons or specific indicators for escalation channels, there are several alternative approaches: 1) Use a channel naming convention, such as prefixing with '[Escalation]'. 2) Utilize the channel topic to provide a brief description or status update. 3) Use the Channel Header plugin to display important information at the top of the channel. Additionally, custom plugins or the Mattermost API can be used to create more advanced features or visual indicators.",
+    "source": "https://forum.mattermost.com/t/channe-markings/16649"
+  },
+  {
+    "question": "What new feature is Mattermost considering for editing attachments on older posts?",
+    "answer": "Mattermost is considering a feature that allows users to edit attachments on older posts. This includes the ability to add, delete, and modify attachments when editing a message. Users can access this feature through the message actions menu, add new attachments via drag-and-drop or file selection, and remove attachments using an 'x' icon. The changes will be reflected in the message's edit history, and the feature will be available on both desktop and mobile platforms.",
+    "source": "https://forum.mattermost.com/t/design-preview-editing-attachments-for-sent-messages/18689"
+  },
+  {
+    "question": "What is the main idea proposed by the user 'openclint' for enhancing Mattermost's security?",
+    "answer": "The user proposes embedding zero trust directly into Mattermost using OpenZiti overlay network. This would allow secure access to Mattermost from anywhere without exposing it to the internet, eliminating the need for proxying ports or agents. It would provide end-to-end encryption and precise control over who can access the server.",
+    "source": "https://forum.mattermost.com/t/zero-trust-enabled-mattermost/17177"
+  },
+  {
+    "question": "Can users remove or customize the 'Add Channels' button in Mattermost?",
+    "answer": "According to the discussion, the 'Add Channels' button is hard-coded and cannot be directly removed or hidden within the user interface. Some users have expressed interest in either removing it or creating a specific color category for it to differentiate it from channels with unread messages. However, these options are not currently available, and the feedback has been noted to be passed on to the development team.",
+    "source": "https://forum.mattermost.com/t/can-i-remove-the-add-channels-button/16758"
+  },
+  {
+    "question": "What happened to the feature that allowed users to create statistics or rankings on their chat behavior in the Mattermost Desktop app?",
+    "answer": "The feature that allowed users to create statistics or rankings on their chat behavior in the Mattermost Desktop app appears to have been removed. A user reported that they could no longer find this feature in the UI or in the 'Deprecated configuration settings' section of the documentation. The Mattermost AI Assistant acknowledged the concern and promised to consult with the team for more information about the feature's status and any potential alternatives or future plans.",
+    "source": "https://forum.mattermost.com/t/users-missing-ability-to-create-statistics/17227"
+  },
+  {
+    "question": "What is the current status of Mattermost Boards development?",
+    "answer": "As of September 15th, 2023, Mattermost Boards has transitioned to being fully community supported. This means that Mattermost is no longer actively developing new features for Boards, such as mobile implementation, external calendar connections, or admin usage statistics. Future development and maintenance will depend on community contributions.",
+    "source": "https://forum.mattermost.com/t/what-will-happen-with-boards/17421"
+  },
+  {
+    "question": "How does Mattermost handle multiple image attachments compared to Slack?",
+    "answer": "In Mattermost, when there are multiple image attachments, they are displayed as small icons that need to be clicked to expand. This differs from Slack, where multiple images are displayed side by side by default. To request a change in this behavior to match Slack's, users are advised to submit their suggestion on the Mattermost productboard at https://mattermost.com/suggestions.",
+    "source": "https://forum.mattermost.com/t/display-two-or-more-attachments-side-by-side/15199"
+  },
+  {
+    "question": "Why doesn't Mattermost Team Edition generate video file thumbnails by default?",
+    "answer": "Mattermost Team Edition doesn't generate video file thumbnails by default because video thumbnail generation often requires additional system resources. This feature is not included in the Team Edition to maintain performance and resource efficiency. Users are advised to consider using plugins or integrations that can add this functionality if needed.",
+    "source": "https://forum.mattermost.com/t/video-file-thumbnails-not-generating-issue/17254"
+  },
+  {
+    "question": "What UI changes are planned for Mattermost, and when can users expect to see them?",
+    "answer": "Mattermost is planning incremental updates to modernize its UI. Some proposed changes were shared in a presentation, including improvements to both light and dark themes. While there's no specific ETA, some UI-related updates are expected to be added incrementally starting from version 9.8. The latest UI updates became available on the Mattermost community server and are tagged for the 9.9 release.",
+    "source": "https://forum.mattermost.com/t/a-fresh-look-to-mattermost/17845"
+  },
+  {
+    "question": "What are some suggestions made by a user to improve the colorization function for compact messages in Mattermost?",
+    "answer": "The user suggested several improvements: 1) Allow users to create their own color palettes or assignments for users, 2) Enable holistic server colorization assignments, 3) Let users assign their preferred color, and 4) Implement an algorithm to choose higher contrast differentiation in channel palettes by default. Additionally, the user proposed organization-based colorization and adding an 'organization' field to user profiles for better color grouping and potential new features.",
+    "source": "https://forum.mattermost.com/t/compact-text-colorization-should-have-a-personal-palette-or-more-options-to-assign-determine-higher-contrasting-colors/17428"
+  },
+  {
+    "question": "What feature is being discussed for Mattermost that would allow different research groups to interconnect and exchange information more easily?",
+    "answer": "The feature being discussed is federation support for Mattermost. This would allow different Mattermost servers to interconnect, enabling users from different servers to create joint channels and communicate without needing separate accounts for each server. Federation support is similar to what other platforms like Matrix and Rocket.chat offer, and it's seen as particularly beneficial for academic and research communities.",
+    "source": "https://forum.mattermost.com/t/mattermost-federation/14256"
+  },
+  {
+    "question": "What is the recommended approach for integrating Mattermost chat functionality into a React Native mobile application that communicates with a Magento 2 backend?",
+    "answer": "The recommended approach is to use Mattermost's APIs for communication. First, establish endpoints in the Magento 2 backend to interact with Mattermost. Then, in the React Native app, utilize these endpoints to send and receive messages. Ensure the mobile app has the necessary permissions and authentication for secure communication. It's important to refer to the detailed documentation from both Mattermost and Magento 2 throughout the integration process. Consider seeking assistance from a web development agency for efficient setup and smooth flow between the app, Magento 2, and Mattermost.",
+    "source": "https://forum.mattermost.com/t/how-to-integrate-mattermost-with-backend-magento-2-and-frond-end-react-native-mobile-application-what-is-the-flow/10578"
+  },
+  {
+    "question": "What feature is the user asking about regarding the integration of Mattermost with PagerDuty?",
+    "answer": "The user is inquiring about the possibility of adding a feature in Mattermost that would allow users to acknowledge and resolve PagerDuty incidents directly through the Mattermost platform, similar to functionality available in Slack.",
+    "source": "https://forum.mattermost.com/t/mattermost-pagerduty/17796"
+  },
+  {
+    "question": "What is the recommended approach for implementing voice channels similar to Discord in Mattermost?",
+    "answer": "The recommended approach is to first check if the existing mattermost-grumble-plugin can be updated or revived. It's suggested to reach out to the original author or the community on GitHub to see if there's any ongoing work or patches. If there's no activity or response, consider either rewriting the plugin from scratch or finding an alternative plugin that meets the voice channel requirements.",
+    "source": "https://forum.mattermost.com/t/how-can-i-make-the-mattermost-grumble-plugin-start-working/17435"
+  },
+  {
+    "question": "Why are custom groups considered an enterprise feature in Mattermost, and how does this affect smaller organizations?",
+    "answer": "Custom groups in Mattermost are considered an enterprise feature to help build a business case for commercial versions. This decision affects smaller organizations, like political parties, who may find it challenging to afford the commercial pricing. While Mattermost Team Edition is ideal for up to 50 users and can work for a couple hundred, features like custom groups are limited to paid tiers. This creates a significant gap between the free version ($0/month) and the lowest commercial tier ($900/month) for organizations that can't qualify for non-profit pricing, potentially putting them at a disadvantage compared to competing platforms like Slack or Discord that offer similar features in their free tiers.",
+    "source": "https://forum.mattermost.com/t/why-are-custom-groups-an-enterprise-feature/17168"
+  },
+  {
+    "question": "What new capabilities are being designed for the Copilot plugin in Mattermost regarding multi-bot configuration?",
+    "answer": "The Copilot plugin for Mattermost is being enhanced with new access control features for multi-bot configuration. These enhancements include user-based access controls (allowing or blocking specific users, LDAP groups, or teams) and channel-based access controls (allowing or blocking specific channels or teams). This will enable admins to create multiple bots with specific purposes and control which users can access them, as well as which channel data the LLMs can access. This feature aims to provide better management of sensitive data and allow for more tailored AI bot usage within organizations.",
+    "source": "https://forum.mattermost.com/t/design-preview-copilot-access-controls-for-ai/18981"
+  },
+  {
+    "question": "Does the Mattermost mobile app have a user agent?",
+    "answer": "According to the user's observation, the Mattermost mobile app doesn't seem to have a user agent, unlike the PC version. The user is inquiring if there are any plans to add an agent value to the mobile app in the future.",
+    "source": "https://forum.mattermost.com/t/there-is-no-mattermost-user-agent/18928"
+  },
+  {
+    "question": "What feature did matthewbirtch suggest to solve the issue of sorting direct messages in Mattermost?",
+    "answer": "matthewbirtch suggested using the \u2022\u2022\u2022 icon under the 'Direct Messages' category in the Left Sidebar, which has a sort option to choose 'Recent activity' instead of 'Alphabetically'. This allows users to sort their direct messages chronologically rather than alphabetically.",
+    "source": "https://forum.mattermost.com/t/design-feedback-chronological-sorting-of-direct-messages/7568"
+  },
+  {
+    "question": "Why is there a discrepancy between the number of plugins available in the Mattermost in-app marketplace and the full list on api.integrations.mattermost.com?",
+    "answer": "The Mattermost in-app marketplace displays fewer plugins because it is designed to show only officially supported and maintained plugins by Mattermost Inc. This curated selection aims to provide users with high-quality plugins that have guaranteed official support. The full list on api.integrations.mattermost.com includes a wider array of plugins, including those not directly maintained by Mattermost. Users who want to install additional plugins not listed in the in-app marketplace can download them from the Mattermost Integrations Directory and manually upload them to their Mattermost server via the System Console.",
+    "source": "https://forum.mattermost.com/t/in-app-marketplace-is-useless-compared-to-api-marketplace-mattermost/16554"
+  },
+  {
+    "question": "What issue does the user 'ylluminate' raise about the right sidebar in the Mattermost interface?",
+    "answer": "The user 'ylluminate' argues that the right sidebar is extremely wasteful of screen space, consuming nearly 50px in width for only two functional icons that are rarely used. They suggest implementing a more effective method to present this functionality, such as a collapsible or pinnable drawer, to reduce wasted space and allow more room for content.",
+    "source": "https://forum.mattermost.com/t/reducing-footprint-right-sidebar/17924"
+  },
+  {
+    "question": "What are the two main approaches discussed for integrating Mattermost with Microsoft Teams, and what are their key differences?",
+    "answer": "The two main approaches discussed are: 1) A connected experience with a per-user subscription and rich notifications, and 2) An embedded experience with Mattermost as an MS Teams App. The key differences are that the connected experience focuses on bidirectional chat syncing between platforms using Microsoft Graph API, while the embedded experience involves embedding Mattermost directly within MS Teams as an app, with a focus on user authentication and notification relay.",
+    "source": "https://forum.mattermost.com/t/seeking-technical-feedback-on-scaling-ms-teams-mattermost-integration/17853"
+  },
+  {
+    "question": "Is it possible to customize the way replies are displayed in Mattermost channels?",
+    "answer": "Currently, there is no direct option to customize the reply behavior individually in Mattermost. The platform has implemented a new design where replies are hidden behind a click to streamline conversation threads and reduce clutter in the main channel view. While some users appreciate this for certain channels, others miss the old style that allowed for a quick overview of new content at a glance. The Mattermost team acknowledges this feedback and is open to exploring options to make the platform more personalized in the future, but as of now, there is no way to change this behavior.",
+    "source": "https://forum.mattermost.com/t/open-replies-on-click-vs-everything-in-the-main-lane/17989"
+  },
+  {
+    "question": "What are the three potential paths forward for expanding notifications for @mentions from Teams channels to Mattermost?",
+    "answer": "The three potential paths forward are: 1) Subscribe to all chat messages across all channels, which requires application level permissions and careful permission checks. 2) Subscribe to a handful of administrator-configured channels, potentially using delegated permissions but still requiring careful permission checks. 3) Work with Microsoft to introduce a new, delegated Graph API subscription for a user's messages across all channels, which could be implemented as '/users/{id}/teams/getAllMessages' or '/users/{id}/teams/getAllMentions'.",
+    "source": "https://forum.mattermost.com/t/seeking-technical-feedback-subscribing-to-ms-teams-channel-mentions/18969"
+  },
+  {
+    "question": "What feature does the user suggest for improving image handling in Mattermost's text input box?",
+    "answer": "The user suggests that when pasting an image using Ctrl+V, Mattermost should automatically upload the image in the background, retrieve its path, and insert it at the cursor position through inline code, rather than going through the attachment upload process. This would create a more intuitive experience for inserting images into messages.",
+    "source": "https://forum.mattermost.com/t/does-mattermost-have-plans-to-upgrade-its-editor/18107"
+  },
+  {
+    "question": "What feature suggestion did user MichaelM propose for handling multiple file downloads in Mattermost?",
+    "answer": "MichaelM suggested adding a 'download all' function in the 'More' dropdown menu to allow users to download multiple files posted at once, instead of having to download each file individually with many clicks.",
+    "source": "https://forum.mattermost.com/t/allow-downloading-all-files-postes-in-one-post-at-once/18208"
+  },
+  {
+    "question": "What is the main feature request being discussed in this thread regarding message forwarding in Mattermost?",
+    "answer": "The main feature request is to implement a simple way to forward a received direct message to another person or channel, including the original text and attachments. Currently, users have to manually download attachments, copy text, create a new message, and re-attach files, which is time-consuming. The requested functionality would allow forwarding messages with a simple menu option, saving users significant time and effort.",
+    "source": "https://forum.mattermost.com/t/forward-a-direct-message-to-another-person-or-channel/14337"
+  },
+  {
+    "question": "What options are available for users who find the horizontal slider in the Mattermost Desktop App too narrow to use comfortably?",
+    "answer": "While there isn't currently an option to directly enlarge the horizontal slider, users have several alternatives: 1) They can submit a feature request on the Mattermost UserVoice Feature Idea Forum for consideration. 2) In the meantime, they can use keyboard shortcuts for navigation, which are detailed in the Mattermost documentation on Keyboard Shortcuts. 3) Users are encouraged to provide feedback, as it helps improve the app's usability in future updates.",
+    "source": "https://forum.mattermost.com/t/the-horizontal-slider-is-so-narrow-it-is-almost-impossible-to-use/18165"
+  },
+  {
+    "question": "What issue did a user raise regarding the status message in Mattermost when setting it to clear after 'Today'?",
+    "answer": "A user pointed out that when setting a status to clear after 'Today' in Mattermost, the resulting message 'Until today' sounds like it's excluding the current day. They suggested that 'Up until today' or 'Until the end of today' would be more appropriate. The user also noted similar confusion with the 'This week' option, as it's unclear whether it includes the last day of the week.",
+    "source": "https://forum.mattermost.com/t/option-set-a-status-not-correct-when-choosing-clear-after-today/18370"
+  },
+  {
+    "question": "What feature did a user suggest for team creation in Mattermost?",
+    "answer": "A user suggested implementing a default team setting that would automatically enable the 'Allow anyone to join this team' feature for newly created teams, eliminating the need to manually turn on this setting for each new team.",
+    "source": "https://forum.mattermost.com/t/default-team-setting/17863"
+  },
+  {
+    "question": "What improvement does RbDev suggest for the video playback experience in Mattermost?",
+    "answer": "RbDev suggests that when a user clicks on a movie thumbnail, the video should start downloading automatically if it's not in the cache, rather than requiring the user to click a separate download button. This would streamline the process and improve the user experience by reducing the number of clicks needed to watch a video.",
+    "source": "https://forum.mattermost.com/t/movies-click-twice-to-watch/5834"
+  },
+  {
+    "question": "What feature suggestion did CyberXUDD make for Mattermost, and how did John Combs respond?",
+    "answer": "CyberXUDD suggested adding a quoting function to Mattermost similar to WeChat Work, where users can quickly quote and respond to specific messages without starting a new thread. This feature would allow users to automatically fill the chat box with the quoted message and @mention the sender, making quick responses more efficient. John Combs welcomed the suggestion, thanked CyberXUDD for the detailed feedback, and promised to pass the idea to the development team for evaluation and possible inclusion in future releases.",
+    "source": "https://forum.mattermost.com/t/suggest-adding-a-mechanism-for-quoting-specific-messages/18095"
+  },
+  {
+    "question": "Is the read receipts feature currently available in Mattermost, and if not, what is its status?",
+    "answer": "As of July 2024, the read receipts feature is not yet available in Mattermost. It was initially proposed as a draft for a possible upcoming feature (ticket MM-36529), but no one is actively working on it. The feature is highly requested, being one of the top voted features on Mattermost's UserVoice forum. The company is seeking user feedback on its importance, potential use cases, and privacy concerns to help prioritize and design the feature for future implementation.",
+    "source": "https://forum.mattermost.com/t/read-receipts-not-available/15290"
+  },
+  {
+    "question": "What feature is being suggested for messaging in this thread?",
+    "answer": "The thread suggests adding the ability to send voice messages. Users would be able to click 'add voice', record their message, press send, and have it made available on the server for others to listen to.",
+    "source": "https://forum.mattermost.com/t/voice-messages-record-and-play-feature/5861"
+  },
+  {
+    "question": "What are some of the recent design improvements and explorations that the Mattermost product design team is working on?",
+    "answer": "According to the post, the Mattermost product design team is working on improvements and explorations in three main areas: AI Copilot, Voice Call improvements, and Admin reporting enhancements. These recent design explorations have been published in the latest issue of the 'Product Design Spotlight' on Medium.",
+    "source": "https://forum.mattermost.com/t/recent-design-explorations-on-ai-copilot-voice-calls-and-admin-reporting/18159"
+  },
+  {
+    "question": "What is Mattermost's policy on converting private channels to public channels?",
+    "answer": "Mattermost allows converting public channels to private channels, but does not offer a user interface option to convert private channels to public. The main reason for this is security concerns, as it's difficult to review all content that might have been shared in a private channel. System administrators can make this change directly in the database or through a CLI tool, but it's not recommended due to potential risks. Mattermost suggests creating new public channels or inviting new members to private channels as alternatives.",
+    "source": "https://forum.mattermost.com/t/complete-convert-a-private-channel-to-public/695"
+  },
+  {
+    "question": "What feature suggestion did user olenleo make to improve the visual distinction between channels or teams in the product?",
+    "answer": "olenleo suggested adding the ability to assign different themes or color schemes to separate channels or teams. This feature would serve as a visual cue to help users avoid accidentally posting sensitive or irrelevant information in the wrong channel.",
+    "source": "https://forum.mattermost.com/t/customize-themes-for-channels-and-or-teams/18469"
+  },
+  {
+    "question": "What are the two main parts of the proposed solution to improve the search experience in Mattermost?",
+    "answer": "The two main parts of the proposed solution are: 1) Combined Search, which brings all core search mechanisms (channels, messages, files, people, and Copilot) into one unified search panel, and 2) Cross-team search, which allows users to search across multiple teams or all teams they have access to in the workspace.",
+    "source": "https://forum.mattermost.com/t/design-preview-search-ux-enhancements/18911"
+  },
+  {
+    "question": "What are some of the proposed custom branding enhancements for Mattermost's enterprise customers?",
+    "answer": "The proposed custom branding enhancements include: adding a company logo to the login screen and main application header, customizing the favicon, creating branded themes for users, and more login screen customizations such as customized titles, colors for backgrounds, text and buttons, and custom background images.",
+    "source": "https://forum.mattermost.com/t/design-preview-custom-branding-enhancements/18575"
+  },
+  {
+    "question": "What is mm-cli?",
+    "answer": "mm-cli is a GitHub repository created by Tobiasmidskards. It appears to be a command-line interface (CLI) tool, likely related to Mattermost, although specific details about its functionality are not provided in the given content.",
+    "source": "https://forum.mattermost.com/t/show-all-tasks-from-all-boards-that-assigned-to-one-person/15641"
+  },
+  {
+    "question": "What is the main purpose of the 'Notifications Schedule' feature being designed for Mattermost?",
+    "answer": "The main purpose of the 'Notifications Schedule' feature is to allow Mattermost users to set personal working hours and silence notifications outside of those hours. This helps users disconnect from work during non-work hours, supporting the right to disconnect and establishing boundaries between work and home life, especially in remote work cultures.",
+    "source": "https://forum.mattermost.com/t/design-preview-notifications-schedule/18514"
+  },
+  {
+    "question": "What feature suggestion did user Nyralei propose for Mattermost regarding message replies?",
+    "answer": "Nyralei suggested adding a quote button next to the reply button on messages. This feature would allow users to quote a message or part of it, along with the name of the message creator, without necessarily creating a thread. The user argued that this would be useful for replying to particular messages without the need to start a full thread, which can sometimes feel like overkill.",
+    "source": "https://forum.mattermost.com/t/add-quote-button-next-to-reply-when-using-collapsed-threads/18912"
+  },
+  {
+    "question": "What issue does the user VincentVegas experience with viewing screenshots in Mattermost, and what solution was proposed?",
+    "answer": "VincentVegas experiences an issue where screenshots shared in Mattermost are displayed at a fixed smaller size, making it difficult to read the text. When clicked, the images open in a new window but remain at the same size, forcing the user to download the image to view it at full size. This problem persists even after an improvement ticket (MM-10700) was opened to investigate increasing the max dimensions of the preview window. The user suggests making the picture as big as the window for a more user-friendly experience.",
+    "source": "https://forum.mattermost.com/t/show-pictures-in-original-size/4996"
+  },
+  {
+    "question": "What feature request is being discussed in this thread regarding new user settings in Mattermost?",
+    "answer": "The thread discusses a feature request to allow administrators to set default settings for new users in Mattermost, particularly the ability to turn off email notifications by default. The users are requesting a 'template' system where administrators can configure all default settings for new users, while still allowing individual users to change these settings later if they wish.",
+    "source": "https://forum.mattermost.com/t/set-default-settings-for-new-users/12370"
+  },
+  {
+    "question": "What issue did the user identify with the login system and what improvements were suggested?",
+    "answer": "The user identified several issues with the login system: 1) There's no warning about account lockout after multiple failed login attempts, 2) The 'Forgot password' feature is not working properly, sending a 'Failed to send password reset email' message, and 3) There's no way to unlock a locked account, forcing users to create new accounts. The user suggested that the technical team should revise the Check Validate Login section to include warnings about potential account lockouts and fix the password reset functionality to improve the overall user experience.",
+    "source": "https://forum.mattermost.com/t/reflection-on-user-experience/18436"
+  },
+  {
+    "question": "What limitation does the user point out regarding the new reminder feature in Mattermost?",
+    "answer": "The user points out that the reminder feature is limited to increments of 30 minutes, making it impossible to set reminders for 15, 20, or 45 minutes. The custom time selection is a dropdown of 30-minute increments instead of a more flexible time editor.",
+    "source": "https://forum.mattermost.com/t/reminder-free-time-entry/15694"
+  },
+  {
+    "question": "What feature related to editing attachments in messages is planned for the Mattermost 8.0 release?",
+    "answer": "The ability to delete or update individual attachments when editing a message, rather than having to delete the entire message and create a new one, is planned for the Mattermost 8.0 release.",
+    "source": "https://forum.mattermost.com/t/allow-for-deletion-or-update-of-attachments-in-message-when-editing/15602"
+  },
+  {
+    "question": "What feature did a user suggest for Focalboard, and what was the response from a Mattermost representative?",
+    "answer": "A user named chaeyan suggested synchronizing the calendar in Focalboard with Nextcloud. In response, a Mattermost representative (agriesser) stated that while there were no immediate plans for this feature, they recommended submitting the idea to Mattermost's ProductBoard where it could potentially be implemented if it receives enough votes.",
+    "source": "https://forum.mattermost.com/t/synchronizing-calendar-with-nextcloud-on-focalboard/15649"
+  },
+  {
+    "question": "What changes are coming to the free editions of Mattermost in the June release (version 9.9)?",
+    "answer": "Starting in the June release (version 9.9), Team Edition and Enterprise Free edition (E0) of Mattermost will display Mattermost branding along with a 'Free edition' label. This labeling and branding will be visible on the login screen, in the main application header, and in the bottom of the product menu. The label in the product menu will also include language indicating that the free edition does not include commercial support.",
+    "source": "https://forum.mattermost.com/t/edition-labels-in-mattermost/18759"
+  },
+  {
+    "question": "What is the proposed solution for Mattermost Team Edition deployments with 500+ users to address security risks?",
+    "answer": "The proposed solution is to publish a warning banner across Mattermost visible to IT Admins when an installation has 500 or more users. The banner would alert that the system is at risk of disruptions and strongly recommend deploying Mattermost with advanced access controls. It would include a link to learn more about high-availability clusters.",
+    "source": "https://forum.mattermost.com/t/feedback-on-collaboration-for-mission-critical-work/17563"
+  },
+  {
+    "question": "What are the main design issues with the system console mentioned in the user feedback?",
+    "answer": "The user feedback highlighted three main design issues with the system console: 1) It has an overall outdated design, 2) It does not support dark mode, and 3) The sidebar is confusing because the categories and clicked menus are the same color.",
+    "source": "https://forum.mattermost.com/t/system-console-redisgn/19007"
+  },
+  {
+    "question": "What is John Combs asking the Mattermost community to share in his message?",
+    "answer": "John Combs is asking the Mattermost community to share creative ways they are using Mattermost. He's interested in hearing about how teams are leveraging the platform for remote collaboration, project management, customer support, integrations, and workflow automation with bots. The goal is to inspire others, understand diverse use cases, and foster collaboration within the community.",
+    "source": "https://forum.mattermost.com/t/the-most-creative-ways-to-use-mattermost/15742"
+  },
+  {
+    "question": "What is E2E Encryption in Rocket.Chat and what is its primary purpose?",
+    "answer": "E2E (End-to-End) Encryption in Rocket.Chat is a security feature that prevents third parties from accessing data while it's being transferred from one end system to another. Its primary purpose is to ensure the privacy and security of communications by encrypting the data at the source and only decrypting it at the intended destination.",
+    "source": "https://forum.mattermost.com/t/e2ee-end-to-end-encrypt-support/15524"
+  },
+  {
+    "question": "What is the purpose of the feedback request mentioned in the message?",
+    "answer": "The feedback request is aimed at improving the navigation between products in Mattermost. Users are asked to participate in a short survey that will take 2-3 minutes, and their input will be used to enhance the Mattermost experience.",
+    "source": "https://forum.mattermost.com/t/improved-navigation-of-mattermost-boards/15822"
+  },
+  {
+    "question": "What change in Mattermost version 7.9.0 caused issues with systemd sandboxing, and how was it resolved?",
+    "answer": "Starting with Mattermost version 7.9.0, the software required the @resources system call set, which was not mentioned in the changelogs. This caused issues for users implementing systemd sandboxing features. The problem was resolved by modifying the systemd unit configuration to include the necessary system call. Specifically, the setrlimit syscall (syscall 160) was likely introduced, possibly due to changes in Go functionality or library updates.",
+    "source": "https://forum.mattermost.com/t/mattermost-vs-systemd-sandboxing-seccomp-systemcallfilter/15402"
+  },
+  {
+    "question": "What is the 'Send Messages Later' feature that John Combs mentions in his message?",
+    "answer": "The 'Send Messages Later' feature is a top-voted idea from Mattermost's UserVoice channel. It would allow users to schedule messages to be sent at a later time, ensuring timely communication even when the user is not available. This feature aims to enhance communication and productivity within Mattermost.",
+    "source": "https://forum.mattermost.com/t/uservoice-spotlight-send-messages-later/18954"
+  },
+  {
+    "question": "What feature does the user suggest for controlling message length in Mattermost channels?",
+    "answer": "The user suggests implementing a feature that allows setting a maximum message length for individual channels, specifically mentioning the desire to set a maximum size of around 100 characters for channels used with /command hooks and message updates.",
+    "source": "https://forum.mattermost.com/t/channel-max-size-of-messages-character/15907"
+  },
+  {
+    "question": "What issue is reported with the left menu in Mattermost version 7.10.2?",
+    "answer": "In Mattermost version 7.10.2, when clicking on the left menu, the label names are not found or displayed.",
+    "source": "https://forum.mattermost.com/t/click-on-the-left-menu-the-label-name-is-not-found-v7-10-2/16025"
+  },
+  {
+    "question": "How can you mark all messages as read in a Mattermost channel?",
+    "answer": "You can mark all messages as read in a Mattermost channel by using the channel menu. There is a 'Mark as Read' option available in the channel menu, which allows you to mark all messages in that specific channel as read on a per-channel basis.",
+    "source": "https://forum.mattermost.com/t/mark-all-messages-read-in-a-channel-or-team/15846"
+  },
+  {
+    "question": "What is the primary purpose of the scheduled messages feature proposed for Mattermost?",
+    "answer": "The primary purpose of the scheduled messages feature is to allow users to send messages at a later time or date. This feature is designed to accommodate teams working across different time zones, enable users to send non-urgent messages outside of working hours without disturbing others, and help maintain a healthy work-life balance by reducing pressure to respond immediately.",
+    "source": "https://forum.mattermost.com/t/design-preview-scheduled-messages/18455"
+  },
+  {
+    "question": "What are the recommended steps for providing feedback on the Mattermost product?",
+    "answer": "To provide feedback on the Mattermost product, users should: 1) Search the forums first to see if their topic has already been discussed. 2) If it's a new idea, create a new topic with detailed information, including where the feature would exist, how it would change the user experience, screenshots, and examples of its usefulness. 3) For formal proposals, create a new suggestion in Mattermost's Productboard and encourage others to vote on it.",
+    "source": "https://forum.mattermost.com/t/feature-idea-discussion/63"
+  },
+  {
+    "question": "What feature does the user suggest for administrators in Mattermost?",
+    "answer": "The user suggests that administrators should have the ability to add members directly, especially when user registration is disabled. This feature is described as being similar to the functionality in Rocket.Chat, where administrators can create new members.",
+    "source": "https://forum.mattermost.com/t/it-is-recommended-that-administrators-add-members/15988"
+  },
+  {
+    "question": "What issue is the user experiencing with voice calls in the Mattermost desktop application?",
+    "answer": "The user is unable to connect voice calls in the Mattermost desktop version 5.3.1, running on Windows 11 with server version 7.10.2.",
+    "source": "https://forum.mattermost.com/t/voice-calls-cannot-be-connected-in-the-desktop-version-v7-10-2/16026"
+  },
+  {
+    "question": "What is Block Kit in the context of Slack?",
+    "answer": "Block Kit is a clean and consistent UI framework for building Slack apps. It provides developers with a set of tools to create visually appealing and interactive interfaces within Slack, allowing for more engaging and user-friendly app experiences.",
+    "source": "https://forum.mattermost.com/t/block-kit-feature/16036"
+  },
+  {
+    "question": "What improvements are suggested for the local translation interface compared to the rocket.chat translation interface?",
+    "answer": "The suggested improvements include allowing key values to be translated without underscores or hyphens, making it easier for other countries to search for English content. Additionally, the translation should support punctuation, quotes, and spaces, and should not use JSON format. It's recommended to create a function library or a set of rules for the system to handle conversions automatically, rather than requiring manual user conversion. The use of i18n is also suggested as a more reasonable approach.",
+    "source": "https://forum.mattermost.com/t/you-are-advised-to-add-a-local-translation-interface/15989"
+  },
+  {
+    "question": "What feature is being suggested for the Mattermost desktop client to improve accessibility and reduce distractions?",
+    "answer": "The suggestion is to provide an option for users to disable or freeze animated items in the Mattermost interface. This would include animated elements in content, room descriptions, reactions (animated emojis), and user statuses. The feature is proposed as an accessibility improvement, particularly beneficial for users with attention difficulties or those who want to keep the Mattermost client open on a second screen without distractions.",
+    "source": "https://forum.mattermost.com/t/accessibility-option-freeze-or-disable-some-animated-graphics/15839"
+  },
+  {
+    "question": "What issue is the user 'spadeskate' experiencing with notifications on a platform?",
+    "answer": "The user 'spadeskate' is being bothered by notifications from a Notification Bot about party bus and other system updates, which they find irrelevant and bothersome as a general user. They are seeking a way to stop receiving these notifications.",
+    "source": "https://forum.mattermost.com/t/how-to-block-notification-bot/18789"
+  },
+  {
+    "question": "What new feature is Mattermost working on to enhance user profiles, and what are some key aspects of this feature?",
+    "answer": "Mattermost is working on a custom profile attributes feature. Key aspects include:\n1. Ability to add and configure custom user properties in the system console\n2. Linking properties with AD/LDAP or SAML attributes for enterprise customers\n3. Different property types such as text, number, email, select, etc.\n4. Reordering and visibility settings for properties\n5. Displaying custom properties in user profile settings and profile popovers\n6. A new detailed profile view in a right-side panel",
+    "source": "https://forum.mattermost.com/t/design-preview-custom-profile-attributes/18998"
+  },
+  {
+    "question": "Does Mattermost include built-in forum functionality similar to traditional forums?",
+    "answer": "No, Mattermost does not include built-in forum functionality in its GUI. This was confirmed by a Mattermost representative in response to a user inquiry on the Mattermost forums.",
+    "source": "https://forum.mattermost.com/t/has-mattermost-forum-functionality/16152"
+  },
+  {
+    "question": "What resource is available for developers who want to set up their environment for Mattermost development?",
+    "answer": "Developers can refer to the 'Developer setup' guide available at developers.mattermost.com/contribute/developer-setup/. This resource provides information on how to set up a development environment for building, running, and testing Mattermost.",
+    "source": "https://forum.mattermost.com/t/how-do-i-skip-the-landing-page-and-go-directly-to-the-login-page/15973"
+  },
+  {
+    "question": "What options were discussed for decision-making tools in Mattermost, and what was the conclusion?",
+    "answer": "The discussion explored several options for decision-making tools in Mattermost. Initially, PolicyKit was considered, but it doesn't have Mattermost integration. A basic Loomio integration was mentioned, which allows receiving notifications through webhooks. The built-in poll plugin in Mattermost was also discussed, but it was deemed too simplistic for complex voting needs. Ultimately, the user decided to stick with Loomio functionality, as there were no other suitable plugins available for more advanced decision-making processes in Mattermost.",
+    "source": "https://forum.mattermost.com/t/decision-making-tools-in-mattermost/15940"
+  },
+  {
+    "question": "What feature did the user 'fallingrock' request for Mattermost?",
+    "answer": "The user 'fallingrock' requested the ability to tag a user and be alerted when they come online, which they referred to as a 'pounce' feature. This functionality was desired in the desktop app, as the user didn't have authority to run scripts or set up cron jobs on the server.",
+    "source": "https://forum.mattermost.com/t/pounce-feature/16295"
+  },
+  {
+    "question": "What issue was reported regarding the 'Reset Password' link in Mattermost when only LDAP authentication is enabled?",
+    "answer": "Users reported that the 'Reset Password' link on the login page remains active even when only LDAP authentication is enabled. This can be misleading for users who try to use the link, as it doesn't work in this configuration. A suggestion was made to disable this link when LDAP is the sole authentication method.",
+    "source": "https://forum.mattermost.com/t/reset-password-link-misleading/16193"
+  },
+  {
+    "question": "What issue was reported regarding emojis in Mattermost email notifications?",
+    "answer": "It was reported that emojis are not rendering properly in email notifications about messages in Mattermost. The user expected emojis to be displayed in these notifications, but observed that they were not appearing as intended.",
+    "source": "https://forum.mattermost.com/t/emoji-doesnt-render-in-email-notification-message/16431"
+  },
+  {
+    "question": "What new feature is Mattermost working on to enhance their search capabilities?",
+    "answer": "Mattermost is working on AI-enhanced search, which will allow users to query across all conversations they have access to using a more topical, semantic approach rather than traditional keyword-based search. This new feature will be integrated into the global search modal with a dedicated 'AI Copilot' tab. The AI search will provide summarized answers to queries, along with links to original source content and related questions for further exploration.",
+    "source": "https://forum.mattermost.com/t/design-preview-ai-enhanced-search/18538"
+  },
+  {
+    "question": "What issue was reported regarding the Calls feature in Compact Mode?",
+    "answer": "The user reported that in Compact Mode, the Calls feature doesn't have a compact view for posts in the channel, meaning it doesn't align with the expected compact display.",
+    "source": "https://forum.mattermost.com/t/in-compact-mode-plug-ins-dont-seem-very-compact/16521"
+  },
+  {
+    "question": "What is happening with Gfycat integration in Mattermost, and are there plans for a replacement?",
+    "answer": "Gfycat is shutting down on September 1st, and Mattermost is currently evaluating alternatives for GIF integration. Users can follow the progress of this process through a Jira ticket (MM-53503) in the Mattermost project management system.",
+    "source": "https://forum.mattermost.com/t/gfycat-integration-replacement/16350"
+  },
+  {
+    "question": "What is the main issue being discussed regarding file organization in Mattermost?",
+    "answer": "The main issue being discussed is the lack of a folder structure for organizing files within Mattermost channels. The user 'Darkland' suggests that it would be beneficial to have the ability to create folders in the document upload fields, similar to other programs. This would allow for better organization, permissions management, and selective sharing of documents within a channel. However, it's explained that the 'files area' in Mattermost is actually a search result of all files posted in a channel, not a filesystem for organizing uploads, which limits the possibility of implementing such a folder structure.",
+    "source": "https://forum.mattermost.com/t/folder-and-files/16185"
+  },
+  {
+    "question": "What issue was reported regarding the display of Channel Header and Channel Purpose in Mattermost?",
+    "answer": "The user reported that after adding a Channel Header and Channel Purpose, the context for each field is lost. They appear as random text in the sidebar without any indication of what the metadata is used for, making it unclear which is the header and which is the purpose.",
+    "source": "https://forum.mattermost.com/t/after-adding-a-channel-header-and-channel-purpose-the-context-for-each-field-is-lost-they-look-like-random-text-in-the-sidebar-with-not-context-on-what-the-metadata-is-used-for/16530"
+  },
+  {
+    "question": "What issue does the image in the Mattermost forum post highlight?",
+    "answer": "The image shows a Mattermost message where special characters or encoding issues are causing text to display incorrectly. Specifically, it shows apostrophes and quotation marks being replaced with unusual character sequences like '&#39;' and '&quot;', indicating a problem with character encoding or escaping in the integration or message formatting.",
+    "source": "https://forum.discourse.com/t/zapier-integration-with-hacker-news-pushes-in-weird-characters/16529"
+  },
+  {
+    "question": "What issue does the user report regarding slash commands in Mattermost?",
+    "answer": "The user reports that there is no easy way for end users to understand how to use slash commands or markdown formatting features from the input box. This lack of guidance significantly reduces the probability that users will understand the value and potential of these powerful features.",
+    "source": "https://forum.mattermost.com/t/difficult-to-understand-end-user-slash-commands/16613"
+  },
+  {
+    "question": "What is the 'broken windows' concept discussed in the Mattermost thread, and how does it relate to product development?",
+    "answer": "The 'broken windows' concept in this context refers to fit and finish issues in the Mattermost experience. It's an analogy where small imperfections or issues in a product, if left unaddressed, can lead to a perception that quality isn't a priority, similar to how a building with many broken windows might invite further neglect. In product development, addressing these 'broken windows' or minor issues can improve the overall user experience and maintain a high standard of quality. The thread suggests creating a dedicated space for the community to identify and discuss these potential issues, allowing for quicker resolution and continuous improvement of the Mattermost platform.",
+    "source": "https://forum.mattermost.com/t/potential-broken-windows/16429"
+  },
+  {
+    "question": "What happened to Mattermost Cloud Free workspaces after July 27, 2023?",
+    "answer": "After July 27, 2023, Mattermost stopped supporting Cloud Free workspaces for users who created them before April 27, 2023. Users attempting to log in received an error message stating 'Your trial has ended' and 'Your workspace has been deleted'. Mattermost was no longer able to restore these workspaces or provide access to the data they contained after this date.",
+    "source": "https://forum.mattermost.com/t/trial-has-ended/16558"
+  },
+  {
+    "question": "How can you customize the content of push notifications in a self-hosted Mattermost server?",
+    "answer": "You can customize the content of push notifications in a self-hosted Mattermost server by adjusting the site configuration settings. Specifically, you can modify the 'Push Notification Contents' setting to control what information is included in the push notifications. For more detailed information, you can refer to the Mattermost documentation on site configuration settings and mobile push notification service.",
+    "source": "https://forum.mattermost.com/t/self-hosted-notification-question/16455"
+  }
+]
