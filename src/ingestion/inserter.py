@@ -2,7 +2,6 @@ from abc import ABC, abstractmethod
 from typing import Dict, Any, List 
 from src.weaviate_db import WeaviateDB
 from contextlib import contextmanager
-import sys 
 
 
 class DatabaseInserter(ABC):

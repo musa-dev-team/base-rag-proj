@@ -8,9 +8,6 @@ from src.ingestion.preprocessor import ThreadPreprocessor, DocPreprocessor, Tick
 from src.ingestion.embedder import EmbeddingGenerator
 
 
-def ingest_batch(batch, ingestor: ContentIngestor):
-    for item in batch:
-        ingestor.ingest(item)
 
 def main():
 
@@ -21,7 +18,8 @@ def main():
             "ticket": TicketPreprocessor()
         },
         embedding_generator=EmbeddingGenerator(),
-        collection_name="test_collection"
+        collection_name="test_collection",
+        batch_size=20
     )
 
     def load_content_from_json(file_path: str, content_type: str) -> List[Union[DuckieThread, DuckieDoc, DuckieTicket]]:
@@ -29,9 +27,8 @@ def main():
         return loader.load(file_path)
 
     content = load_content_from_json('data/raw/forums/technical_support_thread_messages.json', "thread")
-    content = content[0:1]
     print(f"Starting parallel ingestion of {len(content)} documents...")
-    ingest_batch(content, content_ingestor)
+    content_ingestor.ingest_many(content)
     print("Content ingestion complete.")
 
 if __name__ == "__main__":
