@@ -33,12 +33,13 @@ class ContentIngestor:
     def __init__(self, 
                  preprocessors: Dict[str, DataPreprocessor],
                  embedding_generator: EmbeddingGenerator,
+                 db_inserter: Union[WeaviateInserter],
                  collection_name: str,
                  batch_size: int = 10,
                  max_workers: int = 0):
         self.preprocessors = preprocessors
         self.embedding_generator = embedding_generator
-        self.inserter = WeaviateInserter(collection_name)
+        self.inserter = db_inserter(collection_name)
         self.batch_size = batch_size
         self.max_workers = max_workers or multiprocessing.cpu_count() - 1
 
