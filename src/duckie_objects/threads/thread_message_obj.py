@@ -13,6 +13,7 @@ class DuckieThreadMessage:
     user: str = None
     timestamp: datetime = None
     url: str = None
+    file_name: str = ""  
 
     def __str__(self):
         return self.user + ":\n" + self.message_text
@@ -29,6 +30,7 @@ class DuckieThreadMessage:
             if self.timestamp
             else None,
             "message_text": self.message_text,
+            "file_name": self.file_name  
         }
     
     @property
@@ -44,6 +46,7 @@ class DuckieThreadMessage:
             if self.timestamp
             else None,
             "message_text": self.message_text,
+            "file_name": self.file_name  
         }
     
     @classmethod

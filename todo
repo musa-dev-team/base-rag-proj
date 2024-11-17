@@ -1,0 +1,8 @@
+1. Parallelize the ingestion 
+2. Think about collections (seperate for data-types or all data)
+3. Check Property types in the collections sent in 
+[missing - doc_id, content, url]
+4. Think about how to get the content for jira - tickets 
+5. Timestamps for Jira Comments Written in English
+
+

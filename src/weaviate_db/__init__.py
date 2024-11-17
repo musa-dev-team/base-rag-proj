@@ -3,7 +3,7 @@ import os
 import logging
 from dotenv import load_dotenv
 
-load_dotenv()
+load_dotenv(override=True)
 
 import weaviate
 import weaviate.classes as wvc
@@ -35,7 +35,7 @@ class WeaviateDB:
         if len(data) == 0:
             return []
         return rate_limit_function(
-            self.collection.data.insert_many, error_message="rate"
+            self.collection.data.insert_many, error_message="rate", max_retry_timer=100
         )(data)
 
     def delete_many(self, ids=None, filters=None):
