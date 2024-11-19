@@ -28,7 +28,7 @@ def ingest_file(file_path: str, content_type: str, content_ingestor: ContentInge
     return len(content)
 
 def main():
-    config_path = 'ingestion_config.yaml'
+    config_path = 'config_ingestion.yaml'
     config = load_config(config_path)
 
     content_ingestor = ContentIngestor(

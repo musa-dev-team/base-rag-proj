@@ -3,6 +3,7 @@ import json
 import re
 from time import sleep
 import traceback
+from typing import List
 from bs4 import BeautifulSoup
 import html2text
 from requests import Response
@@ -129,3 +130,23 @@ def cprint(text, color="green"):
             text = str(text)
 
     rprint(f"[{color}]{text}[/{color}]")
+
+def extract_urls_from_output(output: str) -> List[str]:
+    urls = []
+    lines = output.strip().split('\n')
+    
+    pattern = re.compile(r'^\d+,\s*(\{.*\})$')
+    
+    for line in lines:
+        match = pattern.match(line)
+        if match:
+            json_str = match.group(1)
+            try:
+                data = json.loads(json_str)
+                url = data.get("url")
+                if url:
+                    urls.append(url)
+            except json.JSONDecodeError as e:
+                print(f"Error decoding JSON in line: {line}\nError: {e}")
+    
+    return urls

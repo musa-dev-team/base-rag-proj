@@ -22,7 +22,6 @@ class RetrieverEvaluator:
         retrieval_lists = []
         for qa_item in tqdm(self.qa_data):
             query = qa_item['question']
-            expected_answer = qa_item['answer']
             expected_source = qa_item['source']
 
             results = self.retriever.retrieve(query)

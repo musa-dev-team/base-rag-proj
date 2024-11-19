@@ -6,7 +6,7 @@ from src.retrieval.metrics import RetrievalMetrics
 def main():
     retriever = RetrieverFactory.get_retriever("weaviate", collection_name="test_collection")
     metrics = RetrievalMetrics()
-    evaluator = RetrieverEvaluator(retriever, metrics,  "data/synthetic_qa/issues/jira_issues_qa.json")
+    evaluator = RetrieverEvaluator(retriever, metrics,  "data/synthetic_qa/docs/handbook_qa.json")
     
     k = 10
     results = evaluator.evaluate(k=k)

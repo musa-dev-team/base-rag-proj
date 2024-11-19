@@ -1,13 +1,14 @@
 from typing import Dict, List, Union
 from src.duckie_objects.threads.thread_obj import DuckieThread
 from src.duckie_objects.docs.doc_obj import DuckieDoc
-from src.ingestion.inserter import WeaviateInserter
+from src.ingestion.inserter import GraphRAGInserter, WeaviateInserter
 from src.ingestion.preprocessor import DataPreprocessor
 from src.ingestion.embedder import EmbeddingGenerator
 from src.duckie_objects.ticketing.ticketing_obj import DuckieTicket
 from tqdm import tqdm
 import multiprocessing
 import concurrent.futures
+
 
 
 class ExampleThreadIngestor:
@@ -33,7 +34,7 @@ class ContentIngestor:
     def __init__(self, 
                  preprocessors: Dict[str, DataPreprocessor],
                  embedding_generator: EmbeddingGenerator,
-                 db_inserter: Union[WeaviateInserter],
+                 db_inserter: Union[WeaviateInserter, GraphRAGInserter],
                  collection_name: str,
                  batch_size: int = 10,
                  max_workers: int = 0):

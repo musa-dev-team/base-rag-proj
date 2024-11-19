@@ -1,5 +1,6 @@
 from abc import ABC, abstractmethod
 from typing import Dict, Any, List 
+from src.graphrag import GraphRAGDB
 from src.weaviate_db import WeaviateDB
 from contextlib import contextmanager
 
@@ -60,42 +61,39 @@ class WeaviateInserter(DatabaseInserter):
 
 
 
-# class LightRAGInserter(DatabaseInserter):
-#     def __init__(self, collection_name: str):
-#         self.collection_name = collection_name
+class GraphRAGInserter(DatabaseInserter):
+    def __init__(self, collection_name: str):
+        self.collection_name = collection_name
+        self.gdb = self._get_gdb()
 
-#     @contextmanager
-#     def _get_gdb(self):
-#         with LightRAGDB(self.collection_name) as gdb:
-#             yield gdb
+    def _get_gdb(self):
+        return GraphRAGDB(self.collection_name)
 
-#     def insert(self, data: Dict[str, Any], embedding: List[float]):
-#         light_rag_object = self._to_light_rag_object(data, embedding)
-#         with self._get_gdb() as gdb:
-#             gdb.insert(light_rag_object, embedding)
+    def insert(self, data: Dict[str, Any], embedding: List[float]):
+        graph_rag_object = self._to_graph_rag_object(data, embedding)
+        self.gdb.insert(graph_rag_object, embedding)
 
-#     def insert_many(self, data_list: List[Dict[str, Any]], embeddings: List[List[float]]):
-#         light_rag_objects = [
-#             self._to_light_rag_object(data, embedding)
-#             for data, embedding in zip(data_list, embeddings)
-#         ]
-#         with self._get_gdb() as vdb:
-#             vdb.insert_many(light_rag_objects, embeddings)
+    def insert_many(self, data_list: List[Dict[str, Any]], embeddings: List[List[float]]):
+        graph_rag_objects = [
+            self._to_graph_rag_object(data, embedding)
+            for data, embedding in zip(data_list, embeddings)
+        ]
+        self.gdb.insert_many(graph_rag_objects, embeddings)
 
-#     def _to_light_rag_object(self, data: Dict[str, Any], embedding: List[float]) -> Dict[str, Any]:
-#         return {
-#             "metadata": {
-#                 "timestamp": data.get("timestamp"),
-#                 "ingest_type": data.get("type"),
-#                 **{k: v for k, v in data.items() if k not in ["id", "object_id", "timestamp", "type", "raw"]},
-#                 "raw": data.get("raw", str(data))
-#             },
-#             "id": data.get("object_id") or data.get("id"),
-#             "content": data.get("content", "")
-#         }
+    def _to_graph_rag_object(self, data: Dict[str, Any], embedding: List[float]) -> Dict[str, Any]:
+        return {
+            "metadata": {
+                "timestamp": data.get("timestamp"),
+                "ingest_type": data.get("type"),
+                **{k: v for k, v in data.items() if k not in ["id", "object_id", "timestamp", "type", "raw"]},
+                "raw": data.get("raw", str(data))
+            },
+            "id": data.get("object_id") or data.get("id"),
+            "content": data.get("content", "")
+        }
 
-#     def __enter__(self):
-#         return self
+    def __enter__(self):
+        return self
 
-#     def __exit__(self, exc_type, exc_value, traceback):
-#         pass
+    def __exit__(self, exc_type, exc_value, traceback):
+        pass
