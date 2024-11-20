@@ -14,6 +14,9 @@ class DuckieDoc:
     file_name: str = ""  
     record_number: int = 0  
 
+    def format_doc(self):
+        return "\n".join([str(self.title), str(self.content), "URL:" + str(self.url)])
+
     @property
     def __dict__(self):
         timestamp = self.timestamp.strftime("%Y-%m-%d %H:%M:%S") if self.timestamp else None

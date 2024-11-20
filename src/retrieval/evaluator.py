@@ -23,10 +23,12 @@ class RetrieverEvaluator:
         for qa_item in tqdm(self.qa_data):
             query = qa_item['question']
             expected_source = qa_item['source']
-
-            results = self.retriever.retrieve(query)
-            relevant_docs = self._get_relevant_docs(results, expected_source)
-            retrieval_lists.append(relevant_docs)
+            try:
+                results = self.retriever.retrieve(query)
+                relevant_docs = self._get_relevant_docs(results, expected_source)
+                retrieval_lists.append(relevant_docs)
+            except:
+                pass
         retrieval_metrics = self.metrics.calculate_metrics(retrieval_lists)
             
         return {

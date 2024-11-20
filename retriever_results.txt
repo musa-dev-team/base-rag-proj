@@ -1,0 +1,18 @@
+LightRAG Retriever Results :
+MRR: 0.1198
+Precision@1: 0.0505
+Recall@1: 0.0505
+Precision@3: 0.0539
+Recall@3: 0.1616
+Precision@5: 0.0444
+Recall@5: 0.2222
+
+
+WeaviateDB Retriever Results:
+MRR: 0.6364
+Precision@1: 0.6263
+Recall@1: 0.6263
+Precision@3: 0.2155
+Recall@3: 0.6465
+Precision@5: 0.1293
+Recall@5: 0.6465
