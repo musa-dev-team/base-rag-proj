@@ -1,0 +1,19 @@
+raw_data_files:
+  thread:
+    - 'data/raw/forums/technical_support_thread_messages.json'
+    - 'data/raw/forums/feedback_thread_messages.json'
+    - 'data/raw/forums/faq_thread_messages.json'
+    - 'data/raw/forums/announcements_thread_messages.json'
+    - 'data/raw/forums/community_thread_messages.json'
+
+  doc:
+    - 'data/raw/docs/handbook.json'
+    - 'data/raw/docs/public_docs.json'
+
+  ticket:
+    - 'data/raw/issues/jira_issues.json'
+
+
+batch_size: 32
+max_workers: 4
+collection_name: 'test_collection'

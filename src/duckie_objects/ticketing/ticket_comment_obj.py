@@ -9,6 +9,7 @@ class DuckieTicketComment:
     content: str = ""
     timestamp: datetime = None
     user: str = ""
+    url: str = ""
 
     def format_comment(self):
         return {

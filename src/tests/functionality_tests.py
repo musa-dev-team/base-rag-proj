@@ -1,3 +1,4 @@
+from src.ingestion.embedder import EmbeddingGenerator
 from src.llm.llm_model import ModelType
 from src.llm.llm_model_helper import generate_llm_response
 from src.supabase_helper import get_supabase
@@ -17,3 +18,4 @@ def test_read_from_supabase():
     print(data)
     assert data is not None
     assert len(data) > 0
+

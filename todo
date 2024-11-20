@@ -1,0 +1,31 @@
+D. Parallelize the ingestion
+D. Think about collections (seperate for data-types or all data) 
+D. Check Property types in the collections sent in 
+[missing - doc_id, content, url]
+
+Q. Think about how to get the content for jira - tickets 
+Q. Timestamps for Jira Comments Written in English
+
+T. Implement Query Answer matching score
+
+1. Explore LightRAG
+Ideally generalize over all customers 
+- Schema Generation System -> Online -> 
+
+Maybe Change alpha values 
+
+llm - 
+
+
+k - docs
+
+[True]
+[False, True]
+[False, False, True]
+
+
+
+
+1. Try entity extraction with new list in prompt.py (lightrag.py)
+2. Clone lightrag locally (lightrag.insert)
+3. parse output from default lightrag 

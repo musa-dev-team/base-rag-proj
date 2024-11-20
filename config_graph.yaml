@@ -1,0 +1,327 @@
+ENTITIES:
+  - Feature Request
+  - Person
+  - User
+  - Survey
+  - Team
+  - Issue
+  - Avatar URL
+  - Account ID
+  - Timezone
+  - Account Type
+  - Software
+  - Image
+  - State
+  - Comment
+  - Description
+  - URL
+  - Issue ID
+  - Image URL
+  - Text
+  - Software Release
+  - Comment ID
+  - Version
+  - System
+  - Application
+  - Service
+  - Branch
+  - Link
+  - Bot
+  - Domain
+  - Port
+  - Server
+  - IP Address
+  - Hardware
+  - Status
+  - File
+  - Certificate
+  - Key
+  - Skill
+  - Task
+  - Platform
+  - Plugin
+  - Technical Issue
+  - Message
+  - Operating System
+  - Database
+  - API_Endpoint
+  - Documentation
+  - Endpoint
+  - Parameter
+  - Answer
+  - API
+  - Message_Type
+  - Community
+  - Feature
+  - Setting
+  - Scheduler
+  - Mechanism
+  - Company
+  - Product
+  - Mission
+  - Platform_Type
+  - Characteristic
+  - Tool
+  - Action
+  - Project
+  - Environment
+  - Subscription_Type
+  - Integration
+  - Offering
+  - Edition
+  - Requirement
+  - Release
+  - Team_Type
+  - Activity
+  - Protocol
+  - Capability
+  - Abbreviation
+  - Method
+  - Process
+  - Data
+  - Format
+  - Purpose
+  - Attribute
+  - Filter Criteria
+  - Location
+  - Report
+  - Metadata
+  - Header
+  - Token
+  - Time Period
+  - Email
+  - Command
+  - Column
+  - Property
+  - Report ID
+  - Field
+  - Table
+  - User ID
+  - Timestamp
+  - Query Type
+  - Number
+  - Synonym
+  - TeamDisplayName
+  - TeamName
+  - ChannelDisplayName
+  - Functionality
+  - Authentication Method
+  - Permission
+  - Nickname
+  - UserType
+  - PostId
+  - Username
+  - Time Range
+  - Concept
+  - Conversion
+  - Solution
+  - Export
+  - Directory
+  - Filter
+  - Deployment
+  - Value
+  - Step
+  - FileName
+  - Information
+  - Query
+  - Keyword
+  - Email List
+  - Role
+  - Division
+  - Product Feature
+  - Infrastructure
+  - Organization
+  - Program
+  - Policy
+  - Department
+  - Event
+  - Experience
+  - Employee
+  - Participation
+  - Calendar
+  - UserEmail
+  - UserNickname
+  - ChannelName
+  - Post ID
+  - Communication Channel
+  - File Format
+  - Group
+  - Meeting
+  - Goal
+  - Customer
+  - Participant_Group
+  - Day
+  - Metric
+  - Topic
+  - User_Group
+  - Programming Language
+  - Privilege
+  - Website
+  - Domain Name
+  - Session
+  - CommunicationChannel
+  - License
+  - Channel
+  - Repository
+  - Feedback Method
+  - Time
+  - Board
+  - Office Hours
+  - Inquiry
+  - Intellectual Property
+  - Entity
+  - Resource
+  - Contact
+  - Position
+  - Contact Information
+  - Playbook
+  - Principle
+  - Vision
+  - Technology
+  - Participants
+  - Cadence
+  - Area
+  - Compliance Standard
+  - Component
+  - Responsibility
+  - Practice
+  - Culture
+  - Translation
+  - Objective
+  - Target
+  - Frequency
+  - Audience
+  - Section
+  - Test
+  - Update
+  - Function
+  - Title
+  - Run
+  - Identifier
+  - Folder
+  - Language
+  - Run Group
+  - Software Version
+  - Web Page
+  - Window
+  - Test Category
+  - Webpage
+  - Failure
+  - Button
+  - Testing Tool
+  - Feature Label
+  - Stage
+  - Support
+  - Usage
+  - Type
+  - Attendee Type
+  - Event Type
+  - Budget
+  - Course
+  - Book
+  - Class
+  - Author
+  - Article
+  - Profession
+  - Institution
+  - Amount
+  - Track
+  - Authors
+  - Paper
+  - Requests
+  - Structure
+  - Departments
+  - Feedback Sources
+  - Request
+  - Framework
+  - TimePeriod
+  - Planning
+  - Analysis
+  - Launch
+  - Initiative
+  - Summary
+  - Theme
+  - List
+  - Review
+  - Deliverable
+  - Date
+  - Roles
+  - Guideline
+  - Risk
+  - Dependency
+  - Specification
+  - Threat
+  - Condition
+  - App
+  - ReleaseType
+  - Versioning
+  - Script
+  - Server Version
+  - Device
+  - CodeEntity
+  - Label
+  - Configuration
+  - Severity Level
+  - Urgency
+  - Severity
+  - Principles
+  - Schedule
+  - Content
+  - Release Type
+  - Philosophy
+  - Release Schedule
+  - Communication
+  - Source
+  - Release Cycle
+  - Methodology
+  - Benefit
+  - Advantage
+  - Strategy
+  - Need
+  - Time Frame
+  - Plan
+  - Input
+  - Stakeholder
+  - Work Type
+  - Category
+  - Pull Request
+  - Tab
+  - Vertical
+  - Review Type
+  - Contribution
+  - Guide
+  - Extension
+  - Page
+  - Output
+  - Problem
+  - Sitemap
+  - Code
+  - Content Type
+  - Message Type
+  - UI Element
+  - Capitalization
+  - Punctuation
+  - Handbook
+  - Style
+  - Collection
+  - Note
+  - Message Subtype
+  - Event/Action
+  - Account
+  - Limit
+  - Connection
+  - Effect
+  - Change
+  - Capitalization Rule
+  - Components
+  - Element
+  - Priority
+  - Work
+  - Competency
+  - Level
+  - Expectation
+  - Recognition
+  - Teams
+  - Discussion
+  - Leadership
+  - PQL Category

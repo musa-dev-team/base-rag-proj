@@ -5,6 +5,17 @@
 .env.*
 !.env.template
 
+#faiss
+faiss/*
+
+#lightrag base
+lightrag/*
+
+#indexes
+*/kv_*
+*/vdb_*
+*/graph_*
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
