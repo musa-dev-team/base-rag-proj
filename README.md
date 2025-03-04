@@ -1,18 +1,13 @@
 # Project: Duckie RAG System
 
-## Overview
-
-Welcome to the Duckie trial project! Your task is to implement an ingestion and retrieval system for a RAG project.
-
 ## Project Structure
 
-Below is a brief overview of the project structure and where your focus will be:
+Below is a brief overview of the project structure:
 
 ### Data
 
 - **/data**
   - **/data/raw**: Contains raw data files for processing and ingestion.
-  - **/data/synthetic_qa**: Contains synthetic QA data for testing system functionality.
 
 ### Logic
 
@@ -24,9 +19,8 @@ Below is a brief overview of the project structure and where your focus will be:
 
 3. **LLM Integration (src/llm/)**:
    - Logic to abstract away the LLM provider.
-   - Support for OpenAI, Anthropic, and Ollama models.
+   - Support for OpenAI, Anthropic, and OpenRouter models.
    - Model definitions and classes dedicated to handling text generation.
-   - Additional helper functions for model preference settings and response generation.
 
 4. **Data Classes (src/duckie_objects/)**:
    - Entity objects related to threads, documentation, and ticket management.
@@ -34,21 +28,13 @@ Below is a brief overview of the project structure and where your focus will be:
 5. **Utilities (src/utils/)**:
    - Functions for utilities such as rate limiting, content conversion, and tokenization.
 
-6. **Vector Database (src/weaviate_db/)**:
-   - Manages interactions with a Weaviate vector database, facilitating embedding storage and retrieval.
-
-7. **Postgres Database (src/supabase_helper/)**:
-   - Manages interactions with a Supabase postgres database, used for storing non-vector data.
-
-## Objective
-
-Your goal is to complete the implementation of the ingestion and retrieval components. The ingestion component should be capable of processing raw data and storing the relevant information within a Weaviate vector database and (optionally) a Postgres database. The retrieval component should take a query and return the relevant data from the database.
+6. **Vector Database (src/vector_db/)**:
+   - Manages interactions with a Chroma vector database, facilitating embedding storage and retrieval.
 
 ## Getting Started
 1. Install the dependencies using `pip install -r requirements.txt`
 2. Familiarize yourself with the existing data and source structure.
 3. Focus on the ingestion and retrieval components.
-4. Use the synthetic QA data for evaluation of your implementation.
 
 ## Expectations
 - **Code Quality**: Maintain clean, concise, and modular code.
